@@ -1,20 +1,95 @@
 # Финальный набор репозиториев и пар коммитов для основного куба
-# эксперимента. Заполняется после клонирования кандидатов из
-# `кандидаты-репо.md` и просмотра свежих merged PR на каждом из них.
+# эксперимента. См. план.md §6 для критериев отбора.
 #
-# Схема: см. internal/benchmark/dataset.go в репозитории testgen-agent.
+# Каждая запись соответствует одному merged PR, который меняет 1–4 файла
+# в продовом коде Go (без _test.go и автогенерации). base — это
+# состояние main непосредственно перед мержем (parent merge-коммита),
+# head — сам merge-коммит. Все примеры собираются (`go build ./...`) и
+# проходят `go test -short ./<pkg>/...` под Linux/Go 1.24+.
 #
-# workdir/ относится к корню этого репозитория и игнорируется git'ом
-# (см. .gitignore). Сюда benchmark-runner кладёт shallow-клоны
-# тестируемых проектов и сохраняет их между прогонами как кэш.
+# Прогон выполняется в WSL2 / Linux: некоторые проекты содержат тесты
+# в смежных пакетах, которые требуют Linux-окружения (file permissions,
+# build-tags). Агент вычисляет coverage по затронутому пакету, а не по
+# всему модулю, поэтому такие тесты в наш прогон не попадают.
 
 workdir: workdir
 
 repos:
-  # TODO: после анализа PR заполняется реальными SHA. Шаблон записи:
-  # - name: gorilla-mux
-  #   url: https://github.com/gorilla/mux.git
-  #   base: <SHA-непосредственно-перед-PR>
-  #   head: <SHA-merge-коммита-PR-или-PR-head>
-  #   # subdir: подкаталог с go.mod, если он не в корне (необязательно)
-  #   # exclude: список регулярных выражений для игнорирования файлов
+  # --- Слот 1: HTTP-роутер (малый) -----------------------------------
+  - name: gorilla-mux
+    url: https://github.com/gorilla/mux.git
+    base: f18421322a2c78a434740116bca26243ad3496ca
+    head: 525206d7c2b250ca658700448b3bf23ec4707115
+    # PR #759: Feature route middleware with `.Use`
+    # https://github.com/gorilla/mux/pull/759
+    # Файлы: middleware.go (новый), route.go.
+
+  # --- Слот 2: Утилита (малый) ---------------------------------------
+  - name: google-uuid
+    url: https://github.com/google/uuid.git
+    base: c58770eb495f55fe2ced6284f93c5158a62e53e3
+    head: a2b2b32373ff0b1a312b7fdf6d38a977099698a6
+    # PR #150: fix: Monotonicity in UUIDv7
+    # https://github.com/google/uuid/pull/150
+    # Файлы: version7.go.
+
+  # --- Слот 3: CLI framework (средний) -------------------------------
+  - name: spf13-cobra
+    url: https://github.com/spf13/cobra.git
+    base: f2878bab8c96afd6e36968af96343b35dbb82a82
+    head: 746ef07158728502482cea9f880a6f4b21ef29a9
+    # PR #2356: prevent completions from mutating os.Args via append side effect
+    # https://github.com/spf13/cobra/pull/2356
+    # Файлы: completions.go.
+
+  # --- Слот 4: Парсер / кодек (средний) ------------------------------
+  - name: burntsushi-toml
+    url: https://github.com/BurntSushi/toml.git
+    base: b7406c026f5af05e3e826cb01c78bc2841be4703
+    head: 2918ee74bb664c418ae9b2d6ba356c2ca6c24506
+    # PR #418: Fix metadata - do not reuse result of append
+    # https://github.com/BurntSushi/toml/pull/418
+    # Файлы: meta.go.
+
+  # --- Слот 5: Web framework (средний) -------------------------------
+  - name: gin-gonic-gin
+    url: https://github.com/gin-gonic/gin.git
+    base: fb2583442c4d9bccb75e6d26f1aa6e7c01950db6
+    head: 472d086af2acd924cb4b9d7be0525f7d790f69bc
+    # PR #4535: fix(tree): panic in findCaseInsensitivePathRec with RedirectFixedPath
+    # https://github.com/gin-gonic/gin/pull/4535
+    # Файлы: tree.go (корень модуля → coverage гонится по `./...`).
+
+  # --- Слот 6: Embedded storage (средне-крупный) ---------------------
+  - name: etcd-io-bbolt
+    url: https://github.com/etcd-io/bbolt.git
+    base: 5a7468c8a9ea508b9a546f22286726619819ad0c
+    head: 36efe3ee12b5ef4d2ba79a3756d4713efdc4b7ee
+    # PR #1179: freelist/hashmap: batch contiguous IDs when merging free spans
+    # https://github.com/etcd-io/bbolt/pull/1179
+    # Файлы: internal/freelist/hashmap.go.
+    # Замечание: пакет tests/failpoint падает без build-tag, но coverage
+    # гонится в ./internal/freelist/... и его не активирует.
+
+  # --- Слот 7: Distributed / consensus (крупный) ---------------------
+  - name: hashicorp-raft
+    url: https://github.com/hashicorp/raft.git
+    base: 185ae2ea91f09c04428c4293641db142b130a631
+    head: 42d34464b2d203e389e11ed6d43db698792c0604
+    # PR #609: Do not update leader last-contact when granting a pre-vote request
+    # https://github.com/hashicorp/raft/pull/609
+    # Файлы: raft.go (корень → `./...`). Тесты идут ~130с на M1/Ryzen,
+    # дефолтный go test timeout 10м укладывается.
+
+  # --- Слот 8: Прикладное приложение (крупный) -----------------------
+  - name: restic-restic
+    url: https://github.com/restic/restic.git
+    base: 4d2da63829f38955621db225ee85896c281dd524
+    head: 5cc86360477b4f70548bfc8c72e6f9a0a4cab712
+    # PR #5614: repository: fix LookupBlobSize to also return pending blobs
+    # https://github.com/restic/restic/pull/5614
+    # Файлы: internal/repository/index/master_index.go,
+    #        internal/repository/repository.go.
+    # Замечание: TestStdinFromCommand[NoOutput] в cmd/restic падает на
+    # некоторых окружениях, но coverage гонится в ./internal/repository/...
+    # и эти тесты не запускаются.
