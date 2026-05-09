@@ -6,6 +6,13 @@
 # Example:
 #   bash scripts/run-model.sh qwen/qwen-2.5-7b-instruct 3 60
 #
+# Provider pinning (recommended for reproducibility):
+#   PROVIDER=Phala bash scripts/run-model.sh qwen/qwen-2.5-7b-instruct
+#   PROVIDER="Phala,DeepInfra" PROVIDER_ALLOW_FALLBACKS=1 bash scripts/run-model.sh ...
+# When PROVIDER is set, every request to OpenRouter is constrained to that
+# provider list (provider.only); allow_fallbacks defaults to false (strict
+# pin) unless PROVIDER_ALLOW_FALLBACKS=1.
+#
 # Output goes to результаты/raw/<sanitized-model>/<repo>/<config>-runN.json.
 # Logs are streamed to логи/<sanitized-model>.log so the run can be
 # detached with nohup and progress watched with `tail -f`.
@@ -15,6 +22,8 @@ MODEL="${1:?usage: run-model.sh <model-id> [<runs>] [<test-timeout-sec>]}"
 RUNS="${2:-3}"
 TEST_TIMEOUT="${3:-60}"
 SEED_BASE="${SEED_BASE:-42}"
+PROVIDER="${PROVIDER:-}"
+PROVIDER_ALLOW_FALLBACKS="${PROVIDER_ALLOW_FALLBACKS:-0}"
 
 EXP_ROOT="$HOME/testgen-experiments"
 AGENT_REPO_URL="https://github.com/Klagvar/testgen-agent.git"
@@ -93,7 +102,16 @@ DATASET_RT="$EXP_ROOT/dataset-runtime.yaml"
 DATASET_ABS="$DATASET_RT"
 echo "─── runtime dataset: $DATASET_RT (workdir → $EXP_ROOT/workdir) ───" | tee -a "$LOG_FILE"
 
-# ─── 5. Run ──────────────────────────────────────────────────────────────
+# ─── 5. Build agent --extra flags ────────────────────────────────────────
+EXTRA_FLAGS="--temperature 0 --test-timeout $TEST_TIMEOUT"
+if [[ -n "$PROVIDER" ]]; then
+  EXTRA_FLAGS="$EXTRA_FLAGS --provider $PROVIDER"
+  if [[ "$PROVIDER_ALLOW_FALLBACKS" == "1" || "$PROVIDER_ALLOW_FALLBACKS" == "true" ]]; then
+    EXTRA_FLAGS="$EXTRA_FLAGS --provider-allow-fallbacks"
+  fi
+fi
+
+# ─── 6. Run ──────────────────────────────────────────────────────────────
 {
 echo
 echo "═════════════════════════════════════════════════════════"
@@ -102,8 +120,10 @@ echo " model tag  : $MODEL_TAG"
 echo " runs/cfg   : $RUNS"
 echo " seed-base  : $SEED_BASE"
 echo " test-timeout: ${TEST_TIMEOUT}s"
+echo " provider   : ${PROVIDER:-<auto>} (allow-fallbacks=$PROVIDER_ALLOW_FALLBACKS)"
 echo " dataset    : $DATASET_ABS"
 echo " out        : $RESULTS_DIR"
+echo " agent extra: $EXTRA_FLAGS"
 echo " started    : $(date -Iseconds)"
 echo "═════════════════════════════════════════════════════════"
 } | tee -a "$LOG_FILE"
@@ -116,7 +136,7 @@ START=$(date +%s)
   --model "$MODEL" \
   --runs "$RUNS" \
   --seed-base "$SEED_BASE" \
-  --extra "--temperature 0 --test-timeout $TEST_TIMEOUT" \
+  --extra "$EXTRA_FLAGS" \
   2>&1 | tee -a "$LOG_FILE"
 END=$(date +%s)
 DURATION=$((END - START))
@@ -129,7 +149,7 @@ echo " finished  : $(date -Iseconds)"
 echo "═════════════════════════════════════════════════════════"
 } | tee -a "$LOG_FILE"
 
-# ─── 6. Quick aggregate ──────────────────────────────────────────────────
+# ─── 7. Quick aggregate ──────────────────────────────────────────────────
 echo
 echo "─── Per-repo summary ───" | tee -a "$LOG_FILE"
 for repo_dir in "$RESULTS_DIR"/*/; do

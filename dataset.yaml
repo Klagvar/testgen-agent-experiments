@@ -48,11 +48,16 @@ repos:
   # --- Слот 4: Парсер / кодек (средний) ------------------------------
   - name: burntsushi-toml
     url: https://github.com/BurntSushi/toml.git
-    base: b7406c026f5af05e3e826cb01c78bc2841be4703
-    head: 2918ee74bb664c418ae9b2d6ba356c2ca6c24506
-    # PR #418: Fix metadata - do not reuse result of append
-    # https://github.com/BurntSushi/toml/pull/418
-    # Файлы: meta.go.
+    base: d73da82a4a6b82eb63738e26e2d7f883fa4fd91b
+    head: 7edfd735b3b7892e5f93b3b6b6d1a809e02c0b9e
+    # PR #379: Allow Unicode in keys (uni-keys)
+    # https://github.com/BurntSushi/toml/pull/379
+    # Файлы: lex.go (+16, добавляет проверку Unicode в ключах).
+    # Заметка: PR #418 ранее использовался, но его diff состоял
+    # только из удалений (-3 в meta.go), агент корректно отфильтровывал
+    # такой PR (нечего тестировать), и результат давал files=0 на всех
+    # 18 ablation × 3 run = 54 запусках. PR #379 — первый PR с реальным
+    # production-добавлением, найденный в истории main.
 
   # --- Слот 5: Web framework (средний) -------------------------------
   - name: gin-gonic-gin
@@ -77,12 +82,18 @@ repos:
   # --- Слот 7: Distributed / consensus (крупный) ---------------------
   - name: hashicorp-raft
     url: https://github.com/hashicorp/raft.git
-    base: 185ae2ea91f09c04428c4293641db142b130a631
-    head: 42d34464b2d203e389e11ed6d43db698792c0604
-    # PR #609: Do not update leader last-contact when granting a pre-vote request
-    # https://github.com/hashicorp/raft/pull/609
-    # Файлы: raft.go (корень → `./...`). Тесты идут ~130с на M1/Ryzen,
-    # дефолтный go test timeout 10м укладывается.
+    base: 5157c19cc233325dd92226aa0fdfe7f1dc188f2d
+    head: 91745625f50efb7098f6a87a6c485cf54c435c1b
+    # PR #494: heartbeat-backoff (cappedExponentialBackoff)
+    # https://github.com/hashicorp/raft/pull/494
+    # Файлы: replication.go (+5/-2), util.go (+17, новая функция
+    # cappedExponentialBackoff). Тесты идут ~130с на M1/Ryzen, дефолтный
+    # go test timeout укладывается.
+    # Заметка: PR #609 ранее использовался, но его production-часть была
+    # одной строкой удаления (raft.go -1), и агент отфильтровывал PR как
+    # "нечего тестировать" → files=0 на всех 54 запусках. PR #494 содержит
+    # новую публичную функцию cappedExponentialBackoff и изменение тела
+    # heartbeat — оба клиерн-кейса для генерации тестов.
 
   # --- Слот 8: Прикладное приложение (крупный) -----------------------
   - name: restic-restic

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "project_name": "hashicorp-raft",
+  "branch": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+  "base_branch": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+  "model": "qwen/qwen-2.5-7b-instruct",
+  "timestamp": "2026-05-10T00:04:34.834587422+03:00",
+  "duration_seconds": 290.157438523,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 37698,
+    "completion_tokens": 3813,
+    "token_efficiency_tokens_per_test": 41511,
+    "naturalness": {
+      "test_count": 11,
+      "assertion_ratio": 2.272727272727273,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 36.36363636363637,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 9.090909090909092,
+      "test_name_score": 34.01515151515151,
+      "var_name_score": 0.19401212822265448
+    }
+  },
+  "files": [
+    {
+      "file": "replication.go",
+      "functions": [
+        "heartbeat"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 29006,
+      "completion_tokens": 2327
+    },
+    {
+      "file": "util.go",
+      "functions": [
+        "cappedExponentialBackoff"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 0,
+      "prompt_tokens": 8692,
+      "completion_tokens": 1486,
+      "token_efficiency_tokens_per_test": 10178,
+      "naturalness": {
+        "test_count": 11,
+        "assertion_ratio": 2.272727272727273,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 36.36363636363637,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 9.090909090909092,
+        "test_name_score": 34.01515151515151,
+        "var_name_score": 0.19401212822265448
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "full",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "Phala"
+    ],
+    "run_index": 1
+  }
+}

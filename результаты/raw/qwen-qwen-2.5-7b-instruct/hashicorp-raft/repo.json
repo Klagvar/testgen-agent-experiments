@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "hashicorp-raft",
+    "URL": "https://github.com/hashicorp/raft.git",
+    "Base": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+    "Head": "91745625f50efb7098f6a87a6c485cf54c435c1b",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/hashicorp-raft",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/hashicorp-raft",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/full-run1.json",
+      "exit_code": 0,
+      "duration": 290200821341
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/full-run2.json",
+      "exit_code": 0,
+      "duration": 293405925396
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/full-run3.json",
+      "exit_code": 0,
+      "duration": 226791281535
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 268133325040
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-types-run2.json",
+      "exit_code": 0,
+      "duration": 199663706603
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 192644988783
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 192813413764
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 278877011185
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 243848872660
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-structured-feedback-run1.json",
+      "exit_code": 2,
+      "duration": 95207619778
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 229018888448
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 262714485833
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 76262490138
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 60481414907
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 113383832256
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 209188245833
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 197168062781
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 194218746727
+    }
+  ],
+  "duration": 3625583774785
+}
