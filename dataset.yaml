@@ -18,11 +18,14 @@ repos:
   # --- Слот 1: HTTP-роутер (малый) -----------------------------------
   - name: gorilla-mux
     url: https://github.com/gorilla/mux.git
-    base: f18421322a2c78a434740116bca26243ad3496ca
+    base: de7178dc9dffadc3cf56bece3962737e8b0710b8
     head: 525206d7c2b250ca658700448b3bf23ec4707115
     # PR #759: Feature route middleware with `.Use`
     # https://github.com/gorilla/mux/pull/759
-    # Файлы: middleware.go (новый), route.go.
+    # Файлы: middleware.go (новый, +16), route.go (+18/-1).
+    # PR влит rebase'ом, поэтому base = parent первого PR-коммита
+    # 7cc5738 ("Added middleware support for individual routes"),
+    # head = последний коммит PR на main.
 
   # --- Слот 2: Утилита (малый) ---------------------------------------
   - name: google-uuid
@@ -84,12 +87,16 @@ repos:
   # --- Слот 8: Прикладное приложение (крупный) -----------------------
   - name: restic-restic
     url: https://github.com/restic/restic.git
-    base: 4d2da63829f38955621db225ee85896c281dd524
-    head: 5cc86360477b4f70548bfc8c72e6f9a0a4cab712
-    # PR #5614: repository: fix LookupBlobSize to also return pending blobs
-    # https://github.com/restic/restic/pull/5614
-    # Файлы: internal/repository/index/master_index.go,
-    #        internal/repository/repository.go.
-    # Замечание: TestStdinFromCommand[NoOutput] в cmd/restic падает на
-    # некоторых окружениях, но coverage гонится в ./internal/repository/...
-    # и эти тесты не запускаются.
+    base: f78e3f369da66ad5589370d2a719ee1b190ad7f5
+    head: 880b08f9ec03425028634129fb8016c0860dca4b
+    # PR #5627: restore: tune fileswriter
+    # https://github.com/restic/restic/pull/5627
+    # Файлы: internal/restorer/filerestorer.go (+2),
+    #        internal/restorer/fileswriter.go (+50/-5).
+    # head — merge-коммит, base — его parent #1 (main до мерджа).
+    # Coverage гонится по ./internal/restorer/... — пакет проходит
+    # `go test -short` за <1 c, без зависимостей от cmd/restic
+    # с его TestStdinFromCommand-проблемой.
+    # Заметка: предыдущий выбор PR #5614 был отклонён, его продовая
+    # часть схлопнулась при мердже из-за параллельного слияния
+    # эквивалентных правок, остался только тест-файл.
