@@ -1,0 +1,51 @@
+{
+  "repo": {
+    "Name": "google-uuid",
+    "URL": "https://github.com/google/uuid.git",
+    "Base": "c58770eb495f55fe2ced6284f93c5158a62e53e3",
+    "Head": "a2b2b32373ff0b1a312b7fdf6d38a977099698a6",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/google-uuid",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/google-uuid",
+  "runs": [
+    {
+      "config": "full",
+      "report_path": "/home/gizat/testgen-experiments/results-smoke/google-uuid/full.json",
+      "exit_code": 2,
+      "duration": 45564810969
+    },
+    {
+      "config": "no-types",
+      "report_path": "/home/gizat/testgen-experiments/results-smoke/google-uuid/no-types.json",
+      "exit_code": 2,
+      "duration": 75099976015
+    },
+    {
+      "config": "no-smart-diff",
+      "report_path": "/home/gizat/testgen-experiments/results-smoke/google-uuid/no-smart-diff.json",
+      "exit_code": 2,
+      "duration": 65126657556
+    },
+    {
+      "config": "no-structured-feedback",
+      "report_path": "/home/gizat/testgen-experiments/results-smoke/google-uuid/no-structured-feedback.json",
+      "exit_code": 2,
+      "duration": 64625171766
+    },
+    {
+      "config": "no-pruning",
+      "report_path": "/home/gizat/testgen-experiments/results-smoke/google-uuid/no-pruning.json",
+      "exit_code": 2,
+      "duration": 50773197879
+    },
+    {
+      "config": "no-coverage",
+      "report_path": "/home/gizat/testgen-experiments/results-smoke/google-uuid/no-coverage.json",
+      "exit_code": 2,
+      "duration": 949165585617
+    }
+  ],
+  "duration": 1251412731695
+}
