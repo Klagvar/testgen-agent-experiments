@@ -39,25 +39,36 @@ repos:
   # --- Слот 3: CLI framework (средний) -------------------------------
   - name: spf13-cobra
     url: https://github.com/spf13/cobra.git
-    base: f2878bab8c96afd6e36968af96343b35dbb82a82
-    head: 746ef07158728502482cea9f880a6f4b21ef29a9
-    # PR #2356: prevent completions from mutating os.Args via append side effect
-    # https://github.com/spf13/cobra/pull/2356
-    # Файлы: completions.go.
+    base: 5c962a221e70fd6b12296e5d7075f28b422f98b2
+    head: 4cafa37bc4bb85633b4245aa118280fe5a9edcd5
+    # PR #2044: Allow running persistent run hooks of all parents
+    # https://github.com/spf13/cobra/pull/2044
+    # Файлы: cobra.go (+8, новый exported var EnableTraverseRunHooks
+    # и default-константа), command.go (+20/-4, два прохода по
+    # цепочке parent-команд с условным append в head/tail и четыре
+    # условных break по EnableTraverseRunHooks). В апстриме PR
+    # сопровождается 106 строками unit-тестов в command_test.go.
+    # Заметка: ранее использовался PR #2356 (prevent slice mutation
+    # of os.Args, +4 строки), но он оказался слишком тривиальным
+    # — заменён на feature-PR с реальной branching-логикой и
+    # глобальным состоянием.
 
   # --- Слот 4: Парсер / кодек (средний) ------------------------------
   - name: burntsushi-toml
     url: https://github.com/BurntSushi/toml.git
-    base: d73da82a4a6b82eb63738e26e2d7f883fa4fd91b
-    head: 7edfd735b3b7892e5f93b3b6b6d1a809e02c0b9e
-    # PR #379: Allow Unicode in keys (uni-keys)
-    # https://github.com/BurntSushi/toml/pull/379
-    # Файлы: lex.go (+16, добавляет проверку Unicode в ключах).
-    # Заметка: PR #418 ранее использовался, но его diff состоял
-    # только из удалений (-3 в meta.go), агент корректно отфильтровывал
-    # такой PR (нечего тестировать), и результат давал files=0 на всех
-    # 18 ablation × 3 run = 54 запусках. PR #379 — первый PR с реальным
-    # production-добавлением, найденный в истории main.
+    base: d716584e960834b63c9c159bef0377c91cfd9ee7
+    head: dcb2346503b4e6a7fd88768b3d71d54df76d4a96
+    # PR #355: Support encoding.json.Number
+    # https://github.com/BurntSushi/toml/pull/355
+    # Файлы: decode.go (+13, новая ветка json.Number в unifyString),
+    # encode.go (+24/-15, type-switch с int64/float64 для json.Number,
+    # перенос time.Duration в eElement, поддержка reflect.Ptr через
+    # рекурсию), parse.go (+1/-1, рефактор-комментарий). 3 файла,
+    # type-switch и условные ветки — хорошая нагрузка для генератора
+    # тестов.
+    # Заметка: ранее использовались PR #418 (только удаления, files=0)
+    # и PR #379 (16 if-условий для unicode-escape). Заменены на PR #355
+    # как наиболее содержательный из найденных в истории main.
 
   # --- Слот 5: Web framework (средний) -------------------------------
   - name: gin-gonic-gin
