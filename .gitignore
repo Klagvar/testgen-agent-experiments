@@ -8,7 +8,9 @@ workdir/
 
 # Per-run logs from orchestration scripts.
 logs/
+логи/
 *.log
+*.out
 
 # OS / IDE
 .DS_Store

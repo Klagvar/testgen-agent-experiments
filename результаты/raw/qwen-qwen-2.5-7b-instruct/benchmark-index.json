@@ -2,14 +2,155 @@
   "work_dir": "/home/gizat/testgen-experiments/workdir",
   "model": "qwen/qwen-2.5-7b-instruct",
   "agent_bin": "/home/gizat/testgen-experiments/testgen-agent",
-  "timestamp": "2026-05-10T00:57:47.936907437+03:00",
+  "timestamp": "2026-05-10T16:49:31.103435118+03:00",
   "results": [
+    {
+      "repo": {
+        "Name": "spf13-cobra",
+        "URL": "https://github.com/spf13/cobra.git",
+        "Base": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+        "Head": "4cafa37bc4bb85633b4245aa118280fe5a9edcd5",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir/spf13-cobra",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir/spf13-cobra",
+      "runs": [
+        {
+          "config": "full",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/full-run1.json",
+          "exit_code": 2,
+          "duration": 53956313016
+        },
+        {
+          "config": "full",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/full-run2.json",
+          "exit_code": 2,
+          "duration": 55822419477
+        },
+        {
+          "config": "full",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/full-run3.json",
+          "exit_code": 2,
+          "duration": 44583708008
+        },
+        {
+          "config": "no-types",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-types-run1.json",
+          "exit_code": 2,
+          "duration": 44276237003
+        },
+        {
+          "config": "no-types",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-types-run2.json",
+          "exit_code": 2,
+          "duration": 53279709247
+        },
+        {
+          "config": "no-types",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-types-run3.json",
+          "exit_code": 2,
+          "duration": 69314189654
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-smart-diff-run1.json",
+          "exit_code": 2,
+          "duration": 54841239243
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-smart-diff-run2.json",
+          "exit_code": 2,
+          "duration": 58605673503
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-smart-diff-run3.json",
+          "exit_code": 2,
+          "duration": 56648768608
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-structured-feedback-run1.json",
+          "exit_code": 2,
+          "duration": 44459031883
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-structured-feedback-run2.json",
+          "exit_code": 2,
+          "duration": 53735405081
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-structured-feedback-run3.json",
+          "exit_code": 2,
+          "duration": 48151221214
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-pruning-run1.json",
+          "exit_code": 2,
+          "duration": 57230106223
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-pruning-run2.json",
+          "exit_code": 2,
+          "duration": 67484089146
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-pruning-run3.json",
+          "exit_code": 2,
+          "duration": 48367804846
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-coverage-run1.json",
+          "exit_code": 2,
+          "duration": 51612589153
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-coverage-run2.json",
+          "exit_code": 0,
+          "duration": 50944225178
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/spf13-cobra/no-coverage-run3.json",
+          "exit_code": 2,
+          "duration": 54305241770
+        }
+      ],
+      "duration": 969058701869
+    },
     {
       "repo": {
         "Name": "burntsushi-toml",
         "URL": "https://github.com/BurntSushi/toml.git",
-        "Base": "d73da82a4a6b82eb63738e26e2d7f883fa4fd91b",
-        "Head": "7edfd735b3b7892e5f93b3b6b6d1a809e02c0b9e",
+        "Base": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+        "Head": "dcb2346503b4e6a7fd88768b3d71d54df76d4a96",
         "Subdir": "",
         "Exclude": null
       },
@@ -20,271 +161,130 @@
           "config": "full",
           "run_index": 1,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/full-run1.json",
-          "exit_code": 2,
-          "duration": 281093661550
+          "exit_code": 0,
+          "duration": 114483925332
         },
         {
           "config": "full",
           "run_index": 2,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/full-run2.json",
           "exit_code": 2,
-          "duration": 68651073140
+          "duration": 128752733986
         },
         {
           "config": "full",
           "run_index": 3,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/full-run3.json",
           "exit_code": 2,
-          "duration": 70443871296
+          "duration": 160508043403
         },
         {
           "config": "no-types",
           "run_index": 1,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-types-run1.json",
           "exit_code": 2,
-          "duration": 69015626871
+          "duration": 105811568308
         },
         {
           "config": "no-types",
           "run_index": 2,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-types-run2.json",
           "exit_code": 2,
-          "duration": 207376783543
+          "duration": 107889861906
         },
         {
           "config": "no-types",
           "run_index": 3,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-types-run3.json",
           "exit_code": 2,
-          "duration": 226227758149
+          "duration": 147279542604
         },
         {
           "config": "no-smart-diff",
           "run_index": 1,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-smart-diff-run1.json",
-          "exit_code": 2,
-          "duration": 227004559694
+          "exit_code": 0,
+          "duration": 140445589826
         },
         {
           "config": "no-smart-diff",
           "run_index": 2,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-smart-diff-run2.json",
           "exit_code": 2,
-          "duration": 54408459971
+          "duration": 138237971254
         },
         {
           "config": "no-smart-diff",
           "run_index": 3,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-smart-diff-run3.json",
-          "exit_code": 2,
-          "duration": 79911035997
+          "exit_code": 0,
+          "duration": 109452583338
         },
         {
           "config": "no-structured-feedback",
           "run_index": 1,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-structured-feedback-run1.json",
           "exit_code": 2,
-          "duration": 217276931161
+          "duration": 97521796022
         },
         {
           "config": "no-structured-feedback",
           "run_index": 2,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-structured-feedback-run2.json",
           "exit_code": 2,
-          "duration": 65268230528
+          "duration": 121067148788
         },
         {
           "config": "no-structured-feedback",
           "run_index": 3,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-structured-feedback-run3.json",
           "exit_code": 2,
-          "duration": 221567009471
+          "duration": 150516383630
         },
         {
           "config": "no-pruning",
           "run_index": 1,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-pruning-run1.json",
           "exit_code": 2,
-          "duration": 70148848551
+          "duration": 135393184687
         },
         {
           "config": "no-pruning",
           "run_index": 2,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-pruning-run2.json",
           "exit_code": 2,
-          "duration": 236173335139
+          "duration": 221171948866
         },
         {
           "config": "no-pruning",
           "run_index": 3,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-pruning-run3.json",
           "exit_code": 2,
-          "duration": 43660145497
+          "duration": 327991256695
         },
         {
           "config": "no-coverage",
           "run_index": 1,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-coverage-run1.json",
           "exit_code": 2,
-          "duration": 71549497456
+          "duration": 194676299310
         },
         {
           "config": "no-coverage",
           "run_index": 2,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-coverage-run2.json",
           "exit_code": 2,
-          "duration": 62739543206
+          "duration": 139085080006
         },
         {
           "config": "no-coverage",
           "run_index": 3,
           "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/burntsushi-toml/no-coverage-run3.json",
           "exit_code": 2,
-          "duration": 229179060416
+          "duration": 125687558601
         }
       ],
-      "duration": 2503288718805
-    },
-    {
-      "repo": {
-        "Name": "hashicorp-raft",
-        "URL": "https://github.com/hashicorp/raft.git",
-        "Base": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
-        "Head": "91745625f50efb7098f6a87a6c485cf54c435c1b",
-        "Subdir": "",
-        "Exclude": null
-      },
-      "clone_dir": "/home/gizat/testgen-experiments/workdir/hashicorp-raft",
-      "agent_dir": "/home/gizat/testgen-experiments/workdir/hashicorp-raft",
-      "runs": [
-        {
-          "config": "full",
-          "run_index": 1,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/full-run1.json",
-          "exit_code": 0,
-          "duration": 290200821341
-        },
-        {
-          "config": "full",
-          "run_index": 2,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/full-run2.json",
-          "exit_code": 0,
-          "duration": 293405925396
-        },
-        {
-          "config": "full",
-          "run_index": 3,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/full-run3.json",
-          "exit_code": 0,
-          "duration": 226791281535
-        },
-        {
-          "config": "no-types",
-          "run_index": 1,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-types-run1.json",
-          "exit_code": 0,
-          "duration": 268133325040
-        },
-        {
-          "config": "no-types",
-          "run_index": 2,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-types-run2.json",
-          "exit_code": 0,
-          "duration": 199663706603
-        },
-        {
-          "config": "no-types",
-          "run_index": 3,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-types-run3.json",
-          "exit_code": 0,
-          "duration": 192644988783
-        },
-        {
-          "config": "no-smart-diff",
-          "run_index": 1,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-smart-diff-run1.json",
-          "exit_code": 0,
-          "duration": 192813413764
-        },
-        {
-          "config": "no-smart-diff",
-          "run_index": 2,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-smart-diff-run2.json",
-          "exit_code": 0,
-          "duration": 278877011185
-        },
-        {
-          "config": "no-smart-diff",
-          "run_index": 3,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-smart-diff-run3.json",
-          "exit_code": 0,
-          "duration": 243848872660
-        },
-        {
-          "config": "no-structured-feedback",
-          "run_index": 1,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-structured-feedback-run1.json",
-          "exit_code": 2,
-          "duration": 95207619778
-        },
-        {
-          "config": "no-structured-feedback",
-          "run_index": 2,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-structured-feedback-run2.json",
-          "exit_code": 0,
-          "duration": 229018888448
-        },
-        {
-          "config": "no-structured-feedback",
-          "run_index": 3,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-structured-feedback-run3.json",
-          "exit_code": 0,
-          "duration": 262714485833
-        },
-        {
-          "config": "no-pruning",
-          "run_index": 1,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-pruning-run1.json",
-          "exit_code": 2,
-          "duration": 76262490138
-        },
-        {
-          "config": "no-pruning",
-          "run_index": 2,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-pruning-run2.json",
-          "exit_code": 2,
-          "duration": 60481414907
-        },
-        {
-          "config": "no-pruning",
-          "run_index": 3,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-pruning-run3.json",
-          "exit_code": 2,
-          "duration": 113383832256
-        },
-        {
-          "config": "no-coverage",
-          "run_index": 1,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-coverage-run1.json",
-          "exit_code": 0,
-          "duration": 209188245833
-        },
-        {
-          "config": "no-coverage",
-          "run_index": 2,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-coverage-run2.json",
-          "exit_code": 0,
-          "duration": 197168062781
-        },
-        {
-          "config": "no-coverage",
-          "run_index": 3,
-          "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen-2.5-7b-instruct/hashicorp-raft/no-coverage-run3.json",
-          "exit_code": 0,
-          "duration": 194218746727
-        }
-      ],
-      "duration": 3625583774785
+      "duration": 2667625592701
     }
   ]
 }

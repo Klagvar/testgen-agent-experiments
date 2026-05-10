@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
   "project_name": "burntsushi-toml",
-  "branch": "d73da82a4a6b82eb63738e26e2d7f883fa4fd91b",
-  "base_branch": "d73da82a4a6b82eb63738e26e2d7f883fa4fd91b",
+  "branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "base_branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
   "model": "qwen/qwen-2.5-7b-instruct",
-  "timestamp": "2026-05-09T23:54:04.840210533+03:00",
-  "duration_seconds": 43.615597971,
+  "timestamp": "2026-05-10T16:42:10.885873792+03:00",
+  "duration_seconds": 327.971913546,
   "totals": {
-    "files_processed": 1,
+    "files_processed": 2,
     "tests_generated": 0,
     "tests_validated": 0,
     "tests_cached": 0,
@@ -17,20 +17,33 @@
     "branches_total": 0,
     "error_paths_covered": 0,
     "error_paths_total": 0,
-    "prompt_tokens": 7954,
-    "completion_tokens": 1756
+    "prompt_tokens": 27828,
+    "completion_tokens": 4569
   },
   "files": [
     {
-      "file": "lex.go",
+      "file": "decode.go",
       "functions": [
-        "isBareKeyChar"
+        "unifyMap",
+        "unifyString"
       ],
       "status": "failed",
       "tests_total": 0,
       "tests_passed": 0,
-      "prompt_tokens": 7954,
-      "completion_tokens": 1756
+      "prompt_tokens": 11894,
+      "completion_tokens": 2879
+    },
+    {
+      "file": "encode.go",
+      "functions": [
+        "encode",
+        "eElement"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 15934,
+      "completion_tokens": 1690
     }
   ],
   "config": {

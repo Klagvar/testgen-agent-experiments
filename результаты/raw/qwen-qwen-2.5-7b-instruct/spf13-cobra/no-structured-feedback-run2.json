@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "project_name": "spf13-cobra",
-  "branch": "f2878bab8c96afd6e36968af96343b35dbb82a82",
-  "base_branch": "f2878bab8c96afd6e36968af96343b35dbb82a82",
+  "branch": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+  "base_branch": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
   "model": "qwen/qwen-2.5-7b-instruct",
-  "timestamp": "2026-05-09T21:15:06.287384474+03:00",
-  "duration_seconds": 47.226342161,
+  "timestamp": "2026-05-10T16:00:50.950815666+03:00",
+  "duration_seconds": 53.698524852,
   "totals": {
     "files_processed": 1,
     "tests_generated": 0,
@@ -17,20 +17,20 @@
     "branches_total": 0,
     "error_paths_covered": 0,
     "error_paths_total": 0,
-    "prompt_tokens": 30974,
-    "completion_tokens": 3577
+    "prompt_tokens": 23681,
+    "completion_tokens": 2842
   },
   "files": [
     {
-      "file": "completions.go",
+      "file": "command.go",
       "functions": [
-        "getCompletions"
+        "execute"
       ],
       "status": "failed",
       "tests_total": 0,
       "tests_passed": 0,
-      "prompt_tokens": 30974,
-      "completion_tokens": 3577
+      "prompt_tokens": 23681,
+      "completion_tokens": 2842
     }
   ],
   "config": {

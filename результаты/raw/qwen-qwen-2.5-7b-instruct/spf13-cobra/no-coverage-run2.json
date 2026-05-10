@@ -1,15 +1,15 @@
 {
   "schema_version": "1.0",
   "project_name": "spf13-cobra",
-  "branch": "f2878bab8c96afd6e36968af96343b35dbb82a82",
-  "base_branch": "f2878bab8c96afd6e36968af96343b35dbb82a82",
+  "branch": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+  "base_branch": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
   "model": "qwen/qwen-2.5-7b-instruct",
-  "timestamp": "2026-05-09T21:22:39.971790247+03:00",
-  "duration_seconds": 91.800558795,
+  "timestamp": "2026-05-10T16:06:01.941833855+03:00",
+  "duration_seconds": 50.911545659,
   "totals": {
     "files_processed": 1,
-    "tests_generated": 0,
-    "tests_validated": 0,
+    "tests_generated": 1,
+    "tests_validated": 1,
     "tests_cached": 0,
     "mutations_killed": 0,
     "mutations_total": 0,
@@ -17,20 +17,42 @@
     "branches_total": 0,
     "error_paths_covered": 0,
     "error_paths_total": 0,
-    "prompt_tokens": 32269,
-    "completion_tokens": 6246
+    "prompt_tokens": 23119,
+    "completion_tokens": 3026,
+    "token_efficiency_tokens_per_test": 26145,
+    "naturalness": {
+      "test_count": 121,
+      "assertion_ratio": 1.8016528925619835,
+      "no_assertions_pct": 2.479338842975207,
+      "duplicate_assertions_pct": 4.132231404958678,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 63.63636363636363,
+      "test_name_score": 29.399872395740147,
+      "var_name_score": 0.1949082719400741
+    }
   },
   "files": [
     {
-      "file": "completions.go",
+      "file": "command.go",
       "functions": [
-        "getCompletions"
+        "execute"
       ],
-      "status": "failed",
-      "tests_total": 0,
-      "tests_passed": 0,
-      "prompt_tokens": 32269,
-      "completion_tokens": 6246
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "prompt_tokens": 23119,
+      "completion_tokens": 3026,
+      "token_efficiency_tokens_per_test": 26145,
+      "naturalness": {
+        "test_count": 121,
+        "assertion_ratio": 1.8016528925619835,
+        "no_assertions_pct": 2.479338842975207,
+        "duplicate_assertions_pct": 4.132231404958678,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 63.63636363636363,
+        "test_name_score": 29.399872395740147,
+        "var_name_score": 0.1949082719400741
+      }
     }
   ],
   "config": {

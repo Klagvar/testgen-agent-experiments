@@ -1,36 +1,81 @@
 {
   "schema_version": "1.0",
   "project_name": "burntsushi-toml",
-  "branch": "d73da82a4a6b82eb63738e26e2d7f883fa4fd91b",
-  "base_branch": "d73da82a4a6b82eb63738e26e2d7f883fa4fd91b",
+  "branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "base_branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
   "model": "qwen/qwen-2.5-7b-instruct",
-  "timestamp": "2026-05-09T23:24:15.195566558+03:00",
-  "duration_seconds": 281.031953158,
+  "timestamp": "2026-05-10T16:08:45.006217261+03:00",
+  "duration_seconds": 114.456046518,
   "totals": {
-    "files_processed": 1,
-    "tests_generated": 0,
-    "tests_validated": 0,
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
     "tests_cached": 0,
+    "diff_coverage_pct": 100,
     "mutations_killed": 0,
     "mutations_total": 0,
-    "branches_covered": 0,
-    "branches_total": 0,
-    "error_paths_covered": 0,
-    "error_paths_total": 0,
-    "prompt_tokens": 14987,
-    "completion_tokens": 12288
+    "branch_coverage_pct": 100,
+    "branches_covered": 10,
+    "branches_total": 10,
+    "error_path_coverage_pct": 100,
+    "error_paths_covered": 1,
+    "error_paths_total": 1,
+    "prompt_tokens": 30568,
+    "completion_tokens": 6389,
+    "token_efficiency_tokens_per_test": 36957,
+    "naturalness": {
+      "test_count": 24,
+      "assertion_ratio": 2.2916666666666665,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 8.333333333333332,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 87.5,
+      "test_name_score": 1.6571969696969695,
+      "var_name_score": 0.19178743961352654
+    }
   },
   "files": [
     {
-      "file": "lex.go",
+      "file": "decode.go",
       "functions": [
-        "isBareKeyChar"
+        "unifyMap",
+        "unifyString"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 100,
+      "branch_coverage_pct": 100,
+      "branches_total": 10,
+      "branches_covered": 10,
+      "error_path_coverage_pct": 100,
+      "error_paths_total": 1,
+      "error_paths_covered": 1,
+      "prompt_tokens": 12344,
+      "completion_tokens": 1739,
+      "token_efficiency_tokens_per_test": 14083,
+      "naturalness": {
+        "test_count": 24,
+        "assertion_ratio": 2.2916666666666665,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 8.333333333333332,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 87.5,
+        "test_name_score": 1.6571969696969695,
+        "var_name_score": 0.19178743961352654
+      }
+    },
+    {
+      "file": "encode.go",
+      "functions": [
+        "encode",
+        "eElement"
       ],
       "status": "failed",
       "tests_total": 0,
       "tests_passed": 0,
-      "prompt_tokens": 14987,
-      "completion_tokens": 12288
+      "prompt_tokens": 18224,
+      "completion_tokens": 4650
     }
   ],
   "config": {
