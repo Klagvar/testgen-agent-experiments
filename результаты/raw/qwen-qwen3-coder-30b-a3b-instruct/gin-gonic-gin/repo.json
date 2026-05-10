@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "gin-gonic-gin",
+    "URL": "https://github.com/gin-gonic/gin.git",
+    "Base": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+    "Head": "472d086af2acd924cb4b9d7be0525f7d790f69bc",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/gin-gonic-gin",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/gin-gonic-gin",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/full-run1.json",
+      "exit_code": 0,
+      "duration": 174773383674
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/full-run2.json",
+      "exit_code": 0,
+      "duration": 155212809547
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/full-run3.json",
+      "exit_code": 2,
+      "duration": 123579157088
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-types-run1.json",
+      "exit_code": 2,
+      "duration": 127231163089
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-types-run2.json",
+      "exit_code": 2,
+      "duration": 129050392645
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-types-run3.json",
+      "exit_code": 2,
+      "duration": 903400503839
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 141932901044
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 134666459073
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 150705519541
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-structured-feedback-run1.json",
+      "exit_code": 2,
+      "duration": 91897511325
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-structured-feedback-run2.json",
+      "exit_code": 2,
+      "duration": 130650772095
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 161297926293
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 135644101103
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 103729012469
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 65829056418
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-coverage-run1.json",
+      "exit_code": 2,
+      "duration": 113133253637
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 62964001662
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gin-gonic-gin/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 62915059603
+    }
+  ],
+  "duration": 2971306782423
+}

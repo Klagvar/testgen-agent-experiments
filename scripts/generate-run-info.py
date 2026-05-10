@@ -42,6 +42,8 @@ total_prompt = 0
 total_completion = 0
 total_runs = 0
 total_validated = 0
+total_runs_success = 0
+total_validated_tests = 0
 
 for repo_entry in idx["results"]:
     repo_name = repo_entry["repo"]["Name"]
@@ -92,8 +94,9 @@ for repo_entry in idx["results"]:
         total_prompt += prompt_tok
         total_completion += compl_tok
         total_runs += 1
+        total_validated_tests += validated
         if validated > 0:
-            total_validated += 1
+            total_runs_success += 1
 
         cfg_obj = rdata.get("config", {})
         prov = cfg_obj.get("provider")
@@ -116,9 +119,10 @@ lines.append(f"**Дата завершения:** {ts}  ")
 lines.append(f"**Всего репозиториев:** {len(repo_stats)}  ")
 lines.append(f"**Всего ablation-запусков:** {total_runs}  ")
 lines.append(
-    f"**Запусков с валидным тестом:** {total_validated}/{total_runs} "
-    f"({total_validated/total_runs*100:.1f} %)  "
+    f"**Успешных запусков (≥1 валидный тест):** {total_runs_success}/{total_runs} "
+    f"({total_runs_success/total_runs*100:.1f} %)  "
 )
+lines.append(f"**Всего валидных тестов:** {total_validated_tests}  ")
 total_tok = total_prompt + total_completion
 lines.append(f"**Токенов всего:** prompt={total_prompt:,} + completion={total_completion:,} = {total_tok:,}")
 lines.append("")
@@ -137,25 +141,43 @@ lines.append("")
 
 lines.append("## Сводка по репозиториям")
 lines.append("")
-lines.append("| repo | base..head | конфигов | runs | val/total | средн. branch% (где есть) | средн. diff% (где есть) |")
-lines.append("|------|-----------|----------|------|-----------|---------------------------|-------------------------|")
+lines.append("Колонки:")
+lines.append("- **успешных runs** — число запусков (из 18), где агент сгенерил ≥1 валидный тест")
+lines.append("- **валидных тестов** — суммарное число валидных тестов по всем 18 запускам")
+lines.append("- **средн. branch% / diff%** — среднее по тем запускам, где coverage был посчитан")
+lines.append("")
+lines.append("| repo | base..head | runs | успешных runs | валидных тестов | средн. branch% | средн. diff% |")
+lines.append("|------|-----------|-----:|--------------:|----------------:|---------------:|-------------:|")
+
+# Re-walk per-run files to count successful runs distinctly from validated test count
+import glob as _glob
 for repo_name in sorted(repo_stats.keys()):
     rs = repo_stats[repo_name]
-    n_val = sum(c["validated"] for c in rs["configs"].values())
-    n_total = sum(c["runs"] for c in rs["configs"].values())
     bcov_all = []
     dcov_all = []
-    for c in rs["configs"].values():
-        bcov_all.extend(c["branch_pct"])
-        dcov_all.extend(c["diff_pct"])
+    n_val_tests = 0
+    n_runs_success = 0
+    n_runs_total = 0
+    for f in _glob.glob(os.path.join(model_dir, repo_name, "*-run*.json")):
+        with open(f, encoding="utf-8") as rf:
+            rd = json.load(rf)
+        tt = rd.get("totals", {})
+        v = tt.get("tests_validated", 0)
+        n_val_tests += v
+        n_runs_total += 1
+        if v > 0:
+            n_runs_success += 1
+        if isinstance(tt.get("branch_coverage_pct"), (int, float)):
+            bcov_all.append(tt["branch_coverage_pct"])
+        if isinstance(tt.get("diff_coverage_pct"), (int, float)):
+            dcov_all.append(tt["diff_coverage_pct"])
     bcov_str = f"{sum(bcov_all)/len(bcov_all):.1f}%" if bcov_all else "—"
     dcov_str = f"{sum(dcov_all)/len(dcov_all):.1f}%" if dcov_all else "—"
     base_short = rs["base"][:8]
     head_short = rs["head"][:8]
     lines.append(
         f"| `{repo_name}` | `{base_short}..{head_short}` "
-        f"| {len(rs['configs'])} | {rs['n_runs']} | "
-        f"{n_val}/{n_total} | {bcov_str} | {dcov_str} |"
+        f"| {n_runs_total} | {n_runs_success} | {n_val_tests} | {bcov_str} | {dcov_str} |"
     )
 lines.append("")
 

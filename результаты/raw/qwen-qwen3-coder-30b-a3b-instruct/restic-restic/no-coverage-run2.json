@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "project_name": "restic-restic",
+  "branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "base_branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "model": "qwen/qwen3-coder-30b-a3b-instruct",
+  "timestamp": "2026-05-10T22:23:03.055565022+03:00",
+  "duration_seconds": 167.090316915,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 25546,
+    "completion_tokens": 17582,
+    "token_efficiency_tokens_per_test": 43128,
+    "naturalness": {
+      "test_count": 11,
+      "assertion_ratio": 2.6363636363636362,
+      "no_assertions_pct": 36.36363636363637,
+      "duplicate_assertions_pct": 0,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 54.54545454545454,
+      "test_name_score": 69.50413223140495,
+      "var_name_score": 0.10409389461113601
+    }
+  },
+  "files": [
+    {
+      "file": "internal/restorer/filerestorer.go",
+      "functions": [
+        "restoreFiles"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 17680,
+      "completion_tokens": 12288
+    },
+    {
+      "file": "internal/restorer/fileswriter.go",
+      "functions": [
+        "newFilesWriter",
+        "writeToFile",
+        "flush"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "prompt_tokens": 7866,
+      "completion_tokens": 5294,
+      "token_efficiency_tokens_per_test": 13160,
+      "naturalness": {
+        "test_count": 11,
+        "assertion_ratio": 2.6363636363636362,
+        "no_assertions_pct": 36.36363636363637,
+        "duplicate_assertions_pct": 0,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 54.54545454545454,
+        "test_name_score": 69.50413223140495,
+        "var_name_score": 0.10409389461113601
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": false,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-coverage",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 43,
+    "provider": [
+      "Novita"
+    ],
+    "run_index": 2
+  }
+}

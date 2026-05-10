@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "project_name": "restic-restic",
+  "branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "base_branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "model": "qwen/qwen3-coder-30b-a3b-instruct",
+  "timestamp": "2026-05-10T22:06:27.764354098+03:00",
+  "duration_seconds": 136.631959285,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 89.1891891891892,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 60,
+    "branches_covered": 6,
+    "branches_total": 10,
+    "error_path_coverage_pct": 40,
+    "error_paths_covered": 2,
+    "error_paths_total": 5,
+    "prompt_tokens": 25817,
+    "completion_tokens": 10972,
+    "token_efficiency_tokens_per_test": 36789,
+    "naturalness": {
+      "test_count": 7,
+      "assertion_ratio": 1.8571428571428572,
+      "no_assertions_pct": 57.14285714285714,
+      "duplicate_assertions_pct": 28.57142857142857,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 14.285714285714285,
+      "test_name_score": 57.79220779220778,
+      "var_name_score": 0.09897546897546897
+    }
+  },
+  "files": [
+    {
+      "file": "internal/restorer/filerestorer.go",
+      "functions": [
+        "restoreFiles"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 15393,
+      "completion_tokens": 7170
+    },
+    {
+      "file": "internal/restorer/fileswriter.go",
+      "functions": [
+        "newFilesWriter",
+        "writeToFile",
+        "flush"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 89.1891891891892,
+      "branch_coverage_pct": 60,
+      "branches_total": 10,
+      "branches_covered": 6,
+      "error_path_coverage_pct": 40,
+      "error_paths_total": 5,
+      "error_paths_covered": 2,
+      "prompt_tokens": 10424,
+      "completion_tokens": 3802,
+      "token_efficiency_tokens_per_test": 14226,
+      "naturalness": {
+        "test_count": 7,
+        "assertion_ratio": 1.8571428571428572,
+        "no_assertions_pct": 57.14285714285714,
+        "duplicate_assertions_pct": 28.57142857142857,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 14.285714285714285,
+        "test_name_score": 57.79220779220778,
+        "var_name_score": 0.09897546897546897
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-structured-feedback",
+    "types_enabled": true,
+    "structured_feedback_enabled": false,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "Novita"
+    ],
+    "run_index": 1
+  }
+}

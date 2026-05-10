@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "gorilla-mux",
+    "URL": "https://github.com/gorilla/mux.git",
+    "Base": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+    "Head": "525206d7c2b250ca658700448b3bf23ec4707115",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/gorilla-mux",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/gorilla-mux",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/full-run1.json",
+      "exit_code": 0,
+      "duration": 93313455550
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/full-run2.json",
+      "exit_code": 0,
+      "duration": 61955481424
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/full-run3.json",
+      "exit_code": 0,
+      "duration": 98581097284
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 89504771126
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-types-run2.json",
+      "exit_code": 0,
+      "duration": 61238723849
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 57866673907
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 80561527883
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 106628545506
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 88655603186
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 134446933575
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 88052122465
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 77442969711
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-pruning-run1.json",
+      "exit_code": 0,
+      "duration": 63751799767
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-pruning-run2.json",
+      "exit_code": 0,
+      "duration": 66335690681
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-pruning-run3.json",
+      "exit_code": 0,
+      "duration": 77968424106
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 82468715279
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 82142486168
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/gorilla-mux/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 85963593095
+    }
+  ],
+  "duration": 1498293209628
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "project_name": "gorilla-mux",
+  "branch": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+  "base_branch": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+  "model": "qwen/qwen3-coder-30b-a3b-instruct",
+  "timestamp": "2026-05-10T17:27:34.407061602+03:00",
+  "duration_seconds": 93.26530354,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 100,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 100,
+    "branches_covered": 14,
+    "branches_total": 14,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 21731,
+    "completion_tokens": 8822,
+    "token_efficiency_tokens_per_test": 30553,
+    "naturalness": {
+      "test_count": 9,
+      "assertion_ratio": 1.8888888888888888,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 0,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 33.33333333333333,
+      "test_name_score": 90,
+      "var_name_score": 0.317984918307499
+    }
+  },
+  "files": [
+    {
+      "file": "middleware.go",
+      "functions": [
+        "Use",
+        "useInterface"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 8281,
+      "completion_tokens": 2503
+    },
+    {
+      "file": "route.go",
+      "functions": [
+        "Match",
+        "GetHandlerWithMiddlewares"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 100,
+      "branch_coverage_pct": 100,
+      "branches_total": 14,
+      "branches_covered": 14,
+      "error_path_coverage_pct": 100,
+      "prompt_tokens": 13450,
+      "completion_tokens": 6319,
+      "token_efficiency_tokens_per_test": 19769,
+      "naturalness": {
+        "test_count": 9,
+        "assertion_ratio": 1.8888888888888888,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 0,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 33.33333333333333,
+        "test_name_score": 90,
+        "var_name_score": 0.317984918307499
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "full",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "Novita"
+    ],
+    "run_index": 1
+  }
+}

@@ -1,15 +1,15 @@
-# Прогон qwen/qwen-2.5-7b-instruct
+# Прогон qwen/qwen3-coder-30b-a3b-instruct
 
-**Дата завершения:** 2026-05-10T16:49:31.075649+03:00  
+**Дата завершения:** 2026-05-10T22:25:26.751031+03:00  
 **Всего репозиториев:** 8  
 **Всего ablation-запусков:** 144  
-**Успешных запусков (≥1 валидный тест):** 22/144 (15.3 %)  
-**Всего валидных тестов:** 22  
-**Токенов всего:** prompt=3,137,664 + completion=641,522 = 3,779,186
+**Успешных запусков (≥1 валидный тест):** 72/144 (50.0 %)  
+**Всего валидных тестов:** 79  
+**Токенов всего:** prompt=3,762,106 + completion=1,425,087 = 5,187,193
 
 ## Параметры запуска
 
-- **OpenRouter provider pin:** `Phala`
+- **OpenRouter provider pin:** `Novita`
 - **provider.allow_fallbacks:** (default)
 - **temperature:** `[0]`
 - **seed:** `[42, 43, 44]` (seed-base + run_index - 1)
@@ -26,19 +26,19 @@
 
 | repo | base..head | runs | успешных runs | валидных тестов | средн. branch% | средн. diff% |
 |------|-----------|-----:|--------------:|----------------:|---------------:|-------------:|
-| `burntsushi-toml` | `d716584e..dcb23465` | 18 | 3 | 3 | 92.6% | 100.0% |
-| `etcd-io-bbolt` | `5a7468c8..36efe3ee` | 18 | 4 | 4 | 25.0% | 43.2% |
-| `gin-gonic-gin` | `fb258344..472d086a` | 18 | 0 | 0 | — | — |
-| `google-uuid` | `c58770eb..a2b2b323` | 18 | 0 | 0 | — | — |
-| `gorilla-mux` | `de7178dc..525206d7` | 18 | 0 | 0 | — | — |
-| `hashicorp-raft` | `5157c19c..91745625` | 18 | 14 | 14 | 94.4% | 80.9% |
-| `restic-restic` | `f78e3f36..880b08f9` | 18 | 0 | 0 | — | — |
-| `spf13-cobra` | `5c962a22..4cafa37b` | 18 | 1 | 1 | — | — |
+| `burntsushi-toml` | `d716584e..dcb23465` | 18 | 5 | 6 | 96.7% | 100.0% |
+| `etcd-io-bbolt` | `5a7468c8..36efe3ee` | 18 | 10 | 10 | 43.1% | 77.8% |
+| `gin-gonic-gin` | `fb258344..472d086a` | 18 | 8 | 8 | 86.8% | 59.6% |
+| `google-uuid` | `c58770eb..a2b2b323` | 18 | 3 | 3 | 100.0% | 66.7% |
+| `gorilla-mux` | `de7178dc..525206d7` | 18 | 18 | 24 | 98.6% | 98.1% |
+| `hashicorp-raft` | `5157c19c..91745625` | 18 | 12 | 12 | 100.0% | 88.9% |
+| `restic-restic` | `f78e3f36..880b08f9` | 18 | 13 | 13 | 62.7% | 89.2% |
+| `spf13-cobra` | `5c962a22..4cafa37b` | 18 | 3 | 3 | 82.9% | 77.8% |
 
 ## Состав файлов
 
 ```
-qwen-qwen-2.5-7b-instruct/
+qwen-qwen3-coder-30b-a3b-instruct/
 ├─ benchmark-index.json       # сводный индекс по всем 8 репо
 ├─ RUN-INFO.md                # этот файл
 ├─ burntsushi-toml/
@@ -70,8 +70,8 @@ qwen-qwen-2.5-7b-instruct/
 ## Воспроизведение
 
 ```bash
-PROVIDER=Phala \
-  bash scripts/run-model.sh qwen/qwen-2.5-7b-instruct 3 60
+PROVIDER=Novita \
+  bash scripts/run-model.sh qwen/qwen3-coder-30b-a3b-instruct 3 60
 ```
 
 Подробное описание методологии — в `план.md`, §6 (выбор репозиториев), §10 (контроль воспроизводимости).

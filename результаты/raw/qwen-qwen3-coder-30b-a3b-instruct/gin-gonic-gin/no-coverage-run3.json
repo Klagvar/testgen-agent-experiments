@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "project_name": "gin-gonic-gin",
+  "branch": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+  "base_branch": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+  "model": "qwen/qwen3-coder-30b-a3b-instruct",
+  "timestamp": "2026-05-10T19:59:35.269838519+03:00",
+  "duration_seconds": 62.809178509,
+  "totals": {
+    "files_processed": 1,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 21875,
+    "completion_tokens": 4434,
+    "token_efficiency_tokens_per_test": 26309,
+    "naturalness": {
+      "test_count": 33,
+      "assertion_ratio": 1.5151515151515151,
+      "no_assertions_pct": 33.33333333333333,
+      "duplicate_assertions_pct": 6.0606060606060606,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 0,
+      "test_name_score": 31.258741258741264,
+      "var_name_score": 0.20124005945745083
+    }
+  },
+  "files": [
+    {
+      "file": "tree.go",
+      "functions": [
+        "findCaseInsensitivePathRec"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "prompt_tokens": 21875,
+      "completion_tokens": 4434,
+      "token_efficiency_tokens_per_test": 26309,
+      "naturalness": {
+        "test_count": 33,
+        "assertion_ratio": 1.5151515151515151,
+        "no_assertions_pct": 33.33333333333333,
+        "duplicate_assertions_pct": 6.0606060606060606,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 0,
+        "test_name_score": 31.258741258741264,
+        "var_name_score": 0.20124005945745083
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": false,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-coverage",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 44,
+    "provider": [
+      "Novita"
+    ],
+    "run_index": 3
+  }
+}

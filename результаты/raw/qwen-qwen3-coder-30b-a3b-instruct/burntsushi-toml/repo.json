@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "burntsushi-toml",
+    "URL": "https://github.com/BurntSushi/toml.git",
+    "Base": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+    "Head": "dcb2346503b4e6a7fd88768b3d71d54df76d4a96",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/burntsushi-toml",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/burntsushi-toml",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/full-run1.json",
+      "exit_code": 2,
+      "duration": 135889285334
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/full-run2.json",
+      "exit_code": 2,
+      "duration": 118237538242
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/full-run3.json",
+      "exit_code": 2,
+      "duration": 135668311242
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 175926107095
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-types-run2.json",
+      "exit_code": 2,
+      "duration": 121594673002
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-types-run3.json",
+      "exit_code": 2,
+      "duration": 162410794195
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-smart-diff-run1.json",
+      "exit_code": 2,
+      "duration": 180428710211
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 201287478745
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 155631494300
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-structured-feedback-run1.json",
+      "exit_code": 2,
+      "duration": 131135703387
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 135863968275
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-structured-feedback-run3.json",
+      "exit_code": 2,
+      "duration": 157534441393
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 145727801049
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 114745599405
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 140097646016
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 125730704851
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-coverage-run2.json",
+      "exit_code": 2,
+      "duration": 129700069477
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/qwen-qwen3-coder-30b-a3b-instruct/burntsushi-toml/no-coverage-run3.json",
+      "exit_code": 2,
+      "duration": 118529653496
+    }
+  ],
+  "duration": 2587828113525
+}
