@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "project_name": "spf13-cobra",
+  "branch": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+  "base_branch": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "timestamp": "2026-05-11T12:50:20.749003743+03:00",
+  "duration_seconds": 312.377318052,
+  "totals": {
+    "files_processed": 1,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 77.77777777777779,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 57.14285714285714,
+    "branches_covered": 20,
+    "branches_total": 35,
+    "error_path_coverage_pct": 33.33333333333333,
+    "error_paths_covered": 4,
+    "error_paths_total": 12,
+    "prompt_tokens": 30691,
+    "completion_tokens": 4445,
+    "token_efficiency_tokens_per_test": 35136,
+    "naturalness": {
+      "test_count": 119,
+      "assertion_ratio": 1.8067226890756303,
+      "no_assertions_pct": 2.5210084033613445,
+      "duplicate_assertions_pct": 4.201680672268908,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 63.02521008403361,
+      "test_name_score": 28.213315629281997,
+      "var_name_score": 0.19324518897472637
+    }
+  },
+  "files": [
+    {
+      "file": "command.go",
+      "functions": [
+        "execute"
+      ],
+      "status": "partial",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 77.77777777777779,
+      "branch_coverage_pct": 57.14285714285714,
+      "branches_total": 35,
+      "branches_covered": 20,
+      "error_path_coverage_pct": 33.33333333333333,
+      "error_paths_total": 12,
+      "error_paths_covered": 4,
+      "prompt_tokens": 30691,
+      "completion_tokens": 4445,
+      "token_efficiency_tokens_per_test": 35136,
+      "naturalness": {
+        "test_count": 119,
+        "assertion_ratio": 1.8067226890756303,
+        "no_assertions_pct": 2.5210084033613445,
+        "duplicate_assertions_pct": 4.201680672268908,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 63.02521008403361,
+        "test_name_score": 28.213315629281997,
+        "var_name_score": 0.19324518897472637
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-structured-feedback",
+    "types_enabled": true,
+    "structured_feedback_enabled": false,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 44,
+    "provider": [
+      "DeepInfra"
+    ],
+    "run_index": 3
+  }
+}

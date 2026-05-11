@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "hashicorp-raft",
+    "URL": "https://github.com/hashicorp/raft.git",
+    "Base": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+    "Head": "91745625f50efb7098f6a87a6c485cf54c435c1b",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/hashicorp-raft",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/hashicorp-raft",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/full-run1.json",
+      "exit_code": 0,
+      "duration": 567118739872
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/full-run2.json",
+      "exit_code": 0,
+      "duration": 461217313619
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/full-run3.json",
+      "exit_code": 0,
+      "duration": 663747322158
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 616383302564
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-types-run2.json",
+      "exit_code": 0,
+      "duration": 505887001968
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 376775986146
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 431646017815
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 433075350167
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 404883276923
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-structured-feedback-run1.json",
+      "exit_code": 2,
+      "duration": 587885403494
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-structured-feedback-run2.json",
+      "exit_code": 2,
+      "duration": 498088191543
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-structured-feedback-run3.json",
+      "exit_code": 2,
+      "duration": 405481326244
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 379960955415
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 384458935400
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 480312396223
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 562587052657
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 529269405851
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/hashicorp-raft/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 671168518193
+    }
+  ],
+  "duration": 8961806065573
+}

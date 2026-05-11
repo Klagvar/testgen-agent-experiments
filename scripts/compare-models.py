@@ -5,10 +5,28 @@ import glob
 import os
 import sys
 
-models = [
-    ("Qwen 2.5 7B (floor)", "результаты/raw/qwen-qwen-2.5-7b-instruct"),
-    ("Qwen3-Coder-30B-A3B", "результаты/raw/qwen-qwen3-coder-30b-a3b-instruct"),
-]
+import sys
+
+# Auto-discover all model directories under результаты/raw/
+HUMAN_NAMES = {
+    "qwen-qwen-2.5-7b-instruct": "Qwen 2.5 7B (floor)",
+    "qwen-qwen3-coder-30b-a3b-instruct": "Qwen3-Coder-30B-A3B",
+    "meta-llama-llama-3.3-70b-instruct": "Llama 3.3 70B",
+    "openai-gpt-4o-mini": "GPT-4o-mini",
+    "deepseek-deepseek-chat": "DeepSeek-chat",
+    "anthropic-claude-3.5-haiku": "Claude 3.5 Haiku",
+}
+
+raw_root = "результаты/raw"
+if not os.path.isdir(raw_root):
+    sys.exit(f"{raw_root} not found — run this from the repo root")
+
+models = []
+for d in sorted(os.listdir(raw_root)):
+    full = os.path.join(raw_root, d)
+    if os.path.isdir(full):
+        label = HUMAN_NAMES.get(d, d)
+        models.append((label, full))
 
 def stats(model_dir):
     runs_succ = 0

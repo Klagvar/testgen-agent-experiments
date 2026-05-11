@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "restic-restic",
+    "URL": "https://github.com/restic/restic.git",
+    "Base": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+    "Head": "880b08f9ec03425028634129fb8016c0860dca4b",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/restic-restic",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/restic-restic",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/full-run1.json",
+      "exit_code": 2,
+      "duration": 757991036471
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/full-run2.json",
+      "exit_code": 0,
+      "duration": 609450652169
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/full-run3.json",
+      "exit_code": 2,
+      "duration": 508273462911
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-types-run1.json",
+      "exit_code": 2,
+      "duration": 307547597446
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-types-run2.json",
+      "exit_code": 0,
+      "duration": 327945047250
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-types-run3.json",
+      "exit_code": 2,
+      "duration": 459707969118
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 296229340429
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-smart-diff-run2.json",
+      "exit_code": 2,
+      "duration": 436409429722
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 387198732340
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-structured-feedback-run1.json",
+      "exit_code": 2,
+      "duration": 297424750704
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 264408884174
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-structured-feedback-run3.json",
+      "exit_code": 2,
+      "duration": 458433428156
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 385604947292
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 433311349134
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 478719294356
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 349831338514
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-coverage-run2.json",
+      "exit_code": 2,
+      "duration": 276358382637
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/restic-restic/no-coverage-run3.json",
+      "exit_code": 2,
+      "duration": 159414047198
+    }
+  ],
+  "duration": 7196945096791
+}

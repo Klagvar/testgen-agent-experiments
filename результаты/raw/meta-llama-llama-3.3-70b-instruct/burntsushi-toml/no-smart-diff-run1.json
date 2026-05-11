@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "project_name": "burntsushi-toml",
+  "branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "base_branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "timestamp": "2026-05-11T13:40:58.80804131+03:00",
+  "duration_seconds": 213.262515493,
+  "totals": {
+    "files_processed": 3,
+    "tests_generated": 0,
+    "tests_validated": 0,
+    "tests_cached": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 37431,
+    "completion_tokens": 4877
+  },
+  "files": [
+    {
+      "file": "decode.go",
+      "functions": [
+        "unifyStruct",
+        "unifyMap",
+        "unifyString"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 13444,
+      "completion_tokens": 1571
+    },
+    {
+      "file": "encode.go",
+      "functions": [
+        "encode",
+        "eElement"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 15693,
+      "completion_tokens": 2205
+    },
+    {
+      "file": "parse.go",
+      "functions": [
+        "next"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 8294,
+      "completion_tokens": 1101
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": false,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-smart-diff",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "DeepInfra"
+    ],
+    "run_index": 1
+  }
+}

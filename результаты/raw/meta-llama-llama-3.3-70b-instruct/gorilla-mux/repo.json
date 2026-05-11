@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "gorilla-mux",
+    "URL": "https://github.com/gorilla/mux.git",
+    "Base": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+    "Head": "525206d7c2b250ca658700448b3bf23ec4707115",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/gorilla-mux",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/gorilla-mux",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/full-run1.json",
+      "exit_code": 0,
+      "duration": 607261507595
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/full-run2.json",
+      "exit_code": 2,
+      "duration": 340433509386
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/full-run3.json",
+      "exit_code": 0,
+      "duration": 215906203353
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 165739031340
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-types-run2.json",
+      "exit_code": 2,
+      "duration": 219334597628
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 226411961151
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-smart-diff-run1.json",
+      "exit_code": 2,
+      "duration": 166106463714
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-smart-diff-run2.json",
+      "exit_code": 2,
+      "duration": 160394183083
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 142398108789
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 277551590965
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 210681052360
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 210953365602
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-pruning-run1.json",
+      "exit_code": 0,
+      "duration": 159696857400
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-pruning-run2.json",
+      "exit_code": 0,
+      "duration": 158185448862
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-pruning-run3.json",
+      "exit_code": 0,
+      "duration": 175103573459
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-coverage-run1.json",
+      "exit_code": 2,
+      "duration": 213884198165
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 328947872328
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gorilla-mux/no-coverage-run3.json",
+      "exit_code": 2,
+      "duration": 225974664741
+    }
+  ],
+  "duration": 4206909522288
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "project_name": "restic-restic",
+  "branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "base_branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "timestamp": "2026-05-11T19:57:10.368900757+03:00",
+  "duration_seconds": 349.799779128,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 25207,
+    "completion_tokens": 7507,
+    "token_efficiency_tokens_per_test": 32714,
+    "naturalness": {
+      "test_count": 6,
+      "assertion_ratio": 0.3333333333333333,
+      "no_assertions_pct": 66.66666666666666,
+      "duplicate_assertions_pct": 0,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 33.33333333333333,
+      "test_name_score": 52.424242424242415,
+      "var_name_score": 0.09404761904761905
+    }
+  },
+  "files": [
+    {
+      "file": "internal/restorer/filerestorer.go",
+      "functions": [
+        "restoreFiles"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 14833,
+      "completion_tokens": 5306
+    },
+    {
+      "file": "internal/restorer/fileswriter.go",
+      "functions": [
+        "newFilesWriter",
+        "writeToFile",
+        "flush"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "prompt_tokens": 10374,
+      "completion_tokens": 2201,
+      "token_efficiency_tokens_per_test": 12575,
+      "naturalness": {
+        "test_count": 6,
+        "assertion_ratio": 0.3333333333333333,
+        "no_assertions_pct": 66.66666666666666,
+        "duplicate_assertions_pct": 0,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 33.33333333333333,
+        "test_name_score": 52.424242424242415,
+        "var_name_score": 0.09404761904761905
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": false,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-coverage",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "DeepInfra"
+    ],
+    "run_index": 1
+  }
+}

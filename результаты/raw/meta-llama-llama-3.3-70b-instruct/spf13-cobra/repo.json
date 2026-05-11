@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "spf13-cobra",
+    "URL": "https://github.com/spf13/cobra.git",
+    "Base": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+    "Head": "4cafa37bc4bb85633b4245aa118280fe5a9edcd5",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/spf13-cobra",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/spf13-cobra",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/full-run1.json",
+      "exit_code": 0,
+      "duration": 226119798601
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/full-run2.json",
+      "exit_code": 0,
+      "duration": 204673536992
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/full-run3.json",
+      "exit_code": 0,
+      "duration": 238148122769
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-types-run1.json",
+      "exit_code": 2,
+      "duration": 125321010847
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-types-run2.json",
+      "exit_code": 2,
+      "duration": 144140092125
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-types-run3.json",
+      "exit_code": 2,
+      "duration": 134187900785
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-smart-diff-run1.json",
+      "exit_code": 2,
+      "duration": 103215115451
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 252465197346
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 149702524026
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-structured-feedback-run1.json",
+      "exit_code": 2,
+      "duration": 97130238693
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 159886337163
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 312400721602
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 153911365786
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-pruning-run2.json",
+      "exit_code": 0,
+      "duration": 231140180117
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-pruning-run3.json",
+      "exit_code": 0,
+      "duration": 504872035114
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-coverage-run1.json",
+      "exit_code": 2,
+      "duration": 137146156151
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-coverage-run2.json",
+      "exit_code": 2,
+      "duration": 120035942201
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/spf13-cobra/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 154741168582
+    }
+  ],
+  "duration": 3451137385721
+}

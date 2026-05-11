@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "gin-gonic-gin",
+    "URL": "https://github.com/gin-gonic/gin.git",
+    "Base": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+    "Head": "472d086af2acd924cb4b9d7be0525f7d790f69bc",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/gin-gonic-gin",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/gin-gonic-gin",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/full-run1.json",
+      "exit_code": 0,
+      "duration": 159325509365
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/full-run2.json",
+      "exit_code": 2,
+      "duration": 113944462109
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/full-run3.json",
+      "exit_code": 0,
+      "duration": 250864559929
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 176321835691
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-types-run2.json",
+      "exit_code": 2,
+      "duration": 93203587019
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 186473496134
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 189877835969
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 200873402368
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 196213183356
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 158542013917
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 179503272967
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 320548617259
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 238625762060
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 170897763985
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 229394541416
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 89580337048
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 66683611545
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/meta-llama-llama-3.3-70b-instruct/gin-gonic-gin/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 88651768027
+    }
+  ],
+  "duration": 3110946439924
+}

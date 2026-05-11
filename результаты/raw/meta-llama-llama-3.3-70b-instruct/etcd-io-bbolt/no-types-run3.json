@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "project_name": "etcd-io-bbolt",
+  "branch": "5a7468c8a9ea508b9a546f22286726619819ad0c",
+  "base_branch": "5a7468c8a9ea508b9a546f22286726619819ad0c",
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "timestamp": "2026-05-11T15:30:57.407707265+03:00",
+  "duration_seconds": 287.651901179,
+  "totals": {
+    "files_processed": 1,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 68.18181818181817,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 37.5,
+    "branches_covered": 3,
+    "branches_total": 8,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 13643,
+    "completion_tokens": 4777,
+    "token_efficiency_tokens_per_test": 18420,
+    "naturalness": {
+      "test_count": 11,
+      "assertion_ratio": 1.8181818181818181,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 18.181818181818183,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 0,
+      "test_name_score": 62.07792207792208,
+      "var_name_score": 0.15426839826839825
+    }
+  },
+  "files": [
+    {
+      "file": "internal/freelist/hashmap.go",
+      "functions": [
+        "mergeSpans",
+        "mergeWithExistingSpan"
+      ],
+      "status": "partial",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 68.18181818181817,
+      "branch_coverage_pct": 37.5,
+      "branches_total": 8,
+      "branches_covered": 3,
+      "error_path_coverage_pct": 100,
+      "prompt_tokens": 13643,
+      "completion_tokens": 4777,
+      "token_efficiency_tokens_per_test": 18420,
+      "naturalness": {
+        "test_count": 11,
+        "assertion_ratio": 1.8181818181818181,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 18.181818181818183,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 0,
+        "test_name_score": 62.07792207792208,
+        "var_name_score": 0.15426839826839825
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-types",
+    "types_enabled": false,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 44,
+    "provider": [
+      "DeepInfra"
+    ],
+    "run_index": 3
+  }
+}
