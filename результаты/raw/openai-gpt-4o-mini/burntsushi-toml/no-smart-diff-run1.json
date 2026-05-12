@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "project_name": "burntsushi-toml",
+  "branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "base_branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "model": "openai/gpt-4o-mini",
+  "timestamp": "2026-05-12T11:58:35.035901245+03:00",
+  "duration_seconds": 106.982888024,
+  "totals": {
+    "files_processed": 3,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 100,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 94.44444444444444,
+    "branches_covered": 17,
+    "branches_total": 18,
+    "error_path_coverage_pct": 100,
+    "error_paths_covered": 2,
+    "error_paths_total": 2,
+    "prompt_tokens": 36788,
+    "completion_tokens": 7856,
+    "token_efficiency_tokens_per_test": 44644,
+    "naturalness": {
+      "test_count": 29,
+      "assertion_ratio": 2.0689655172413794,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 6.896551724137931,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 79.3103448275862,
+      "test_name_score": 16.88871473354232,
+      "var_name_score": 0.17154882154882153
+    }
+  },
+  "files": [
+    {
+      "file": "decode.go",
+      "functions": [
+        "unifyStruct",
+        "unifyMap",
+        "unifyString"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 100,
+      "branch_coverage_pct": 94.44444444444444,
+      "branches_total": 18,
+      "branches_covered": 17,
+      "error_path_coverage_pct": 100,
+      "error_paths_total": 2,
+      "error_paths_covered": 2,
+      "prompt_tokens": 12977,
+      "completion_tokens": 2997,
+      "token_efficiency_tokens_per_test": 15974,
+      "naturalness": {
+        "test_count": 29,
+        "assertion_ratio": 2.0689655172413794,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 6.896551724137931,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 79.3103448275862,
+        "test_name_score": 16.88871473354232,
+        "var_name_score": 0.17154882154882153
+      }
+    },
+    {
+      "file": "encode.go",
+      "functions": [
+        "encode",
+        "eElement"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 16041,
+      "completion_tokens": 3291
+    },
+    {
+      "file": "parse.go",
+      "functions": [
+        "next"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 7770,
+      "completion_tokens": 1568
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": false,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-smart-diff",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "run_index": 1
+  }
+}

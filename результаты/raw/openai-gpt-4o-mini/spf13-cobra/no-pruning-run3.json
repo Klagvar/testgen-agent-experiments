@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "project_name": "spf13-cobra",
+  "branch": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+  "base_branch": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+  "model": "openai/gpt-4o-mini",
+  "timestamp": "2026-05-12T11:46:42.082204053+03:00",
+  "duration_seconds": 68.376894177,
+  "totals": {
+    "files_processed": 1,
+    "tests_generated": 0,
+    "tests_validated": 0,
+    "tests_cached": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 24299,
+    "completion_tokens": 3697
+  },
+  "files": [
+    {
+      "file": "command.go",
+      "functions": [
+        "execute"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 24299,
+      "completion_tokens": 3697
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-pruning",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": false,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 44,
+    "run_index": 3
+  }
+}

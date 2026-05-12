@@ -1,0 +1,77 @@
+# Прогон openai/gpt-4o-mini
+
+**Дата завершения:** 2026-05-12T14:23:38.749633+03:00  
+**Всего репозиториев:** 8  
+**Всего ablation-запусков:** 144  
+**Успешных запусков (≥1 валидный тест):** 98/144 (68.1 %)  
+**Всего валидных тестов:** 102  
+**Токенов всего:** prompt=3,043,703 + completion=503,521 = 3,547,224
+
+## Параметры запуска
+
+- **OpenRouter provider pin:** не задан (auto-routing; для моделей с единственным провайдером это no-op)
+- **provider.allow_fallbacks:** (default)
+- **temperature:** `[0]`
+- **seed:** `[42, 43, 44]` (seed-base + run_index - 1)
+- **ablation-конфиги:** full, no-coverage, no-pruning, no-smart-diff, no-structured-feedback, no-types
+- **runs/config:** 3 (различаются seed)
+- **окружение:** WSL2 / Ubuntu, Go 1.24, Clash Verge TUN
+
+## Сводка по репозиториям
+
+Колонки:
+- **успешных runs** — число запусков (из 18), где агент сгенерил ≥1 валидный тест
+- **валидных тестов** — суммарное число валидных тестов по всем 18 запускам
+- **средн. branch% / diff%** — среднее по тем запускам, где coverage был посчитан
+
+| repo | base..head | runs | успешных runs | валидных тестов | средн. branch% | средн. diff% |
+|------|-----------|-----:|--------------:|----------------:|---------------:|-------------:|
+| `burntsushi-toml` | `d716584e..dcb23465` | 18 | 16 | 17 | 98.7% | 100.0% |
+| `etcd-io-bbolt` | `5a7468c8..36efe3ee` | 18 | 14 | 14 | 25.0% | 36.4% |
+| `gin-gonic-gin` | `fb258344..472d086a` | 18 | 11 | 11 | 86.8% | 59.6% |
+| `google-uuid` | `c58770eb..a2b2b323` | 18 | 14 | 14 | 100.0% | 100.0% |
+| `gorilla-mux` | `de7178dc..525206d7` | 18 | 17 | 17 | — | 100.0% |
+| `hashicorp-raft` | `5157c19c..91745625` | 18 | 11 | 11 | 66.7% | 31.1% |
+| `restic-restic` | `f78e3f36..880b08f9` | 18 | 15 | 18 | 67.2% | 90.5% |
+| `spf13-cobra` | `5c962a22..4cafa37b` | 18 | 0 | 0 | — | — |
+
+## Состав файлов
+
+```
+openai-gpt-4o-mini/
+├─ benchmark-index.json       # сводный индекс по всем 8 репо
+├─ RUN-INFO.md                # этот файл
+├─ burntsushi-toml/
+│  ├─ repo.json               # сводка по репо (18 ablation-runs)
+│  └─ <config>-run<N>.json    # 6×3 = 18 отчётов агента
+├─ etcd-io-bbolt/
+│  ├─ repo.json               # сводка по репо (18 ablation-runs)
+│  └─ <config>-run<N>.json    # 6×3 = 18 отчётов агента
+├─ gin-gonic-gin/
+│  ├─ repo.json               # сводка по репо (18 ablation-runs)
+│  └─ <config>-run<N>.json    # 6×3 = 18 отчётов агента
+├─ google-uuid/
+│  ├─ repo.json               # сводка по репо (18 ablation-runs)
+│  └─ <config>-run<N>.json    # 6×3 = 18 отчётов агента
+├─ gorilla-mux/
+│  ├─ repo.json               # сводка по репо (18 ablation-runs)
+│  └─ <config>-run<N>.json    # 6×3 = 18 отчётов агента
+├─ hashicorp-raft/
+│  ├─ repo.json               # сводка по репо (18 ablation-runs)
+│  └─ <config>-run<N>.json    # 6×3 = 18 отчётов агента
+├─ restic-restic/
+│  ├─ repo.json               # сводка по репо (18 ablation-runs)
+│  └─ <config>-run<N>.json    # 6×3 = 18 отчётов агента
+├─ spf13-cobra/
+│  ├─ repo.json               # сводка по репо (18 ablation-runs)
+│  └─ <config>-run<N>.json    # 6×3 = 18 отчётов агента
+```
+
+## Воспроизведение
+
+```bash
+bash scripts/run-model.sh openai/gpt-4o-mini 3 60
+# (без --provider — единственный провайдер на OpenRouter)
+```
+
+Подробное описание методологии — в `план.md`, §6 (выбор репозиториев), §10 (контроль воспроизводимости).

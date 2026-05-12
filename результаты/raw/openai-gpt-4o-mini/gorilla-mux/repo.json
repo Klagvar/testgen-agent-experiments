@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "gorilla-mux",
+    "URL": "https://github.com/gorilla/mux.git",
+    "Base": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+    "Head": "525206d7c2b250ca658700448b3bf23ec4707115",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/gorilla-mux",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/gorilla-mux",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/full-run1.json",
+      "exit_code": 0,
+      "duration": 70236803760
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/full-run2.json",
+      "exit_code": 0,
+      "duration": 61196486556
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/full-run3.json",
+      "exit_code": 0,
+      "duration": 53290031765
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 84193625373
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-types-run2.json",
+      "exit_code": 0,
+      "duration": 66156338867
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 72406920284
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 75799562785
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 78295465372
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 54010183967
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 62146634974
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 66827814303
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 65799689166
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-pruning-run1.json",
+      "exit_code": 0,
+      "duration": 75241661392
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-pruning-run2.json",
+      "exit_code": 0,
+      "duration": 99981199869
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-pruning-run3.json",
+      "exit_code": 0,
+      "duration": 54618744277
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 60589888381
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 67381068565
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/gorilla-mux/no-coverage-run3.json",
+      "exit_code": 2,
+      "duration": 77965473481
+    }
+  ],
+  "duration": 1247916937317
+}

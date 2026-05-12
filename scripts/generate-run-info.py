@@ -129,7 +129,10 @@ lines.append("")
 
 lines.append("## Параметры запуска")
 lines.append("")
-lines.append(f"- **OpenRouter provider pin:** `{', '.join(sorted(provider_seen)) or 'auto'}`")
+if provider_seen:
+    lines.append(f"- **OpenRouter provider pin:** `{', '.join(sorted(provider_seen))}`")
+else:
+    lines.append(f"- **OpenRouter provider pin:** не задан (auto-routing; для моделей с единственным провайдером это no-op)")
 af = sorted(allow_fallbacks_seen)
 lines.append(f"- **provider.allow_fallbacks:** {af if af else '(default)'}")
 lines.append(f"- **temperature:** `{sorted(temperature_seen)}`")
@@ -198,8 +201,12 @@ lines.append("")
 lines.append("## Воспроизведение")
 lines.append("")
 lines.append("```bash")
-lines.append(f"PROVIDER={', '.join(sorted(provider_seen)) or 'Phala'} \\")
-lines.append(f"  bash scripts/run-model.sh {model} 3 60")
+if provider_seen:
+    lines.append(f"PROVIDER={','.join(sorted(provider_seen))} \\")
+    lines.append(f"  bash scripts/run-model.sh {model} 3 60")
+else:
+    lines.append(f"bash scripts/run-model.sh {model} 3 60")
+    lines.append("# (без --provider — единственный провайдер на OpenRouter)")
 lines.append("```")
 lines.append("")
 lines.append("Подробное описание методологии — в `план.md`, §6 (выбор репозиториев), §10 (контроль воспроизводимости).")

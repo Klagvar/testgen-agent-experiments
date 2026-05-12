@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "spf13-cobra",
+    "URL": "https://github.com/spf13/cobra.git",
+    "Base": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+    "Head": "4cafa37bc4bb85633b4245aa118280fe5a9edcd5",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/spf13-cobra",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/spf13-cobra",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/full-run1.json",
+      "exit_code": 2,
+      "duration": 45527135550
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/full-run2.json",
+      "exit_code": 2,
+      "duration": 51312269473
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/full-run3.json",
+      "exit_code": 2,
+      "duration": 56652554616
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-types-run1.json",
+      "exit_code": 2,
+      "duration": 42711309297
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-types-run2.json",
+      "exit_code": 2,
+      "duration": 39770406871
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-types-run3.json",
+      "exit_code": 2,
+      "duration": 58253401703
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-smart-diff-run1.json",
+      "exit_code": 2,
+      "duration": 63860348501
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-smart-diff-run2.json",
+      "exit_code": 2,
+      "duration": 51982841439
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-smart-diff-run3.json",
+      "exit_code": 2,
+      "duration": 47116686393
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-structured-feedback-run1.json",
+      "exit_code": 2,
+      "duration": 59471595188
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-structured-feedback-run2.json",
+      "exit_code": 2,
+      "duration": 79279813915
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-structured-feedback-run3.json",
+      "exit_code": 2,
+      "duration": 44413879200
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 44356424112
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 56024517042
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 68409347948
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-coverage-run1.json",
+      "exit_code": 2,
+      "duration": 51909605691
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-coverage-run2.json",
+      "exit_code": 2,
+      "duration": 70282401232
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/openai-gpt-4o-mini/spf13-cobra/no-coverage-run3.json",
+      "exit_code": 2,
+      "duration": 65438819216
+    }
+  ],
+  "duration": 998402412596
+}

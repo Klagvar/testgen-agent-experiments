@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "project_name": "hashicorp-raft",
+  "branch": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+  "base_branch": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+  "model": "openai/gpt-4o-mini",
+  "timestamp": "2026-05-12T12:55:46.463796081+03:00",
+  "duration_seconds": 281.849024878,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 39831,
+    "completion_tokens": 5555,
+    "token_efficiency_tokens_per_test": 45386,
+    "naturalness": {
+      "test_count": 11,
+      "assertion_ratio": 2.272727272727273,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 36.36363636363637,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 9.090909090909092,
+      "test_name_score": 34.01515151515151,
+      "var_name_score": 0.26862304362304357
+    }
+  },
+  "files": [
+    {
+      "file": "replication.go",
+      "functions": [
+        "heartbeat"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 29541,
+      "completion_tokens": 2853
+    },
+    {
+      "file": "util.go",
+      "functions": [
+        "cappedExponentialBackoff"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 0,
+      "prompt_tokens": 10290,
+      "completion_tokens": 2702,
+      "token_efficiency_tokens_per_test": 12992,
+      "naturalness": {
+        "test_count": 11,
+        "assertion_ratio": 2.272727272727273,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 36.36363636363637,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 9.090909090909092,
+        "test_name_score": 34.01515151515151,
+        "var_name_score": 0.26862304362304357
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-types",
+    "types_enabled": false,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "run_index": 1
+  }
+}

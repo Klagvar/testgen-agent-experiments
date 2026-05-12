@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "project_name": "etcd-io-bbolt",
+  "branch": "5a7468c8a9ea508b9a546f22286726619819ad0c",
+  "base_branch": "5a7468c8a9ea508b9a546f22286726619819ad0c",
+  "model": "openai/gpt-4o-mini",
+  "timestamp": "2026-05-12T12:27:34.270260015+03:00",
+  "duration_seconds": 51.524369795,
+  "totals": {
+    "files_processed": 1,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 36.36363636363637,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 25,
+    "branches_covered": 2,
+    "branches_total": 8,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 13488,
+    "completion_tokens": 3508,
+    "token_efficiency_tokens_per_test": 16996,
+    "naturalness": {
+      "test_count": 5,
+      "assertion_ratio": 2.8,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 40,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 0,
+      "test_name_score": 28.571428571428566,
+      "var_name_score": 0.05543672014260248
+    }
+  },
+  "files": [
+    {
+      "file": "internal/freelist/hashmap.go",
+      "functions": [
+        "mergeSpans",
+        "mergeWithExistingSpan"
+      ],
+      "status": "partial",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 36.36363636363637,
+      "branch_coverage_pct": 25,
+      "branches_total": 8,
+      "branches_covered": 2,
+      "error_path_coverage_pct": 100,
+      "prompt_tokens": 13488,
+      "completion_tokens": 3508,
+      "token_efficiency_tokens_per_test": 16996,
+      "naturalness": {
+        "test_count": 5,
+        "assertion_ratio": 2.8,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 40,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 0,
+        "test_name_score": 28.571428571428566,
+        "var_name_score": 0.05543672014260248
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "full",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "run_index": 1
+  }
+}
