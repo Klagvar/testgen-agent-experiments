@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "project_name": "etcd-io-bbolt",
+  "branch": "5a7468c8a9ea508b9a546f22286726619819ad0c",
+  "base_branch": "5a7468c8a9ea508b9a546f22286726619819ad0c",
+  "model": "deepseek/deepseek-chat",
+  "timestamp": "2026-05-14T01:55:00.141112476+03:00",
+  "duration_seconds": 50.212778471,
+  "totals": {
+    "files_processed": 1,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 95.45454545454545,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 50,
+    "branches_covered": 4,
+    "branches_total": 8,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 6204,
+    "completion_tokens": 1649,
+    "token_efficiency_tokens_per_test": 7853,
+    "naturalness": {
+      "test_count": 11,
+      "assertion_ratio": 2.090909090909091,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 18.181818181818183,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 0,
+      "test_name_score": 62.07792207792208,
+      "var_name_score": 0.05283267457180498
+    }
+  },
+  "files": [
+    {
+      "file": "internal/freelist/hashmap.go",
+      "functions": [
+        "mergeSpans",
+        "mergeWithExistingSpan"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 95.45454545454545,
+      "branch_coverage_pct": 50,
+      "branches_total": 8,
+      "branches_covered": 4,
+      "error_path_coverage_pct": 100,
+      "prompt_tokens": 6204,
+      "completion_tokens": 1649,
+      "token_efficiency_tokens_per_test": 7853,
+      "naturalness": {
+        "test_count": 11,
+        "assertion_ratio": 2.090909090909091,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 18.181818181818183,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 0,
+        "test_name_score": 62.07792207792208,
+        "var_name_score": 0.05283267457180498
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-structured-feedback",
+    "types_enabled": true,
+    "structured_feedback_enabled": false,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "Novita"
+    ],
+    "run_index": 1
+  }
+}

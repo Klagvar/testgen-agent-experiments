@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "gin-gonic-gin",
+    "URL": "https://github.com/gin-gonic/gin.git",
+    "Base": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+    "Head": "472d086af2acd924cb4b9d7be0525f7d790f69bc",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/gin-gonic-gin",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/gin-gonic-gin",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/full-run1.json",
+      "exit_code": 0,
+      "duration": 156867918039
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/full-run2.json",
+      "exit_code": 0,
+      "duration": 201146364362
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/full-run3.json",
+      "exit_code": 0,
+      "duration": 147443433636
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 185068356912
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-types-run2.json",
+      "exit_code": 2,
+      "duration": 98561346232
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 240452176211
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 195565223855
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 174035722387
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 115845158840
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 154693105209
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 136265336984
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 150949977209
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 74384710463
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 122848664947
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-pruning-run3.json",
+      "exit_code": 0,
+      "duration": 177690326561
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-coverage-run1.json",
+      "exit_code": 2,
+      "duration": 101005400598
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 52713691698
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/gin-gonic-gin/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 61801058713
+    }
+  ],
+  "duration": 2548868611801
+}

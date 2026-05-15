@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "project_name": "hashicorp-raft",
+  "branch": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+  "base_branch": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+  "model": "deepseek/deepseek-chat",
+  "timestamp": "2026-05-14T02:55:00.861607272+03:00",
+  "duration_seconds": 230.67482992,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 0,
+    "tests_validated": 0,
+    "tests_cached": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 39797,
+    "completion_tokens": 5515
+  },
+  "files": [
+    {
+      "file": "replication.go",
+      "functions": [
+        "heartbeat"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 30786,
+      "completion_tokens": 2935
+    },
+    {
+      "file": "util.go",
+      "functions": [
+        "cappedExponentialBackoff"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 9011,
+      "completion_tokens": 2580
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-structured-feedback",
+    "types_enabled": true,
+    "structured_feedback_enabled": false,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 43,
+    "provider": [
+      "Novita"
+    ],
+    "run_index": 2
+  }
+}

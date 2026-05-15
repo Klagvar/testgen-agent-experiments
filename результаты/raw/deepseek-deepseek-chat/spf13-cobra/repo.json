@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "spf13-cobra",
+    "URL": "https://github.com/spf13/cobra.git",
+    "Base": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+    "Head": "4cafa37bc4bb85633b4245aa118280fe5a9edcd5",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/spf13-cobra",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/spf13-cobra",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/full-run1.json",
+      "exit_code": 2,
+      "duration": 49489412969
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/full-run2.json",
+      "exit_code": 2,
+      "duration": 54045055730
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/full-run3.json",
+      "exit_code": 2,
+      "duration": 77486160682
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-types-run1.json",
+      "exit_code": 2,
+      "duration": 60175681013
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-types-run2.json",
+      "exit_code": 2,
+      "duration": 56288548329
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-types-run3.json",
+      "exit_code": 2,
+      "duration": 63091615539
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-smart-diff-run1.json",
+      "exit_code": 2,
+      "duration": 69565159759
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-smart-diff-run2.json",
+      "exit_code": 2,
+      "duration": 64838964477
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-smart-diff-run3.json",
+      "exit_code": 2,
+      "duration": 67746649455
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-structured-feedback-run1.json",
+      "exit_code": 2,
+      "duration": 67758906822
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-structured-feedback-run2.json",
+      "exit_code": 2,
+      "duration": 74847847664
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-structured-feedback-run3.json",
+      "exit_code": 2,
+      "duration": 92172075503
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 67375936996
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 67312929290
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 73377261582
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-coverage-run1.json",
+      "exit_code": 2,
+      "duration": 81721461330
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-coverage-run2.json",
+      "exit_code": 2,
+      "duration": 112833912702
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/spf13-cobra/no-coverage-run3.json",
+      "exit_code": 2,
+      "duration": 89018998625
+    }
+  ],
+  "duration": 1290839034307
+}

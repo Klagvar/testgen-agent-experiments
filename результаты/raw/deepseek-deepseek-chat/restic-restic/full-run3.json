@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "project_name": "restic-restic",
+  "branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "base_branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "model": "deepseek/deepseek-chat",
+  "timestamp": "2026-05-14T03:25:16.796347221+03:00",
+  "duration_seconds": 104.873538342,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 89.1891891891892,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 70,
+    "branches_covered": 7,
+    "branches_total": 10,
+    "error_path_coverage_pct": 60,
+    "error_paths_covered": 3,
+    "error_paths_total": 5,
+    "prompt_tokens": 15228,
+    "completion_tokens": 3589,
+    "token_efficiency_tokens_per_test": 18817,
+    "naturalness": {
+      "test_count": 8,
+      "assertion_ratio": 1.375,
+      "no_assertions_pct": 50,
+      "duplicate_assertions_pct": 0,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 37.5,
+      "test_name_score": 63.06818181818181,
+      "var_name_score": 0.21183261183261182
+    }
+  },
+  "files": [
+    {
+      "file": "internal/restorer/filerestorer.go",
+      "functions": [
+        "restoreFiles"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 12631,
+      "completion_tokens": 2394
+    },
+    {
+      "file": "internal/restorer/fileswriter.go",
+      "functions": [
+        "newFilesWriter",
+        "writeToFile",
+        "flush"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 89.1891891891892,
+      "branch_coverage_pct": 70,
+      "branches_total": 10,
+      "branches_covered": 7,
+      "error_path_coverage_pct": 60,
+      "error_paths_total": 5,
+      "error_paths_covered": 3,
+      "prompt_tokens": 2597,
+      "completion_tokens": 1195,
+      "token_efficiency_tokens_per_test": 3792,
+      "naturalness": {
+        "test_count": 8,
+        "assertion_ratio": 1.375,
+        "no_assertions_pct": 50,
+        "duplicate_assertions_pct": 0,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 37.5,
+        "test_name_score": 63.06818181818181,
+        "var_name_score": 0.21183261183261182
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "full",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 44,
+    "provider": [
+      "Novita"
+    ],
+    "run_index": 3
+  }
+}

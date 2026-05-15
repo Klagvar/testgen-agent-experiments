@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "hashicorp-raft",
+    "URL": "https://github.com/hashicorp/raft.git",
+    "Base": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+    "Head": "91745625f50efb7098f6a87a6c485cf54c435c1b",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/hashicorp-raft",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/hashicorp-raft",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/full-run1.json",
+      "exit_code": 0,
+      "duration": 241851759874
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/full-run2.json",
+      "exit_code": 0,
+      "duration": 344030583972
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/full-run3.json",
+      "exit_code": 2,
+      "duration": 212129342321
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 288509464021
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-types-run2.json",
+      "exit_code": 0,
+      "duration": 285298097232
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-types-run3.json",
+      "exit_code": 2,
+      "duration": 290149369227
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 257386863464
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-smart-diff-run2.json",
+      "exit_code": 2,
+      "duration": 211367289434
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 348479714106
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 241454257028
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-structured-feedback-run2.json",
+      "exit_code": 2,
+      "duration": 230726946981
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 362548302262
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 107438815242
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 165430730573
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 155727896624
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 260911804636
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 267211981806
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/hashicorp-raft/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 243572468384
+    }
+  ],
+  "duration": 4516066286704
+}

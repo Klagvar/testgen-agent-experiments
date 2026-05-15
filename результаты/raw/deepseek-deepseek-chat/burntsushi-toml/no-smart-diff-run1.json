@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "project_name": "burntsushi-toml",
+  "branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "base_branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "model": "deepseek/deepseek-chat",
+  "timestamp": "2026-05-14T00:17:13.459489511+03:00",
+  "duration_seconds": 278.528258182,
+  "totals": {
+    "files_processed": 3,
+    "tests_generated": 2,
+    "tests_validated": 2,
+    "tests_cached": 0,
+    "diff_coverage_pct": 95.45454545454545,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 93.84615384615384,
+    "branches_covered": 61,
+    "branches_total": 65,
+    "error_path_coverage_pct": 66.66666666666666,
+    "error_paths_covered": 4,
+    "error_paths_total": 6,
+    "prompt_tokens": 41097,
+    "completion_tokens": 8469,
+    "token_efficiency_tokens_per_test": 24783,
+    "naturalness": {
+      "test_count": 48,
+      "assertion_ratio": 1.6083916083916083,
+      "no_assertions_pct": 27.27272727272727,
+      "duplicate_assertions_pct": 8.391608391608392,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 60.13986013986013,
+      "test_name_score": 52.511522568340744,
+      "var_name_score": 0.23928162578162576
+    }
+  },
+  "files": [
+    {
+      "file": "decode.go",
+      "functions": [
+        "unifyStruct",
+        "unifyMap",
+        "unifyString"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 100,
+      "branch_coverage_pct": 94.44444444444444,
+      "branches_total": 18,
+      "branches_covered": 17,
+      "error_path_coverage_pct": 100,
+      "error_paths_total": 2,
+      "error_paths_covered": 2,
+      "prompt_tokens": 16666,
+      "completion_tokens": 3752,
+      "token_efficiency_tokens_per_test": 20418,
+      "naturalness": {
+        "test_count": 26,
+        "assertion_ratio": 2.3076923076923075,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 7.6923076923076925,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 88.46153846153845,
+        "test_name_score": 8.452797202797202,
+        "var_name_score": 0.19644444444444442
+      }
+    },
+    {
+      "file": "encode.go",
+      "functions": [
+        "encode",
+        "eElement"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 90.9090909090909,
+      "branch_coverage_pct": 93.61702127659575,
+      "branches_total": 47,
+      "branches_covered": 44,
+      "error_path_coverage_pct": 50,
+      "error_paths_total": 4,
+      "error_paths_covered": 2,
+      "prompt_tokens": 16499,
+      "completion_tokens": 3074,
+      "token_efficiency_tokens_per_test": 19573,
+      "naturalness": {
+        "test_count": 22,
+        "assertion_ratio": 0.9090909090909091,
+        "no_assertions_pct": 54.54545454545454,
+        "duplicate_assertions_pct": 9.090909090909092,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 31.818181818181817,
+        "test_name_score": 96.57024793388429,
+        "var_name_score": 0.2821188071188071
+      }
+    },
+    {
+      "file": "parse.go",
+      "functions": [
+        "next"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 7932,
+      "completion_tokens": 1643
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": false,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-smart-diff",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "Novita"
+    ],
+    "run_index": 1
+  }
+}

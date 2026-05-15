@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "google-uuid",
+    "URL": "https://github.com/google/uuid.git",
+    "Base": "c58770eb495f55fe2ced6284f93c5158a62e53e3",
+    "Head": "a2b2b32373ff0b1a312b7fdf6d38a977099698a6",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/google-uuid",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/google-uuid",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/full-run1.json",
+      "exit_code": 2,
+      "duration": 77387216925
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/full-run2.json",
+      "exit_code": 0,
+      "duration": 85133793335
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/full-run3.json",
+      "exit_code": 0,
+      "duration": 61939549711
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-types-run1.json",
+      "exit_code": 2,
+      "duration": 62302690014
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-types-run2.json",
+      "exit_code": 2,
+      "duration": 125907150115
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-types-run3.json",
+      "exit_code": 2,
+      "duration": 53378783836
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 108208284995
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-smart-diff-run2.json",
+      "exit_code": 2,
+      "duration": 146200776464
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 141154647547
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-structured-feedback-run1.json",
+      "exit_code": 2,
+      "duration": 55777260372
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 132294896787
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-structured-feedback-run3.json",
+      "exit_code": 2,
+      "duration": 63892607062
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 65621431586
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-pruning-run2.json",
+      "exit_code": 0,
+      "duration": 66225218144
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 81494595578
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-coverage-run1.json",
+      "exit_code": 2,
+      "duration": 140793716588
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 45316925748
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/deepseek-deepseek-chat/google-uuid/no-coverage-run3.json",
+      "exit_code": 2,
+      "duration": 66702454195
+    }
+  ],
+  "duration": 1585045720145
+}
