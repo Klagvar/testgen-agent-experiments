@@ -16,16 +16,18 @@ declare -a MODELS=(
   "qwen/qwen-2.5-7b-instruct|Phala"
   "qwen/qwen3-coder-30b-a3b-instruct|Novita"
   "meta-llama/llama-3.3-70b-instruct|DeepInfra"
-  "deepseek/deepseek-chat|DeepSeek"
+  "deepseek/deepseek-chat|novita"
   "openai/gpt-4o-mini|OpenAI"
   "anthropic/claude-3.5-haiku|amazon-bedrock"
   "google/gemini-3-flash-preview|google-ai-studio"
 )
 
 # Refuse to launch if anything is already running.
-if pgrep -af "run-mutation-microexp.sh|run-model.sh" >/dev/null 2>&1; then
-  echo "ERROR: another run is in progress:" >&2
-  pgrep -af "run-mutation-microexp.sh|run-model.sh" >&2
+# Use --pgroup to exclude self (and the bash -c that wraps us).
+RUNNING=$(pgrep -f "run-mutation-microexp.sh|run-model.sh" | grep -v "^$$\$" || true)
+if [[ -n "$RUNNING" ]]; then
+  echo "ERROR: another run is in progress (PIDs: $RUNNING)" >&2
+  ps -fp $RUNNING >&2 || true
   exit 1
 fi
 
