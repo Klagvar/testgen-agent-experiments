@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "project_name": "spf13-cobra",
+  "branch": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+  "base_branch": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+  "model": "google/gemini-3-flash-preview",
+  "timestamp": "2026-05-16T10:06:34.852518082+03:00",
+  "duration_seconds": 34.232514515,
+  "totals": {
+    "files_processed": 1,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 77.77777777777779,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 74.28571428571429,
+    "branches_covered": 26,
+    "branches_total": 35,
+    "error_path_coverage_pct": 58.333333333333336,
+    "error_paths_covered": 7,
+    "error_paths_total": 12,
+    "prompt_tokens": 15658,
+    "completion_tokens": 6579,
+    "token_efficiency_tokens_per_test": 22237,
+    "naturalness": {
+      "test_count": 132,
+      "assertion_ratio": 1.7878787878787878,
+      "no_assertions_pct": 2.272727272727273,
+      "duplicate_assertions_pct": 3.787878787878788,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 64.39393939393939,
+      "test_name_score": 35.283216362761806,
+      "var_name_score": 0.19076629771994022
+    }
+  },
+  "files": [
+    {
+      "file": "command.go",
+      "functions": [
+        "execute"
+      ],
+      "status": "partial",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 77.77777777777779,
+      "branch_coverage_pct": 74.28571428571429,
+      "branches_total": 35,
+      "branches_covered": 26,
+      "error_path_coverage_pct": 58.333333333333336,
+      "error_paths_total": 12,
+      "error_paths_covered": 7,
+      "prompt_tokens": 15658,
+      "completion_tokens": 6579,
+      "token_efficiency_tokens_per_test": 22237,
+      "naturalness": {
+        "test_count": 132,
+        "assertion_ratio": 1.7878787878787878,
+        "no_assertions_pct": 2.272727272727273,
+        "duplicate_assertions_pct": 3.787878787878788,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 64.39393939393939,
+        "test_name_score": 35.283216362761806,
+        "var_name_score": 0.19076629771994022
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "full",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 43,
+    "provider": [
+      "google-ai-studio"
+    ],
+    "run_index": 2
+  }
+}

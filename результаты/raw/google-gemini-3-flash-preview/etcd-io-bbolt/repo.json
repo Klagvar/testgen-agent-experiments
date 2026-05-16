@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "etcd-io-bbolt",
+    "URL": "https://github.com/etcd-io/bbolt.git",
+    "Base": "5a7468c8a9ea508b9a546f22286726619819ad0c",
+    "Head": "36efe3ee12b5ef4d2ba79a3756d4713efdc4b7ee",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-google-gemini-3-flash-preview/etcd-io-bbolt",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-google-gemini-3-flash-preview/etcd-io-bbolt",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/full-run1.json",
+      "exit_code": 0,
+      "duration": 14954818198
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/full-run2.json",
+      "exit_code": 0,
+      "duration": 13392581500
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/full-run3.json",
+      "exit_code": 0,
+      "duration": 12151617871
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 27597458642
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-types-run2.json",
+      "exit_code": 0,
+      "duration": 24910761530
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 34927130189
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 11603498265
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 13348639455
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 13134372772
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 15838093543
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 13496668802
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 13023097655
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-pruning-run1.json",
+      "exit_code": 0,
+      "duration": 13173713205
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-pruning-run2.json",
+      "exit_code": 0,
+      "duration": 92998255645
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-pruning-run3.json",
+      "exit_code": 0,
+      "duration": 12292346019
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 10909120485
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 10728952850
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/etcd-io-bbolt/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 13137371776
+    }
+  ],
+  "duration": 365512857115
+}

@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "burntsushi-toml",
+    "URL": "https://github.com/BurntSushi/toml.git",
+    "Base": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+    "Head": "dcb2346503b4e6a7fd88768b3d71d54df76d4a96",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-google-gemini-3-flash-preview/burntsushi-toml",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-google-gemini-3-flash-preview/burntsushi-toml",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/full-run1.json",
+      "exit_code": 0,
+      "duration": 54034532871
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/full-run2.json",
+      "exit_code": 0,
+      "duration": 61880574579
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/full-run3.json",
+      "exit_code": 0,
+      "duration": 58064227420
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 62342318201
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-types-run2.json",
+      "exit_code": 0,
+      "duration": 47170601425
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 69755269929
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 75897559511
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 74204242704
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 78619614665
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 55538874463
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 58925515475
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 56837036299
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-pruning-run1.json",
+      "exit_code": 0,
+      "duration": 53752508297
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 56644160511
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-pruning-run3.json",
+      "exit_code": 0,
+      "duration": 56066240954
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 55306061858
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 56225593295
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/burntsushi-toml/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 48844885634
+    }
+  ],
+  "duration": 1083468441321
+}

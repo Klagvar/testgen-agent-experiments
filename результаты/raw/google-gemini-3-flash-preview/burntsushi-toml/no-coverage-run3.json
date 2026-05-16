@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "project_name": "burntsushi-toml",
+  "branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "base_branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "model": "google/gemini-3-flash-preview",
+  "timestamp": "2026-05-16T10:29:21.924965423+03:00",
+  "duration_seconds": 48.808360333,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 2,
+    "tests_validated": 2,
+    "tests_cached": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 41918,
+    "completion_tokens": 8218,
+    "token_efficiency_tokens_per_test": 25068,
+    "naturalness": {
+      "test_count": 50,
+      "assertion_ratio": 1.573070607553366,
+      "no_assertions_pct": 28.57142857142857,
+      "duplicate_assertions_pct": 8.210180623973727,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 59.77011494252873,
+      "test_name_score": 56.8859158083296,
+      "var_name_score": 0.19378618777056278
+    }
+  },
+  "files": [
+    {
+      "file": "decode.go",
+      "functions": [
+        "unifyMap",
+        "unifyString"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "prompt_tokens": 20448,
+      "completion_tokens": 3395,
+      "token_efficiency_tokens_per_test": 23843,
+      "naturalness": {
+        "test_count": 29,
+        "assertion_ratio": 2.2413793103448274,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 6.896551724137931,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 86.20689655172413,
+        "test_name_score": 16.88871473354232,
+        "var_name_score": 0.1665079365079365
+      }
+    },
+    {
+      "file": "encode.go",
+      "functions": [
+        "encode",
+        "eElement"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "prompt_tokens": 21470,
+      "completion_tokens": 4823,
+      "token_efficiency_tokens_per_test": 26293,
+      "naturalness": {
+        "test_count": 21,
+        "assertion_ratio": 0.9047619047619048,
+        "no_assertions_pct": 57.14285714285714,
+        "duplicate_assertions_pct": 9.523809523809524,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 33.33333333333333,
+        "test_name_score": 96.88311688311688,
+        "var_name_score": 0.22106443903318904
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": false,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-coverage",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 44,
+    "provider": [
+      "google-ai-studio"
+    ],
+    "run_index": 3
+  }
+}

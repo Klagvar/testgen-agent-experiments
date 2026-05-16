@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "gin-gonic-gin",
+    "URL": "https://github.com/gin-gonic/gin.git",
+    "Base": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+    "Head": "472d086af2acd924cb4b9d7be0525f7d790f69bc",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/gin-gonic-gin",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/gin-gonic-gin",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/full-run1.json",
+      "exit_code": 2,
+      "duration": 60473016302
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/full-run2.json",
+      "exit_code": 2,
+      "duration": 60018901213
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/full-run3.json",
+      "exit_code": 2,
+      "duration": 60617834277
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-types-run1.json",
+      "exit_code": 2,
+      "duration": 58630591344
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-types-run2.json",
+      "exit_code": 2,
+      "duration": 57021364511
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-types-run3.json",
+      "exit_code": 2,
+      "duration": 57402153330
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-smart-diff-run1.json",
+      "exit_code": 2,
+      "duration": 59834975706
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-smart-diff-run2.json",
+      "exit_code": 2,
+      "duration": 58366094402
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-smart-diff-run3.json",
+      "exit_code": 2,
+      "duration": 60761297208
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-structured-feedback-run1.json",
+      "exit_code": 2,
+      "duration": 61523065222
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-structured-feedback-run2.json",
+      "exit_code": 2,
+      "duration": 59534701641
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-structured-feedback-run3.json",
+      "exit_code": 2,
+      "duration": 59665064803
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 63315070366
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 59391968076
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 59778154853
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-coverage-run1.json",
+      "exit_code": 2,
+      "duration": 59634579270
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-coverage-run2.json",
+      "exit_code": 2,
+      "duration": 60360367036
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-coverage-run3.json",
+      "exit_code": 2,
+      "duration": 60821027136
+    }
+  ],
+  "duration": 1080819099806
+}

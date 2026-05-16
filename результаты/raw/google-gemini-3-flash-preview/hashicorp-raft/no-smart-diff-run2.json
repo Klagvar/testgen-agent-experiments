@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "project_name": "hashicorp-raft",
+  "branch": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+  "base_branch": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+  "model": "google/gemini-3-flash-preview",
+  "timestamp": "2026-05-16T11:13:15.247624828+03:00",
+  "duration_seconds": 272.525156594,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 47345,
+    "completion_tokens": 9404,
+    "token_efficiency_tokens_per_test": 56749,
+    "naturalness": {
+      "test_count": 12,
+      "assertion_ratio": 2.5833333333333335,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 33.33333333333333,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 25,
+      "test_name_score": 26.458333333333332,
+      "var_name_score": 0.21036820322534608
+    }
+  },
+  "files": [
+    {
+      "file": "replication.go",
+      "functions": [
+        "heartbeat"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 33332,
+      "completion_tokens": 5694
+    },
+    {
+      "file": "util.go",
+      "functions": [
+        "cappedExponentialBackoff"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 0,
+      "prompt_tokens": 14013,
+      "completion_tokens": 3710,
+      "token_efficiency_tokens_per_test": 17723,
+      "naturalness": {
+        "test_count": 12,
+        "assertion_ratio": 2.5833333333333335,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 33.33333333333333,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 25,
+        "test_name_score": 26.458333333333332,
+        "var_name_score": 0.21036820322534608
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": false,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-smart-diff",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 43,
+    "provider": [
+      "google-ai-studio"
+    ],
+    "run_index": 2
+  }
+}

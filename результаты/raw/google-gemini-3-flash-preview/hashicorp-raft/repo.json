@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "hashicorp-raft",
+    "URL": "https://github.com/hashicorp/raft.git",
+    "Base": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+    "Head": "91745625f50efb7098f6a87a6c485cf54c435c1b",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-google-gemini-3-flash-preview/hashicorp-raft",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-google-gemini-3-flash-preview/hashicorp-raft",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/full-run1.json",
+      "exit_code": 0,
+      "duration": 295071635912
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/full-run2.json",
+      "exit_code": 0,
+      "duration": 161342311598
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/full-run3.json",
+      "exit_code": 0,
+      "duration": 118807860532
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 173650174494
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-types-run2.json",
+      "exit_code": 0,
+      "duration": 196211188565
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 243358074461
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 122620540348
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 272557940831
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 168082133525
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 245487020159
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 167466330214
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 239834679949
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-pruning-run1.json",
+      "exit_code": 2,
+      "duration": 95028314860
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-pruning-run2.json",
+      "exit_code": 2,
+      "duration": 204406249640
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-pruning-run3.json",
+      "exit_code": 2,
+      "duration": 46386324587
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 121548218457
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 76830595003
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/hashicorp-raft/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 125299825178
+    }
+  ],
+  "duration": 3078082617741
+}

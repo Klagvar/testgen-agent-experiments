@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "project_name": "burntsushi-toml",
+  "branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "base_branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "model": "anthropic/claude-3.5-haiku",
+  "timestamp": "2026-05-16T00:35:25.608165928+03:00",
+  "duration_seconds": 134.664300902,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 100,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 100,
+    "branches_covered": 10,
+    "branches_total": 10,
+    "error_path_coverage_pct": 100,
+    "error_paths_covered": 1,
+    "error_paths_total": 1,
+    "prompt_tokens": 43953,
+    "completion_tokens": 8365,
+    "token_efficiency_tokens_per_test": 52318,
+    "naturalness": {
+      "test_count": 25,
+      "assertion_ratio": 2.32,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 8,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 88,
+      "test_name_score": 5.1909090909090905,
+      "var_name_score": 0.19144444444444442
+    }
+  },
+  "files": [
+    {
+      "file": "decode.go",
+      "functions": [
+        "unifyMap",
+        "unifyString"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 100,
+      "branch_coverage_pct": 100,
+      "branches_total": 10,
+      "branches_covered": 10,
+      "error_path_coverage_pct": 100,
+      "error_paths_total": 1,
+      "error_paths_covered": 1,
+      "prompt_tokens": 23685,
+      "completion_tokens": 3863,
+      "token_efficiency_tokens_per_test": 27548,
+      "naturalness": {
+        "test_count": 25,
+        "assertion_ratio": 2.32,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 8,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 88,
+        "test_name_score": 5.1909090909090905,
+        "var_name_score": 0.19144444444444442
+      }
+    },
+    {
+      "file": "encode.go",
+      "functions": [
+        "encode",
+        "eElement"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 20268,
+      "completion_tokens": 4502
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-pruning",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": false,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "amazon-bedrock"
+    ],
+    "run_index": 1
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "project_name": "gin-gonic-gin",
+  "branch": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+  "base_branch": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+  "model": "anthropic/claude-3.5-haiku",
+  "timestamp": "2026-05-16T01:11:43.989762275+03:00",
+  "duration_seconds": 71.837723255,
+  "totals": {
+    "files_processed": 1,
+    "tests_generated": 0,
+    "tests_validated": 0,
+    "tests_cached": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 27342,
+    "completion_tokens": 4593
+  },
+  "files": [
+    {
+      "file": "tree.go",
+      "functions": [
+        "findCaseInsensitivePathRec"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 27342,
+      "completion_tokens": 4593
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-pruning",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": false,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 43,
+    "provider": [
+      "amazon-bedrock"
+    ],
+    "run_index": 2
+  }
+}

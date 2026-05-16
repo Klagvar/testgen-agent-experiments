@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "project_name": "google-uuid",
+  "branch": "c58770eb495f55fe2ced6284f93c5158a62e53e3",
+  "base_branch": "c58770eb495f55fe2ced6284f93c5158a62e53e3",
+  "model": "anthropic/claude-haiku-4.5",
+  "timestamp": "2026-05-16T00:02:50.581169697+03:00",
+  "duration_seconds": 20.785642583,
+  "totals": {
+    "files_processed": 1,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 100,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 100,
+    "branches_covered": 1,
+    "branches_total": 1,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 2774,
+    "completion_tokens": 3272,
+    "token_efficiency_tokens_per_test": 6046,
+    "naturalness": {
+      "test_count": 13,
+      "assertion_ratio": 1,
+      "no_assertions_pct": 7.6923076923076925,
+      "duplicate_assertions_pct": 0,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 0,
+      "test_name_score": 90,
+      "var_name_score": 0.0409356725146199
+    }
+  },
+  "files": [
+    {
+      "file": "version7.go",
+      "functions": [
+        "makeV7",
+        "getV7Time"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 100,
+      "branch_coverage_pct": 100,
+      "branches_total": 1,
+      "branches_covered": 1,
+      "error_path_coverage_pct": 100,
+      "prompt_tokens": 2774,
+      "completion_tokens": 3272,
+      "token_efficiency_tokens_per_test": 6046,
+      "naturalness": {
+        "test_count": 13,
+        "assertion_ratio": 1,
+        "no_assertions_pct": 7.6923076923076925,
+        "duplicate_assertions_pct": 0,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 0,
+        "test_name_score": 90,
+        "var_name_score": 0.0409356725146199
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-structured-feedback",
+    "types_enabled": true,
+    "structured_feedback_enabled": false,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "anthropic"
+    ],
+    "run_index": 1
+  }
+}

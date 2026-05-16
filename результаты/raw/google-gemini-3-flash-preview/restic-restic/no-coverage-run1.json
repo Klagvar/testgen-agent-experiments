@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "project_name": "restic-restic",
+  "branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "base_branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "model": "google/gemini-3-flash-preview",
+  "timestamp": "2026-05-16T11:47:41.237193457+03:00",
+  "duration_seconds": 36.831281762,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 2,
+    "tests_validated": 2,
+    "tests_cached": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 18195,
+    "completion_tokens": 6500,
+    "token_efficiency_tokens_per_test": 12347.5,
+    "naturalness": {
+      "test_count": 18,
+      "assertion_ratio": 1.2375,
+      "no_assertions_pct": 51.25,
+      "duplicate_assertions_pct": 0,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 32.5,
+      "test_name_score": 61.01893939393939,
+      "var_name_score": 0.3793290043290043
+    }
+  },
+  "files": [
+    {
+      "file": "internal/restorer/filerestorer.go",
+      "functions": [
+        "restoreFiles"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "prompt_tokens": 15418,
+      "completion_tokens": 4961,
+      "token_efficiency_tokens_per_test": 20379,
+      "naturalness": {
+        "test_count": 8,
+        "assertion_ratio": 0.375,
+        "no_assertions_pct": 62.5,
+        "duplicate_assertions_pct": 0,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 25,
+        "test_name_score": 59.58333333333333,
+        "var_name_score": 0.5356060606060606
+      }
+    },
+    {
+      "file": "internal/restorer/fileswriter.go",
+      "functions": [
+        "newFilesWriter",
+        "writeToFile",
+        "flush"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "prompt_tokens": 2777,
+      "completion_tokens": 1539,
+      "token_efficiency_tokens_per_test": 4316,
+      "naturalness": {
+        "test_count": 10,
+        "assertion_ratio": 2.1,
+        "no_assertions_pct": 40,
+        "duplicate_assertions_pct": 0,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 40,
+        "test_name_score": 62.45454545454545,
+        "var_name_score": 0.223051948051948
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": false,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-coverage",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "google-ai-studio"
+    ],
+    "run_index": 1
+  }
+}

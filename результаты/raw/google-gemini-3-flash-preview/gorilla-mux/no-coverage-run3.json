@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "project_name": "gorilla-mux",
+  "branch": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+  "base_branch": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+  "model": "google/gemini-3-flash-preview",
+  "timestamp": "2026-05-16T14:58:54.383174267+03:00",
+  "duration_seconds": 41.376064734,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 2,
+    "tests_validated": 2,
+    "tests_cached": 0,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 22034,
+    "completion_tokens": 7490,
+    "token_efficiency_tokens_per_test": 14762,
+    "naturalness": {
+      "test_count": 15,
+      "assertion_ratio": 3.769230769230769,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 34.61538461538461,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 48.07692307692308,
+      "test_name_score": 62.11538461538461,
+      "var_name_score": 0.31959317249166874
+    }
+  },
+  "files": [
+    {
+      "file": "middleware.go",
+      "functions": [
+        "Use",
+        "useInterface"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "prompt_tokens": 8224,
+      "completion_tokens": 2413,
+      "token_efficiency_tokens_per_test": 10637,
+      "naturalness": {
+        "test_count": 13,
+        "assertion_ratio": 4.538461538461538,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 69.23076923076923,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 46.15384615384615,
+        "test_name_score": 34.23076923076923,
+        "var_name_score": 0.371644601013022
+      }
+    },
+    {
+      "file": "route.go",
+      "functions": [
+        "Match",
+        "GetHandlerWithMiddlewares"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "prompt_tokens": 13810,
+      "completion_tokens": 5077,
+      "token_efficiency_tokens_per_test": 18887,
+      "naturalness": {
+        "test_count": 2,
+        "assertion_ratio": 3,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 0,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 50,
+        "test_name_score": 90,
+        "var_name_score": 0.26754174397031544
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": false,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-coverage",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 44,
+    "provider": [
+      "google-ai-studio"
+    ],
+    "run_index": 3
+  }
+}

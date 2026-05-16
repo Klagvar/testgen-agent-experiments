@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "project_name": "burntsushi-toml",
+  "branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "base_branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "model": "anthropic/claude-3.5-haiku",
+  "timestamp": "2026-05-16T00:21:05.605711596+03:00",
+  "duration_seconds": 204.83653969,
+  "totals": {
+    "files_processed": 3,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 100,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 94.44444444444444,
+    "branches_covered": 17,
+    "branches_total": 18,
+    "error_path_coverage_pct": 100,
+    "error_paths_covered": 2,
+    "error_paths_total": 2,
+    "prompt_tokens": 58075,
+    "completion_tokens": 12963,
+    "token_efficiency_tokens_per_test": 71038,
+    "naturalness": {
+      "test_count": 27,
+      "assertion_ratio": 2.2962962962962963,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 7.4074074074074066,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 88.88888888888889,
+      "test_name_score": 11.473063973063972,
+      "var_name_score": 0.17796934865900382
+    }
+  },
+  "files": [
+    {
+      "file": "decode.go",
+      "functions": [
+        "unifyStruct",
+        "unifyMap",
+        "unifyString"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 100,
+      "branch_coverage_pct": 94.44444444444444,
+      "branches_total": 18,
+      "branches_covered": 17,
+      "error_path_coverage_pct": 100,
+      "error_paths_total": 2,
+      "error_paths_covered": 2,
+      "prompt_tokens": 27845,
+      "completion_tokens": 5925,
+      "token_efficiency_tokens_per_test": 33770,
+      "naturalness": {
+        "test_count": 27,
+        "assertion_ratio": 2.2962962962962963,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 7.4074074074074066,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 88.88888888888889,
+        "test_name_score": 11.473063973063972,
+        "var_name_score": 0.17796934865900382
+      }
+    },
+    {
+      "file": "encode.go",
+      "functions": [
+        "encode",
+        "eElement"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 20268,
+      "completion_tokens": 4502
+    },
+    {
+      "file": "parse.go",
+      "functions": [
+        "next"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 9962,
+      "completion_tokens": 2536
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": false,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-smart-diff",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "amazon-bedrock"
+    ],
+    "run_index": 1
+  }
+}

@@ -1,0 +1,1136 @@
+{
+  "work_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5",
+  "model": "anthropic/claude-haiku-4.5",
+  "agent_bin": "/home/gizat/testgen-experiments/testgen-agent",
+  "timestamp": "2026-05-16T10:14:18.572480+03:00",
+  "results": [
+    {
+      "repo": {
+        "Name": "burntsushi-toml",
+        "URL": "https://github.com/BurntSushi/toml.git",
+        "Base": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+        "Head": "dcb2346503b4e6a7fd88768b3d71d54df76d4a96",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/burntsushi-toml",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/burntsushi-toml",
+      "runs": [
+        {
+          "config": "full",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/full-run1.json",
+          "exit_code": 0,
+          "duration": 108857491190
+        },
+        {
+          "config": "full",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/full-run2.json",
+          "exit_code": 2,
+          "duration": 108613932934
+        },
+        {
+          "config": "full",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/full-run3.json",
+          "exit_code": 0,
+          "duration": 99217883372
+        },
+        {
+          "config": "no-types",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-types-run1.json",
+          "exit_code": 0,
+          "duration": 92159771128
+        },
+        {
+          "config": "no-types",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-types-run2.json",
+          "exit_code": 0,
+          "duration": 114365469526
+        },
+        {
+          "config": "no-types",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-types-run3.json",
+          "exit_code": 0,
+          "duration": 102603468539
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-smart-diff-run1.json",
+          "exit_code": 2,
+          "duration": 173596305445
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-smart-diff-run2.json",
+          "exit_code": 2,
+          "duration": 165275126199
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-smart-diff-run3.json",
+          "exit_code": 2,
+          "duration": 174234127353
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-structured-feedback-run1.json",
+          "exit_code": 0,
+          "duration": 114178775227
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-structured-feedback-run2.json",
+          "exit_code": 2,
+          "duration": 113424277618
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-structured-feedback-run3.json",
+          "exit_code": 2,
+          "duration": 116793942575
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-pruning-run1.json",
+          "exit_code": 2,
+          "duration": 112413346449
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-pruning-run2.json",
+          "exit_code": 2,
+          "duration": 107440846257
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-pruning-run3.json",
+          "exit_code": 0,
+          "duration": 112885488359
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-coverage-run1.json",
+          "exit_code": 2,
+          "duration": 112244105347
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-coverage-run2.json",
+          "exit_code": 2,
+          "duration": 102195310824
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/burntsushi-toml/no-coverage-run3.json",
+          "exit_code": 2,
+          "duration": 111763462877
+        }
+      ],
+      "duration": 2145825709445
+    },
+    {
+      "repo": {
+        "Name": "etcd-io-bbolt",
+        "URL": "https://github.com/etcd-io/bbolt.git",
+        "Base": "5a7468c8a9ea508b9a546f22286726619819ad0c",
+        "Head": "36efe3ee12b5ef4d2ba79a3756d4713efdc4b7ee",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/etcd-io-bbolt",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/etcd-io-bbolt",
+      "runs": [
+        {
+          "config": "full",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/full-run1.json",
+          "exit_code": 2,
+          "duration": 56943235969
+        },
+        {
+          "config": "full",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/full-run2.json",
+          "exit_code": 2,
+          "duration": 55719132966
+        },
+        {
+          "config": "full",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/full-run3.json",
+          "exit_code": 2,
+          "duration": 54742842129
+        },
+        {
+          "config": "no-types",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-types-run1.json",
+          "exit_code": 2,
+          "duration": 55123396219
+        },
+        {
+          "config": "no-types",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-types-run2.json",
+          "exit_code": 2,
+          "duration": 55963558295
+        },
+        {
+          "config": "no-types",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-types-run3.json",
+          "exit_code": 2,
+          "duration": 54869579039
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-smart-diff-run1.json",
+          "exit_code": 2,
+          "duration": 56134919208
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-smart-diff-run2.json",
+          "exit_code": 2,
+          "duration": 55718328504
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-smart-diff-run3.json",
+          "exit_code": 2,
+          "duration": 55306555481
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-structured-feedback-run1.json",
+          "exit_code": 2,
+          "duration": 55409253890
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-structured-feedback-run2.json",
+          "exit_code": 2,
+          "duration": 55497650632
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-structured-feedback-run3.json",
+          "exit_code": 2,
+          "duration": 55800686093
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-pruning-run1.json",
+          "exit_code": 2,
+          "duration": 55330889634
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-pruning-run2.json",
+          "exit_code": 2,
+          "duration": 55546137728
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-pruning-run3.json",
+          "exit_code": 2,
+          "duration": 55645338079
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-coverage-run1.json",
+          "exit_code": 2,
+          "duration": 58118178518
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-coverage-run2.json",
+          "exit_code": 0,
+          "duration": 46587606769
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/etcd-io-bbolt/no-coverage-run3.json",
+          "exit_code": 2,
+          "duration": 56726449438
+        }
+      ],
+      "duration": 998714684680
+    },
+    {
+      "repo": {
+        "Name": "gin-gonic-gin",
+        "URL": "https://github.com/gin-gonic/gin.git",
+        "Base": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+        "Head": "472d086af2acd924cb4b9d7be0525f7d790f69bc",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/gin-gonic-gin",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/gin-gonic-gin",
+      "runs": [
+        {
+          "config": "full",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/full-run1.json",
+          "exit_code": 2,
+          "duration": 60473016302
+        },
+        {
+          "config": "full",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/full-run2.json",
+          "exit_code": 2,
+          "duration": 60018901213
+        },
+        {
+          "config": "full",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/full-run3.json",
+          "exit_code": 2,
+          "duration": 60617834277
+        },
+        {
+          "config": "no-types",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-types-run1.json",
+          "exit_code": 2,
+          "duration": 58630591344
+        },
+        {
+          "config": "no-types",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-types-run2.json",
+          "exit_code": 2,
+          "duration": 57021364511
+        },
+        {
+          "config": "no-types",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-types-run3.json",
+          "exit_code": 2,
+          "duration": 57402153330
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-smart-diff-run1.json",
+          "exit_code": 2,
+          "duration": 59834975706
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-smart-diff-run2.json",
+          "exit_code": 2,
+          "duration": 58366094402
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-smart-diff-run3.json",
+          "exit_code": 2,
+          "duration": 60761297208
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-structured-feedback-run1.json",
+          "exit_code": 2,
+          "duration": 61523065222
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-structured-feedback-run2.json",
+          "exit_code": 2,
+          "duration": 59534701641
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-structured-feedback-run3.json",
+          "exit_code": 2,
+          "duration": 59665064803
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-pruning-run1.json",
+          "exit_code": 2,
+          "duration": 63315070366
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-pruning-run2.json",
+          "exit_code": 2,
+          "duration": 59391968076
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-pruning-run3.json",
+          "exit_code": 2,
+          "duration": 59778154853
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-coverage-run1.json",
+          "exit_code": 2,
+          "duration": 59634579270
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-coverage-run2.json",
+          "exit_code": 2,
+          "duration": 60360367036
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gin-gonic-gin/no-coverage-run3.json",
+          "exit_code": 2,
+          "duration": 60821027136
+        }
+      ],
+      "duration": 1080819099806
+    },
+    {
+      "repo": {
+        "Name": "google-uuid",
+        "URL": "https://github.com/google/uuid.git",
+        "Base": "c58770eb495f55fe2ced6284f93c5158a62e53e3",
+        "Head": "a2b2b32373ff0b1a312b7fdf6d38a977099698a6",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/google-uuid",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/google-uuid",
+      "runs": [
+        {
+          "config": "full",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/full-run1.json",
+          "exit_code": 0,
+          "duration": 26084393652
+        },
+        {
+          "config": "full",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/full-run2.json",
+          "exit_code": 0,
+          "duration": 28042427694
+        },
+        {
+          "config": "full",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/full-run3.json",
+          "exit_code": 0,
+          "duration": 29073084257
+        },
+        {
+          "config": "no-types",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-types-run1.json",
+          "exit_code": 0,
+          "duration": 21390482935
+        },
+        {
+          "config": "no-types",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-types-run2.json",
+          "exit_code": 0,
+          "duration": 18973362816
+        },
+        {
+          "config": "no-types",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-types-run3.json",
+          "exit_code": 0,
+          "duration": 26806193432
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-smart-diff-run1.json",
+          "exit_code": 0,
+          "duration": 41481048676
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-smart-diff-run2.json",
+          "exit_code": 0,
+          "duration": 20506360543
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-smart-diff-run3.json",
+          "exit_code": 0,
+          "duration": 20825492357
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-structured-feedback-run1.json",
+          "exit_code": 0,
+          "duration": 20818082330
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-structured-feedback-run2.json",
+          "exit_code": 0,
+          "duration": 43853931742
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-structured-feedback-run3.json",
+          "exit_code": 0,
+          "duration": 23686804416
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-pruning-run1.json",
+          "exit_code": 0,
+          "duration": 33404343243
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-pruning-run2.json",
+          "exit_code": 0,
+          "duration": 25805359593
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-pruning-run3.json",
+          "exit_code": 0,
+          "duration": 41690454012
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-coverage-run1.json",
+          "exit_code": 0,
+          "duration": 19763287403
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-coverage-run2.json",
+          "exit_code": 0,
+          "duration": 40979675504
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/google-uuid/no-coverage-run3.json",
+          "exit_code": 0,
+          "duration": 24503989622
+        }
+      ],
+      "duration": 511101547043
+    },
+    {
+      "repo": {
+        "Name": "gorilla-mux",
+        "URL": "https://github.com/gorilla/mux.git",
+        "Base": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+        "Head": "525206d7c2b250ca658700448b3bf23ec4707115",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir/gorilla-mux",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir/gorilla-mux",
+      "runs": [
+        {
+          "config": "full",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/full-run1.json",
+          "exit_code": 2,
+          "duration": 100847980732
+        },
+        {
+          "config": "full",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/full-run2.json",
+          "exit_code": 2,
+          "duration": 98828955298
+        },
+        {
+          "config": "full",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/full-run3.json",
+          "exit_code": 2,
+          "duration": 105473540207
+        },
+        {
+          "config": "no-types",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-types-run1.json",
+          "exit_code": 2,
+          "duration": 97016333789
+        },
+        {
+          "config": "no-types",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-types-run2.json",
+          "exit_code": 2,
+          "duration": 103424096412
+        },
+        {
+          "config": "no-types",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-types-run3.json",
+          "exit_code": 0,
+          "duration": 75741674362
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-smart-diff-run1.json",
+          "exit_code": 0,
+          "duration": 98921880142
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-smart-diff-run2.json",
+          "exit_code": 2,
+          "duration": 105830358398
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-smart-diff-run3.json",
+          "exit_code": 2,
+          "duration": 104870093854
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-structured-feedback-run1.json",
+          "exit_code": 2,
+          "duration": 103793710793
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-structured-feedback-run2.json",
+          "exit_code": 2,
+          "duration": 103356622155
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-structured-feedback-run3.json",
+          "exit_code": 2,
+          "duration": 46597333158
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-pruning-run1.json",
+          "exit_code": 2,
+          "duration": 19996521695
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-pruning-run2.json",
+          "exit_code": 2,
+          "duration": 103489888490
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-pruning-run3.json",
+          "exit_code": 2,
+          "duration": 104826382423
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-coverage-run1.json",
+          "exit_code": 2,
+          "duration": 108485254154
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-coverage-run2.json",
+          "exit_code": 0,
+          "duration": 92599862524
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/gorilla-mux/no-coverage-run3.json",
+          "exit_code": 2,
+          "duration": 102636325667
+        }
+      ],
+      "duration": 1678527326520
+    },
+    {
+      "repo": {
+        "Name": "hashicorp-raft",
+        "URL": "https://github.com/hashicorp/raft.git",
+        "Base": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+        "Head": "91745625f50efb7098f6a87a6c485cf54c435c1b",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/hashicorp-raft",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/hashicorp-raft",
+      "runs": [
+        {
+          "config": "full",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/full-run1.json",
+          "exit_code": 0,
+          "duration": 215014940884
+        },
+        {
+          "config": "full",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/full-run2.json",
+          "exit_code": 0,
+          "duration": 246840430020
+        },
+        {
+          "config": "full",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/full-run3.json",
+          "exit_code": 0,
+          "duration": 214794739294
+        },
+        {
+          "config": "no-types",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-types-run1.json",
+          "exit_code": 0,
+          "duration": 248361297565
+        },
+        {
+          "config": "no-types",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-types-run2.json",
+          "exit_code": 0,
+          "duration": 300736144895
+        },
+        {
+          "config": "no-types",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-types-run3.json",
+          "exit_code": 0,
+          "duration": 289041800927
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-smart-diff-run1.json",
+          "exit_code": 0,
+          "duration": 247182619987
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-smart-diff-run2.json",
+          "exit_code": 0,
+          "duration": 212601938790
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-smart-diff-run3.json",
+          "exit_code": 0,
+          "duration": 316376467801
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-structured-feedback-run1.json",
+          "exit_code": 0,
+          "duration": 215473989265
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-structured-feedback-run2.json",
+          "exit_code": 0,
+          "duration": 267064612017
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-structured-feedback-run3.json",
+          "exit_code": 0,
+          "duration": 256348860267
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-pruning-run1.json",
+          "exit_code": 2,
+          "duration": 103674853477
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-pruning-run2.json",
+          "exit_code": 2,
+          "duration": 99467342087
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-pruning-run3.json",
+          "exit_code": 2,
+          "duration": 106144262179
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-coverage-run1.json",
+          "exit_code": 2,
+          "duration": 264102911454
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-coverage-run2.json",
+          "exit_code": 0,
+          "duration": 217311291653
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/hashicorp-raft/no-coverage-run3.json",
+          "exit_code": 2,
+          "duration": 167681576003
+        }
+      ],
+      "duration": 3991672376693
+    },
+    {
+      "repo": {
+        "Name": "restic-restic",
+        "URL": "https://github.com/restic/restic.git",
+        "Base": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+        "Head": "880b08f9ec03425028634129fb8016c0860dca4b",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/restic-restic",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/restic-restic",
+      "runs": [
+        {
+          "config": "full",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/full-run1.json",
+          "exit_code": 2,
+          "duration": 105917744389
+        },
+        {
+          "config": "full",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/full-run2.json",
+          "exit_code": 0,
+          "duration": 104457304106
+        },
+        {
+          "config": "full",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/full-run3.json",
+          "exit_code": 2,
+          "duration": 120243211105
+        },
+        {
+          "config": "no-types",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-types-run1.json",
+          "exit_code": 2,
+          "duration": 122821007640
+        },
+        {
+          "config": "no-types",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-types-run2.json",
+          "exit_code": 2,
+          "duration": 119146533695
+        },
+        {
+          "config": "no-types",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-types-run3.json",
+          "exit_code": 2,
+          "duration": 119692947954
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-smart-diff-run1.json",
+          "exit_code": 2,
+          "duration": 101089422981
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-smart-diff-run2.json",
+          "exit_code": 2,
+          "duration": 120120831002
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-smart-diff-run3.json",
+          "exit_code": 2,
+          "duration": 120383498554
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-structured-feedback-run1.json",
+          "exit_code": 2,
+          "duration": 97726633671
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-structured-feedback-run2.json",
+          "exit_code": 2,
+          "duration": 120344551990
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-structured-feedback-run3.json",
+          "exit_code": 2,
+          "duration": 104377894666
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-pruning-run1.json",
+          "exit_code": 2,
+          "duration": 100999371576
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-pruning-run2.json",
+          "exit_code": 2,
+          "duration": 117331074799
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-pruning-run3.json",
+          "exit_code": 2,
+          "duration": 95417720496
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-coverage-run1.json",
+          "exit_code": 2,
+          "duration": 118959195228
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-coverage-run2.json",
+          "exit_code": 2,
+          "duration": 121670846177
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/restic-restic/no-coverage-run3.json",
+          "exit_code": 2,
+          "duration": 104182808649
+        }
+      ],
+      "duration": 2021157347508
+    },
+    {
+      "repo": {
+        "Name": "spf13-cobra",
+        "URL": "https://github.com/spf13/cobra.git",
+        "Base": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+        "Head": "4cafa37bc4bb85633b4245aa118280fe5a9edcd5",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/spf13-cobra",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-anthropic-claude-haiku-4.5/spf13-cobra",
+      "runs": [
+        {
+          "config": "full",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/full-run1.json",
+          "exit_code": 2,
+          "duration": 66609990117
+        },
+        {
+          "config": "full",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/full-run2.json",
+          "exit_code": 2,
+          "duration": 57881779766
+        },
+        {
+          "config": "full",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/full-run3.json",
+          "exit_code": 2,
+          "duration": 60310385809
+        },
+        {
+          "config": "no-types",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-types-run1.json",
+          "exit_code": 2,
+          "duration": 58732747380
+        },
+        {
+          "config": "no-types",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-types-run2.json",
+          "exit_code": 2,
+          "duration": 60992376776
+        },
+        {
+          "config": "no-types",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-types-run3.json",
+          "exit_code": 2,
+          "duration": 58415360033
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-smart-diff-run1.json",
+          "exit_code": 2,
+          "duration": 62170388745
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-smart-diff-run2.json",
+          "exit_code": 2,
+          "duration": 64447023407
+        },
+        {
+          "config": "no-smart-diff",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-smart-diff-run3.json",
+          "exit_code": 2,
+          "duration": 57817680598
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-structured-feedback-run1.json",
+          "exit_code": 2,
+          "duration": 58090122983
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-structured-feedback-run2.json",
+          "exit_code": 2,
+          "duration": 59256037341
+        },
+        {
+          "config": "no-structured-feedback",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-structured-feedback-run3.json",
+          "exit_code": 2,
+          "duration": 58877715657
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-pruning-run1.json",
+          "exit_code": 2,
+          "duration": 59795875840
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-pruning-run2.json",
+          "exit_code": 2,
+          "duration": 59140590033
+        },
+        {
+          "config": "no-pruning",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-pruning-run3.json",
+          "exit_code": 2,
+          "duration": 58370128607
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 1,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-coverage-run1.json",
+          "exit_code": 2,
+          "duration": 59752481807
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 2,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-coverage-run2.json",
+          "exit_code": 2,
+          "duration": 56959147110
+        },
+        {
+          "config": "no-coverage",
+          "run_index": 3,
+          "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-haiku-4.5/spf13-cobra/no-coverage-run3.json",
+          "exit_code": 2,
+          "duration": 59742172067
+        }
+      ],
+      "duration": 1080848192506
+    }
+  ]
+}

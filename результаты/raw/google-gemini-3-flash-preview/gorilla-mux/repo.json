@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "gorilla-mux",
+    "URL": "https://github.com/gorilla/mux.git",
+    "Base": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+    "Head": "525206d7c2b250ca658700448b3bf23ec4707115",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/gorilla-mux",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/gorilla-mux",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/full-run1.json",
+      "exit_code": 0,
+      "duration": 43860329203
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/full-run2.json",
+      "exit_code": 0,
+      "duration": 35055728062
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/full-run3.json",
+      "exit_code": 0,
+      "duration": 38927538501
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 40739482055
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-types-run2.json",
+      "exit_code": 2,
+      "duration": 37582859986
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 47774751031
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 39765655248
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 64608941128
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 42592846796
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 38923520820
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 59444795245
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 50106942246
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-pruning-run1.json",
+      "exit_code": 0,
+      "duration": 37088950142
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-pruning-run2.json",
+      "exit_code": 0,
+      "duration": 43887208940
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-pruning-run3.json",
+      "exit_code": 0,
+      "duration": 83731223382
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 39451402906
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 36140806501
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/gorilla-mux/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 41425985173
+    }
+  ],
+  "duration": 822407270745
+}

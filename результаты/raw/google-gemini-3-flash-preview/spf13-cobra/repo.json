@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "spf13-cobra",
+    "URL": "https://github.com/spf13/cobra.git",
+    "Base": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+    "Head": "4cafa37bc4bb85633b4245aa118280fe5a9edcd5",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-google-gemini-3-flash-preview/spf13-cobra",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-google-gemini-3-flash-preview/spf13-cobra",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/full-run1.json",
+      "exit_code": 0,
+      "duration": 33533717287
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/full-run2.json",
+      "exit_code": 0,
+      "duration": 34271132585
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/full-run3.json",
+      "exit_code": 0,
+      "duration": 47769434488
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 28367776677
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-types-run2.json",
+      "exit_code": 0,
+      "duration": 29169279880
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 30759961545
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 31371103397
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 30010826297
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 29571094804
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 28969891016
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 27279372988
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 27418343307
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-pruning-run1.json",
+      "exit_code": 0,
+      "duration": 27168242631
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-pruning-run2.json",
+      "exit_code": 0,
+      "duration": 25539502051
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-pruning-run3.json",
+      "exit_code": 0,
+      "duration": 25664312700
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 10104845733
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 10422129077
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/google-gemini-3-flash-preview/spf13-cobra/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 10245870310
+    }
+  ],
+  "duration": 491025903588
+}

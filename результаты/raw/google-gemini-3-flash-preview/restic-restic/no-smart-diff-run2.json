@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "project_name": "restic-restic",
+  "branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "base_branch": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+  "model": "google/gemini-3-flash-preview",
+  "timestamp": "2026-05-16T11:41:14.244159043+03:00",
+  "duration_seconds": 44.361665131,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 89.1891891891892,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 70,
+    "branches_covered": 7,
+    "branches_total": 10,
+    "error_path_coverage_pct": 60,
+    "error_paths_covered": 3,
+    "error_paths_total": 5,
+    "prompt_tokens": 19285,
+    "completion_tokens": 7890,
+    "token_efficiency_tokens_per_test": 27175,
+    "naturalness": {
+      "test_count": 10,
+      "assertion_ratio": 2.1,
+      "no_assertions_pct": 40,
+      "duplicate_assertions_pct": 0,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 40,
+      "test_name_score": 62.45454545454545,
+      "var_name_score": 0.223051948051948
+    }
+  },
+  "files": [
+    {
+      "file": "internal/restorer/filerestorer.go",
+      "functions": [
+        "restoreFiles"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 16508,
+      "completion_tokens": 6351
+    },
+    {
+      "file": "internal/restorer/fileswriter.go",
+      "functions": [
+        "newFilesWriter",
+        "writeToFile",
+        "flush"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 89.1891891891892,
+      "branch_coverage_pct": 70,
+      "branches_total": 10,
+      "branches_covered": 7,
+      "error_path_coverage_pct": 60,
+      "error_paths_total": 5,
+      "error_paths_covered": 3,
+      "prompt_tokens": 2777,
+      "completion_tokens": 1539,
+      "token_efficiency_tokens_per_test": 4316,
+      "naturalness": {
+        "test_count": 10,
+        "assertion_ratio": 2.1,
+        "no_assertions_pct": 40,
+        "duplicate_assertions_pct": 0,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 40,
+        "test_name_score": 62.45454545454545,
+        "var_name_score": 0.223051948051948
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": false,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-smart-diff",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 43,
+    "provider": [
+      "google-ai-studio"
+    ],
+    "run_index": 2
+  }
+}

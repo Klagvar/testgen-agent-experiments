@@ -1,0 +1,141 @@
+{
+  "repo": {
+    "Name": "burntsushi-toml",
+    "URL": "https://github.com/BurntSushi/toml.git",
+    "Base": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+    "Head": "dcb2346503b4e6a7fd88768b3d71d54df76d4a96",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir/burntsushi-toml",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir/burntsushi-toml",
+  "runs": [
+    {
+      "config": "full",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/full-run1.json",
+      "exit_code": 0,
+      "duration": 134628949331
+    },
+    {
+      "config": "full",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/full-run2.json",
+      "exit_code": 0,
+      "duration": 130120532706
+    },
+    {
+      "config": "full",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/full-run3.json",
+      "exit_code": 0,
+      "duration": 135643923294
+    },
+    {
+      "config": "no-types",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-types-run1.json",
+      "exit_code": 0,
+      "duration": 156462257017
+    },
+    {
+      "config": "no-types",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-types-run2.json",
+      "exit_code": 0,
+      "duration": 132035003255
+    },
+    {
+      "config": "no-types",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-types-run3.json",
+      "exit_code": 0,
+      "duration": 128065677863
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-smart-diff-run1.json",
+      "exit_code": 0,
+      "duration": 204857968914
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-smart-diff-run2.json",
+      "exit_code": 0,
+      "duration": 188889537994
+    },
+    {
+      "config": "no-smart-diff",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-smart-diff-run3.json",
+      "exit_code": 0,
+      "duration": 195915486662
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-structured-feedback-run1.json",
+      "exit_code": 0,
+      "duration": 142385427216
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-structured-feedback-run2.json",
+      "exit_code": 0,
+      "duration": 133500347963
+    },
+    {
+      "config": "no-structured-feedback",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-structured-feedback-run3.json",
+      "exit_code": 0,
+      "duration": 140966089439
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-pruning-run1.json",
+      "exit_code": 0,
+      "duration": 134699247899
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-pruning-run2.json",
+      "exit_code": 0,
+      "duration": 134766644721
+    },
+    {
+      "config": "no-pruning",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-pruning-run3.json",
+      "exit_code": 0,
+      "duration": 132138438894
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 1,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-coverage-run1.json",
+      "exit_code": 0,
+      "duration": 135348993334
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 2,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-coverage-run2.json",
+      "exit_code": 0,
+      "duration": 137981942461
+    },
+    {
+      "config": "no-coverage",
+      "run_index": 3,
+      "report_path": "/home/gizat/exp/результаты/raw/anthropic-claude-3.5-haiku/burntsushi-toml/no-coverage-run3.json",
+      "exit_code": 0,
+      "duration": 129837070887
+    }
+  ],
+  "duration": 2629861650699
+}

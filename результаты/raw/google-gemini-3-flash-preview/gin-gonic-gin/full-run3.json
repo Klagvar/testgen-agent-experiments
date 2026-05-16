@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "project_name": "gin-gonic-gin",
+  "branch": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+  "base_branch": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+  "model": "google/gemini-3-flash-preview",
+  "timestamp": "2026-05-16T10:32:18.036632114+03:00",
+  "duration_seconds": 59.563097597,
+  "totals": {
+    "files_processed": 1,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 59.61538461538461,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 86.8421052631579,
+    "branches_covered": 33,
+    "branches_total": 38,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 35098,
+    "completion_tokens": 8512,
+    "token_efficiency_tokens_per_test": 43610,
+    "naturalness": {
+      "test_count": 28,
+      "assertion_ratio": 1.6071428571428572,
+      "no_assertions_pct": 39.285714285714285,
+      "duplicate_assertions_pct": 7.142857142857142,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 0,
+      "test_name_score": 20.769230769230774,
+      "var_name_score": 0.22138759489302967
+    }
+  },
+  "files": [
+    {
+      "file": "tree.go",
+      "functions": [
+        "findCaseInsensitivePathRec"
+      ],
+      "status": "partial",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 59.61538461538461,
+      "branch_coverage_pct": 86.8421052631579,
+      "branches_total": 38,
+      "branches_covered": 33,
+      "error_path_coverage_pct": 100,
+      "prompt_tokens": 35098,
+      "completion_tokens": 8512,
+      "token_efficiency_tokens_per_test": 43610,
+      "naturalness": {
+        "test_count": 28,
+        "assertion_ratio": 1.6071428571428572,
+        "no_assertions_pct": 39.285714285714285,
+        "duplicate_assertions_pct": 7.142857142857142,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 0,
+        "test_name_score": 20.769230769230774,
+        "var_name_score": 0.22138759489302967
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "full",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 44,
+    "provider": [
+      "google-ai-studio"
+    ],
+    "run_index": 3
+  }
+}

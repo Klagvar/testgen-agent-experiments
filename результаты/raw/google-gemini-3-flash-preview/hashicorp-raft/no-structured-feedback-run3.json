@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "project_name": "hashicorp-raft",
+  "branch": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+  "base_branch": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+  "model": "google/gemini-3-flash-preview",
+  "timestamp": "2026-05-16T11:25:42.895306682+03:00",
+  "duration_seconds": 239.781798713,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 2,
+    "tests_validated": 2,
+    "tests_cached": 0,
+    "diff_coverage_pct": 100,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 100,
+    "branches_covered": 10,
+    "branches_total": 10,
+    "error_path_coverage_pct": 100,
+    "error_paths_covered": 1,
+    "error_paths_total": 1,
+    "prompt_tokens": 36358,
+    "completion_tokens": 7263,
+    "token_efficiency_tokens_per_test": 21810.5,
+    "naturalness": {
+      "test_count": 14,
+      "assertion_ratio": 1.575,
+      "no_assertions_pct": 12.5,
+      "duplicate_assertions_pct": 20,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 5,
+      "test_name_score": 59.20833333333333,
+      "var_name_score": 0.21455078534910466
+    }
+  },
+  "files": [
+    {
+      "file": "replication.go",
+      "functions": [
+        "heartbeat"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 100,
+      "branch_coverage_pct": 100,
+      "branches_total": 8,
+      "branches_covered": 8,
+      "error_path_coverage_pct": 100,
+      "error_paths_total": 1,
+      "error_paths_covered": 1,
+      "prompt_tokens": 33988,
+      "completion_tokens": 6106,
+      "token_efficiency_tokens_per_test": 40094,
+      "naturalness": {
+        "test_count": 4,
+        "assertion_ratio": 0.75,
+        "no_assertions_pct": 25,
+        "duplicate_assertions_pct": 0,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 0,
+        "test_name_score": 90,
+        "var_name_score": 0.20746606334841627
+      }
+    },
+    {
+      "file": "util.go",
+      "functions": [
+        "cappedExponentialBackoff"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 100,
+      "branch_coverage_pct": 100,
+      "branches_total": 2,
+      "branches_covered": 2,
+      "error_path_coverage_pct": 100,
+      "prompt_tokens": 2370,
+      "completion_tokens": 1157,
+      "token_efficiency_tokens_per_test": 3527,
+      "naturalness": {
+        "test_count": 10,
+        "assertion_ratio": 2.4,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 40,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 10,
+        "test_name_score": 28.416666666666664,
+        "var_name_score": 0.22163550734979304
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-structured-feedback",
+    "types_enabled": true,
+    "structured_feedback_enabled": false,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 44,
+    "provider": [
+      "google-ai-studio"
+    ],
+    "run_index": 3
+  }
+}

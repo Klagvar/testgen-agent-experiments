@@ -89,18 +89,19 @@ echo "─── Building binaries ───" | tee -a "$LOG_FILE"
 # overwrite its `workdir:` line with the native path. The repo's
 # dataset.yaml stays portable; only the runtime copy is WSL-specific.
 DATASET_SRC="$REPO_ROOT/dataset.yaml"
-DATASET_RT="$EXP_ROOT/dataset-runtime.yaml"
+# Per-model runtime dataset + workdir so multiple models can run in parallel
+# without colliding on git clones / merger output.
+DATASET_RT="$EXP_ROOT/dataset-runtime-$MODEL_TAG.yaml"
+WORKDIR_RT="$EXP_ROOT/workdir-$MODEL_TAG"
 [[ -f "$DATASET_SRC" ]] || { echo "ERROR: dataset not found at $DATASET_SRC" >&2; exit 1; }
 
-# Strip any existing workdir: line, prepend an absolute one. Also strip
-# stray CRs from Windows-side editing.
 {
-  echo "workdir: $EXP_ROOT/workdir"
+  echo "workdir: $WORKDIR_RT"
   sed -e 's/\r$//' -e '/^[[:space:]]*workdir:.*/d' "$DATASET_SRC"
 } > "$DATASET_RT"
 
 DATASET_ABS="$DATASET_RT"
-echo "─── runtime dataset: $DATASET_RT (workdir → $EXP_ROOT/workdir) ───" | tee -a "$LOG_FILE"
+echo "─── runtime dataset: $DATASET_RT (workdir → $WORKDIR_RT) ───" | tee -a "$LOG_FILE"
 
 # ─── 5. Build agent --extra flags ────────────────────────────────────────
 EXTRA_FLAGS="--temperature 0 --test-timeout $TEST_TIMEOUT"

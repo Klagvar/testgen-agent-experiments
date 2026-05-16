@@ -8,10 +8,14 @@ import os
 from collections import defaultdict
 
 models = [
+    ("Qwen 7B (floor)", "результаты/raw/qwen-qwen-2.5-7b-instruct"),
     ("Qwen 30B", "результаты/raw/qwen-qwen3-coder-30b-a3b-instruct"),
     ("Llama 70B", "результаты/raw/meta-llama-llama-3.3-70b-instruct"),
     ("GPT-4o-mini", "результаты/raw/openai-gpt-4o-mini"),
     ("DeepSeek V3", "результаты/raw/deepseek-deepseek-chat"),
+    ("Claude 3.5 Haiku", "результаты/raw/anthropic-claude-3.5-haiku"),
+    ("Claude Haiku 4.5", "результаты/raw/anthropic-claude-haiku-4.5"),
+    ("Gemini 3 Flash", "результаты/raw/google-gemini-3-flash-preview"),
 ]
 
 CONFIGS = ["full", "no-coverage", "no-pruning", "no-smart-diff",

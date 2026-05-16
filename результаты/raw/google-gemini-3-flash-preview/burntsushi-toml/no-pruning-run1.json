@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "project_name": "burntsushi-toml",
+  "branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "base_branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "model": "google/gemini-3-flash-preview",
+  "timestamp": "2026-05-16T10:25:12.284919486+03:00",
+  "duration_seconds": 53.716013778,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 100,
+    "mutations_killed": 0,
+    "mutations_total": 0,
+    "branch_coverage_pct": 100,
+    "branches_covered": 10,
+    "branches_total": 10,
+    "error_path_coverage_pct": 100,
+    "error_paths_covered": 1,
+    "error_paths_total": 1,
+    "prompt_tokens": 46776,
+    "completion_tokens": 8837,
+    "token_efficiency_tokens_per_test": 55613,
+    "naturalness": {
+      "test_count": 31,
+      "assertion_ratio": 2.2580645161290325,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 6.451612903225806,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 87.09677419354838,
+      "test_name_score": 21.60557184750733,
+      "var_name_score": 0.16225071225071225
+    }
+  },
+  "files": [
+    {
+      "file": "decode.go",
+      "functions": [
+        "unifyMap",
+        "unifyString"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 100,
+      "branch_coverage_pct": 100,
+      "branches_total": 10,
+      "branches_covered": 10,
+      "error_path_coverage_pct": 100,
+      "error_paths_total": 1,
+      "error_paths_covered": 1,
+      "prompt_tokens": 16146,
+      "completion_tokens": 3112,
+      "token_efficiency_tokens_per_test": 19258,
+      "naturalness": {
+        "test_count": 31,
+        "assertion_ratio": 2.2580645161290325,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 6.451612903225806,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 87.09677419354838,
+        "test_name_score": 21.60557184750733,
+        "var_name_score": 0.16225071225071225
+      }
+    },
+    {
+      "file": "encode.go",
+      "functions": [
+        "encode",
+        "eElement"
+      ],
+      "status": "failed",
+      "tests_total": 0,
+      "tests_passed": 0,
+      "prompt_tokens": 30630,
+      "completion_tokens": 5725
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": false,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "no-pruning",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": false,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "google-ai-studio"
+    ],
+    "run_index": 1
+  }
+}
