@@ -18,8 +18,8 @@ declare -a MODELS=(
   "meta-llama/llama-3.3-70b-instruct|DeepInfra"
   "deepseek/deepseek-chat|DeepSeek"
   "openai/gpt-4o-mini|OpenAI"
-  "anthropic/claude-3.5-haiku|Amazon Bedrock"
-  "google/gemini-3-flash-preview|Google AI Studio"
+  "anthropic/claude-3.5-haiku|amazon-bedrock"
+  "google/gemini-3-flash-preview|google-ai-studio"
 )
 
 # Refuse to launch if anything is already running.
