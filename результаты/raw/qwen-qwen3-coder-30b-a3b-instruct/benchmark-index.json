@@ -1,7 +1,7 @@
 {
   "work_dir": "/home/gizat/testgen-experiments/workdir",
   "model": "qwen/qwen3-coder-30b-a3b-instruct",
-  "agent_bin": "/home/gizat/testgen-experiments\\testgen-agent",
+  "agent_bin": "/home/gizat/testgen-experiments/testgen-agent",
   "timestamp": "2026-05-10T22:25:26.751031+03:00",
   "results": [
     {

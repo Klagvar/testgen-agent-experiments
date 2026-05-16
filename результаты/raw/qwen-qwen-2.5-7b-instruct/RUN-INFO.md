@@ -38,7 +38,7 @@
 ## Состав файлов
 
 ```
-qwen-qwen-2.5-7b-instruct/
+/
 ├─ benchmark-index.json       # сводный индекс по всем 8 репо
 ├─ RUN-INFO.md                # этот файл
 ├─ burntsushi-toml/

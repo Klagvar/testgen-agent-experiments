@@ -38,7 +38,7 @@
 ## Состав файлов
 
 ```
-anthropic-claude-3.5-haiku/
+/
 ├─ benchmark-index.json       # сводный индекс по всем 8 репо
 ├─ RUN-INFO.md                # этот файл
 ├─ burntsushi-toml/

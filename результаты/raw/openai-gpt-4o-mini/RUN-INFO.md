@@ -38,7 +38,7 @@
 ## Состав файлов
 
 ```
-openai-gpt-4o-mini/
+/
 ├─ benchmark-index.json       # сводный индекс по всем 8 репо
 ├─ RUN-INFO.md                # этот файл
 ├─ burntsushi-toml/

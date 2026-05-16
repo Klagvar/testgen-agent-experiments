@@ -15,7 +15,12 @@ HUMAN_NAMES = {
     "openai-gpt-4o-mini": "GPT-4o-mini",
     "deepseek-deepseek-chat": "DeepSeek-chat",
     "anthropic-claude-3.5-haiku": "Claude 3.5 Haiku",
+    "google-gemini-3-flash-preview": "Gemini 3 Flash",
 }
+# claude-haiku-4.5 был запущен, но исключён из основной выборки из-за
+# configuration trap (max_tokens=4096 строго соблюдается Anthropic native
+# и обрезает ответы посреди composite literal). Подробнее:
+# результаты/НАБЛЮДЕНИЯ.md → "Configuration trap".
 
 raw_root = "результаты/raw"
 if not os.path.isdir(raw_root):

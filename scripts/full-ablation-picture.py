@@ -14,8 +14,11 @@ models = [
     ("GPT-4o-mini", "результаты/raw/openai-gpt-4o-mini"),
     ("DeepSeek V3", "результаты/raw/deepseek-deepseek-chat"),
     ("Claude 3.5 Haiku", "результаты/raw/anthropic-claude-3.5-haiku"),
-    ("Claude Haiku 4.5", "результаты/raw/anthropic-claude-haiku-4.5"),
     ("Gemini 3 Flash", "результаты/raw/google-gemini-3-flash-preview"),
+    # claude-haiku-4.5 был запущен, но из-за обнаруженной configuration trap
+    # (max_tokens=4096 + Anthropic native API строго соблюдает лимит) его
+    # результаты систематически занижены и не годятся для cross-model сравнения.
+    # Подробности в результаты/НАБЛЮДЕНИЯ.md (раздел Configuration trap).
 ]
 
 CONFIGS = ["full", "no-coverage", "no-pruning", "no-smart-diff",
