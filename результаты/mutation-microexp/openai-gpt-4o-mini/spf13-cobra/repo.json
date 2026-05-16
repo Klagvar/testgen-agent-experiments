@@ -1,0 +1,21 @@
+{
+  "repo": {
+    "Name": "spf13-cobra",
+    "URL": "https://github.com/spf13/cobra.git",
+    "Base": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+    "Head": "4cafa37bc4bb85633b4245aa118280fe5a9edcd5",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-openai-gpt-4o-mini/spf13-cobra",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-openai-gpt-4o-mini/spf13-cobra",
+  "runs": [
+    {
+      "config": "full",
+      "report_path": "/home/gizat/exp/результаты/mutation-microexp/openai-gpt-4o-mini/spf13-cobra/full.json",
+      "exit_code": 2,
+      "duration": 31170970566
+    }
+  ],
+  "duration": 34264170027
+}

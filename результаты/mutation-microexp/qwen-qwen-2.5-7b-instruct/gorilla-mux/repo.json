@@ -1,0 +1,21 @@
+{
+  "repo": {
+    "Name": "gorilla-mux",
+    "URL": "https://github.com/gorilla/mux.git",
+    "Base": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+    "Head": "525206d7c2b250ca658700448b3bf23ec4707115",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-qwen-qwen-2.5-7b-instruct/gorilla-mux",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-qwen-qwen-2.5-7b-instruct/gorilla-mux",
+  "runs": [
+    {
+      "config": "full",
+      "report_path": "/home/gizat/exp/результаты/mutation-microexp/qwen-qwen-2.5-7b-instruct/gorilla-mux/full.json",
+      "exit_code": 2,
+      "duration": 69467637407
+    }
+  ],
+  "duration": 72242387446
+}

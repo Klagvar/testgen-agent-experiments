@@ -1,0 +1,15 @@
+{
+  "repo": {
+    "Name": "gorilla-mux",
+    "URL": "https://github.com/gorilla/mux.git",
+    "Base": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+    "Head": "525206d7c2b250ca658700448b3bf23ec4707115",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "",
+  "agent_dir": "",
+  "runs": null,
+  "error": "clone gorilla-mux: exit status 128",
+  "duration": 3569893584
+}

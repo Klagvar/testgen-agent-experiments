@@ -1,0 +1,176 @@
+{
+  "work_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku",
+  "model": "anthropic/claude-3.5-haiku",
+  "agent_bin": "/home/gizat/testgen-experiments/testgen-agent",
+  "timestamp": "2026-05-17T01:03:02.67064957+03:00",
+  "results": [
+    {
+      "repo": {
+        "Name": "gorilla-mux",
+        "URL": "https://github.com/gorilla/mux.git",
+        "Base": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+        "Head": "525206d7c2b250ca658700448b3bf23ec4707115",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/gorilla-mux",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/gorilla-mux",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/anthropic-claude-3.5-haiku/gorilla-mux/full.json",
+          "exit_code": 0,
+          "duration": 163158818098
+        }
+      ],
+      "duration": 166487949410
+    },
+    {
+      "repo": {
+        "Name": "google-uuid",
+        "URL": "https://github.com/google/uuid.git",
+        "Base": "c58770eb495f55fe2ced6284f93c5158a62e53e3",
+        "Head": "a2b2b32373ff0b1a312b7fdf6d38a977099698a6",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/google-uuid",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/google-uuid",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/anthropic-claude-3.5-haiku/google-uuid/full.json",
+          "exit_code": 0,
+          "duration": 34390062923
+        }
+      ],
+      "duration": 37399390062
+    },
+    {
+      "repo": {
+        "Name": "spf13-cobra",
+        "URL": "https://github.com/spf13/cobra.git",
+        "Base": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+        "Head": "4cafa37bc4bb85633b4245aa118280fe5a9edcd5",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/spf13-cobra",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/spf13-cobra",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/anthropic-claude-3.5-haiku/spf13-cobra/full.json",
+          "exit_code": 2,
+          "duration": 54830424171
+        }
+      ],
+      "duration": 57877272185
+    },
+    {
+      "repo": {
+        "Name": "burntsushi-toml",
+        "URL": "https://github.com/BurntSushi/toml.git",
+        "Base": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+        "Head": "dcb2346503b4e6a7fd88768b3d71d54df76d4a96",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/burntsushi-toml",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/burntsushi-toml",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/anthropic-claude-3.5-haiku/burntsushi-toml/full.json",
+          "exit_code": 0,
+          "duration": 133792144003
+        }
+      ],
+      "duration": 136899776051
+    },
+    {
+      "repo": {
+        "Name": "gin-gonic-gin",
+        "URL": "https://github.com/gin-gonic/gin.git",
+        "Base": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+        "Head": "472d086af2acd924cb4b9d7be0525f7d790f69bc",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/gin-gonic-gin",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/gin-gonic-gin",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/anthropic-claude-3.5-haiku/gin-gonic-gin/full.json",
+          "exit_code": 0,
+          "duration": 137011923905
+        }
+      ],
+      "duration": 140110596350
+    },
+    {
+      "repo": {
+        "Name": "etcd-io-bbolt",
+        "URL": "https://github.com/etcd-io/bbolt.git",
+        "Base": "5a7468c8a9ea508b9a546f22286726619819ad0c",
+        "Head": "36efe3ee12b5ef4d2ba79a3756d4713efdc4b7ee",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/etcd-io-bbolt",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/etcd-io-bbolt",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/anthropic-claude-3.5-haiku/etcd-io-bbolt/full.json",
+          "exit_code": 2,
+          "duration": 70041704821
+        }
+      ],
+      "duration": 73294992779
+    },
+    {
+      "repo": {
+        "Name": "hashicorp-raft",
+        "URL": "https://github.com/hashicorp/raft.git",
+        "Base": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+        "Head": "91745625f50efb7098f6a87a6c485cf54c435c1b",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/hashicorp-raft",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/hashicorp-raft",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/anthropic-claude-3.5-haiku/hashicorp-raft/full.json",
+          "exit_code": 0,
+          "duration": 344934577009
+        }
+      ],
+      "duration": 354419969942
+    },
+    {
+      "repo": {
+        "Name": "restic-restic",
+        "URL": "https://github.com/restic/restic.git",
+        "Base": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+        "Head": "880b08f9ec03425028634129fb8016c0860dca4b",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/restic-restic",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/restic-restic",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/anthropic-claude-3.5-haiku/restic-restic/full.json",
+          "exit_code": 0,
+          "duration": 77459796019
+        }
+      ],
+      "duration": 89645477979
+    }
+  ]
+}

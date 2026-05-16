@@ -1,0 +1,21 @@
+{
+  "repo": {
+    "Name": "burntsushi-toml",
+    "URL": "https://github.com/BurntSushi/toml.git",
+    "Base": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+    "Head": "dcb2346503b4e6a7fd88768b3d71d54df76d4a96",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-openai-gpt-4o-mini/burntsushi-toml",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-openai-gpt-4o-mini/burntsushi-toml",
+  "runs": [
+    {
+      "config": "full",
+      "report_path": "/home/gizat/exp/результаты/mutation-microexp/openai-gpt-4o-mini/burntsushi-toml/full.json",
+      "exit_code": 2,
+      "duration": 51080921486
+    }
+  ],
+  "duration": 54137007550
+}

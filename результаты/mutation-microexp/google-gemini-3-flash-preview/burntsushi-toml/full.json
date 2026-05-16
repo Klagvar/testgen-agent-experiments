@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "project_name": "burntsushi-toml",
+  "branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "base_branch": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+  "model": "google/gemini-3-flash-preview",
+  "timestamp": "2026-05-17T00:49:31.722270692+03:00",
+  "duration_seconds": 61.423810448,
+  "totals": {
+    "files_processed": 2,
+    "tests_generated": 2,
+    "tests_validated": 2,
+    "tests_cached": 0,
+    "diff_coverage_pct": 95.45454545454545,
+    "mutation_score_pct": 100,
+    "mutations_killed": 14,
+    "mutations_total": 14,
+    "branch_coverage_pct": 92.98245614035088,
+    "branches_covered": 53,
+    "branches_total": 57,
+    "error_path_coverage_pct": 60,
+    "error_paths_covered": 3,
+    "error_paths_total": 5,
+    "prompt_tokens": 59892,
+    "completion_tokens": 10034,
+    "token_efficiency_tokens_per_test": 34963,
+    "naturalness": {
+      "test_count": 48,
+      "assertion_ratio": 1.6984126984126986,
+      "no_assertions_pct": 28.57142857142857,
+      "duplicate_assertions_pct": 10.317460317460316,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 61.11111111111111,
+      "test_name_score": 54.17809042809043,
+      "var_name_score": 0.20614064754689754
+    }
+  },
+  "files": [
+    {
+      "file": "decode.go",
+      "functions": [
+        "unifyMap",
+        "unifyString"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 100,
+      "branch_coverage_pct": 100,
+      "branches_total": 10,
+      "branches_covered": 10,
+      "error_path_coverage_pct": 100,
+      "error_paths_total": 1,
+      "error_paths_covered": 1,
+      "mutation_score_pct": 100,
+      "mutation_killed": 9,
+      "mutation_total": 9,
+      "prompt_tokens": 29560,
+      "completion_tokens": 4446,
+      "token_efficiency_tokens_per_test": 34006,
+      "naturalness": {
+        "test_count": 27,
+        "assertion_ratio": 2.4444444444444446,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 11.11111111111111,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 88.88888888888889,
+        "test_name_score": 11.473063973063972,
+        "var_name_score": 0.1769097222222222
+      }
+    },
+    {
+      "file": "encode.go",
+      "functions": [
+        "encode",
+        "eElement"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 90.9090909090909,
+      "branch_coverage_pct": 91.48936170212765,
+      "branches_total": 47,
+      "branches_covered": 43,
+      "error_path_coverage_pct": 50,
+      "error_paths_total": 4,
+      "error_paths_covered": 2,
+      "mutation_score_pct": 100,
+      "mutation_killed": 5,
+      "mutation_total": 5,
+      "prompt_tokens": 30332,
+      "completion_tokens": 5588,
+      "token_efficiency_tokens_per_test": 35920,
+      "naturalness": {
+        "test_count": 21,
+        "assertion_ratio": 0.9523809523809523,
+        "no_assertions_pct": 57.14285714285714,
+        "duplicate_assertions_pct": 9.523809523809524,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 33.33333333333333,
+        "test_name_score": 96.88311688311688,
+        "var_name_score": 0.23537157287157284
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": true,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "full",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "google-ai-studio"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "repo": {
+    "Name": "gin-gonic-gin",
+    "URL": "https://github.com/gin-gonic/gin.git",
+    "Base": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+    "Head": "472d086af2acd924cb4b9d7be0525f7d790f69bc",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-openai-gpt-4o-mini/gin-gonic-gin",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-openai-gpt-4o-mini/gin-gonic-gin",
+  "runs": [
+    {
+      "config": "full",
+      "report_path": "/home/gizat/exp/результаты/mutation-microexp/openai-gpt-4o-mini/gin-gonic-gin/full.json",
+      "exit_code": 0,
+      "duration": 71935914428
+    }
+  ],
+  "duration": 75102101272
+}

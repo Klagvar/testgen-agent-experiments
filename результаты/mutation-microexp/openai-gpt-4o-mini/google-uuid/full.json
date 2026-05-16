@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "project_name": "google-uuid",
+  "branch": "c58770eb495f55fe2ced6284f93c5158a62e53e3",
+  "base_branch": "c58770eb495f55fe2ced6284f93c5158a62e53e3",
+  "model": "openai/gpt-4o-mini",
+  "timestamp": "2026-05-17T00:47:18.605072914+03:00",
+  "duration_seconds": 12.354759847,
+  "totals": {
+    "files_processed": 1,
+    "tests_generated": 1,
+    "tests_validated": 1,
+    "tests_cached": 0,
+    "diff_coverage_pct": 0,
+    "mutation_score_pct": 83.33333333333334,
+    "mutations_killed": 5,
+    "mutations_total": 6,
+    "branches_covered": 0,
+    "branches_total": 0,
+    "error_paths_covered": 0,
+    "error_paths_total": 0,
+    "prompt_tokens": 6752,
+    "completion_tokens": 676,
+    "token_efficiency_tokens_per_test": 7428,
+    "naturalness": {
+      "test_count": 3,
+      "assertion_ratio": 1,
+      "no_assertions_pct": 0,
+      "duplicate_assertions_pct": 0,
+      "nil_only_assertions_pct": 0,
+      "error_assertions_pct": 0,
+      "test_name_score": 90,
+      "var_name_score": 0.07045454545454544
+    }
+  },
+  "files": [
+    {
+      "file": "version7.go",
+      "functions": [
+        "makeV7",
+        "getV7Time"
+      ],
+      "status": "success",
+      "tests_total": 1,
+      "tests_passed": 1,
+      "diff_coverage_pct": 0,
+      "mutation_score_pct": 83.33333333333334,
+      "mutation_killed": 5,
+      "mutation_total": 6,
+      "prompt_tokens": 6752,
+      "completion_tokens": 676,
+      "token_efficiency_tokens_per_test": 7428,
+      "naturalness": {
+        "test_count": 3,
+        "assertion_ratio": 1,
+        "no_assertions_pct": 0,
+        "duplicate_assertions_pct": 0,
+        "nil_only_assertions_pct": 0,
+        "error_assertions_pct": 0,
+        "test_name_score": 90,
+        "var_name_score": 0.07045454545454544
+      }
+    }
+  ],
+  "config": {
+    "coverage_target": 80,
+    "max_retries": 3,
+    "max_coverage_iter": 2,
+    "race_detection": false,
+    "mutation_enabled": true,
+    "cache_enabled": true,
+    "smart_diff_enabled": true,
+    "coverage_analysis": true,
+    "validation_enabled": true,
+    "timeout_seconds": 300,
+    "ablation_config": "full",
+    "types_enabled": true,
+    "structured_feedback_enabled": true,
+    "pruning_enabled": true,
+    "naturalness_enabled": true,
+    "temperature": 0,
+    "seed": 42,
+    "provider": [
+      "OpenAI"
+    ]
+  }
+}

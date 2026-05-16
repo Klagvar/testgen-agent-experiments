@@ -1,0 +1,176 @@
+{
+  "work_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview",
+  "model": "google/gemini-3-flash-preview",
+  "agent_bin": "/home/gizat/testgen-experiments/testgen-agent",
+  "timestamp": "2026-05-17T00:55:49.210350448+03:00",
+  "results": [
+    {
+      "repo": {
+        "Name": "gorilla-mux",
+        "URL": "https://github.com/gorilla/mux.git",
+        "Base": "de7178dc9dffadc3cf56bece3962737e8b0710b8",
+        "Head": "525206d7c2b250ca658700448b3bf23ec4707115",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/gorilla-mux",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/gorilla-mux",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/google-gemini-3-flash-preview/gorilla-mux/full.json",
+          "exit_code": 2,
+          "duration": 40634112770
+        }
+      ],
+      "duration": 43378541440
+    },
+    {
+      "repo": {
+        "Name": "google-uuid",
+        "URL": "https://github.com/google/uuid.git",
+        "Base": "c58770eb495f55fe2ced6284f93c5158a62e53e3",
+        "Head": "a2b2b32373ff0b1a312b7fdf6d38a977099698a6",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/google-uuid",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/google-uuid",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/google-gemini-3-flash-preview/google-uuid/full.json",
+          "exit_code": 0,
+          "duration": 19120550704
+        }
+      ],
+      "duration": 23322575014
+    },
+    {
+      "repo": {
+        "Name": "spf13-cobra",
+        "URL": "https://github.com/spf13/cobra.git",
+        "Base": "5c962a221e70fd6b12296e5d7075f28b422f98b2",
+        "Head": "4cafa37bc4bb85633b4245aa118280fe5a9edcd5",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/spf13-cobra",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/spf13-cobra",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/google-gemini-3-flash-preview/spf13-cobra/full.json",
+          "exit_code": 0,
+          "duration": 57905456499
+        }
+      ],
+      "duration": 61062871107
+    },
+    {
+      "repo": {
+        "Name": "burntsushi-toml",
+        "URL": "https://github.com/BurntSushi/toml.git",
+        "Base": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+        "Head": "dcb2346503b4e6a7fd88768b3d71d54df76d4a96",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/burntsushi-toml",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/burntsushi-toml",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/google-gemini-3-flash-preview/burntsushi-toml/full.json",
+          "exit_code": 0,
+          "duration": 62019825921
+        }
+      ],
+      "duration": 65072006272
+    },
+    {
+      "repo": {
+        "Name": "gin-gonic-gin",
+        "URL": "https://github.com/gin-gonic/gin.git",
+        "Base": "fb2583442c4d9bccb75e6d26f1aa6e7c01950db6",
+        "Head": "472d086af2acd924cb4b9d7be0525f7d790f69bc",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/gin-gonic-gin",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/gin-gonic-gin",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/google-gemini-3-flash-preview/gin-gonic-gin/full.json",
+          "exit_code": 0,
+          "duration": 69336770179
+        }
+      ],
+      "duration": 72496452803
+    },
+    {
+      "repo": {
+        "Name": "etcd-io-bbolt",
+        "URL": "https://github.com/etcd-io/bbolt.git",
+        "Base": "5a7468c8a9ea508b9a546f22286726619819ad0c",
+        "Head": "36efe3ee12b5ef4d2ba79a3756d4713efdc4b7ee",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/etcd-io-bbolt",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/etcd-io-bbolt",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/google-gemini-3-flash-preview/etcd-io-bbolt/full.json",
+          "exit_code": 0,
+          "duration": 17082587352
+        }
+      ],
+      "duration": 20162786259
+    },
+    {
+      "repo": {
+        "Name": "hashicorp-raft",
+        "URL": "https://github.com/hashicorp/raft.git",
+        "Base": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+        "Head": "91745625f50efb7098f6a87a6c485cf54c435c1b",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/hashicorp-raft",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/hashicorp-raft",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/google-gemini-3-flash-preview/hashicorp-raft/full.json",
+          "exit_code": 0,
+          "duration": 254224652650
+        }
+      ],
+      "duration": 259795185529
+    },
+    {
+      "repo": {
+        "Name": "restic-restic",
+        "URL": "https://github.com/restic/restic.git",
+        "Base": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+        "Head": "880b08f9ec03425028634129fb8016c0860dca4b",
+        "Subdir": "",
+        "Exclude": null
+      },
+      "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/restic-restic",
+      "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/restic-restic",
+      "runs": [
+        {
+          "config": "full",
+          "report_path": "/home/gizat/exp/результаты/mutation-microexp/google-gemini-3-flash-preview/restic-restic/full.json",
+          "exit_code": 0,
+          "duration": 40452773583
+        }
+      ],
+      "duration": 48497162221
+    }
+  ]
+}

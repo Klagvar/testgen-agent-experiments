@@ -1,0 +1,21 @@
+{
+  "repo": {
+    "Name": "etcd-io-bbolt",
+    "URL": "https://github.com/etcd-io/bbolt.git",
+    "Base": "5a7468c8a9ea508b9a546f22286726619819ad0c",
+    "Head": "36efe3ee12b5ef4d2ba79a3756d4713efdc4b7ee",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/etcd-io-bbolt",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/etcd-io-bbolt",
+  "runs": [
+    {
+      "config": "full",
+      "report_path": "/home/gizat/exp/результаты/mutation-microexp/anthropic-claude-3.5-haiku/etcd-io-bbolt/full.json",
+      "exit_code": 2,
+      "duration": 70041704821
+    }
+  ],
+  "duration": 73294992779
+}

@@ -1,0 +1,21 @@
+{
+  "repo": {
+    "Name": "restic-restic",
+    "URL": "https://github.com/restic/restic.git",
+    "Base": "f78e3f369da66ad5589370d2a719ee1b190ad7f5",
+    "Head": "880b08f9ec03425028634129fb8016c0860dca4b",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-qwen-qwen3-coder-30b-a3b-instruct/restic-restic",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-qwen-qwen3-coder-30b-a3b-instruct/restic-restic",
+  "runs": [
+    {
+      "config": "full",
+      "report_path": "/home/gizat/exp/результаты/mutation-microexp/qwen-qwen3-coder-30b-a3b-instruct/restic-restic/full.json",
+      "exit_code": 0,
+      "duration": 130474461460
+    }
+  ],
+  "duration": 138191801209
+}

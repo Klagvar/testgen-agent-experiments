@@ -1,0 +1,21 @@
+{
+  "repo": {
+    "Name": "burntsushi-toml",
+    "URL": "https://github.com/BurntSushi/toml.git",
+    "Base": "d716584e960834b63c9c159bef0377c91cfd9ee7",
+    "Head": "dcb2346503b4e6a7fd88768b3d71d54df76d4a96",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/burntsushi-toml",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-anthropic-claude-3.5-haiku/burntsushi-toml",
+  "runs": [
+    {
+      "config": "full",
+      "report_path": "/home/gizat/exp/результаты/mutation-microexp/anthropic-claude-3.5-haiku/burntsushi-toml/full.json",
+      "exit_code": 0,
+      "duration": 133792144003
+    }
+  ],
+  "duration": 136899776051
+}

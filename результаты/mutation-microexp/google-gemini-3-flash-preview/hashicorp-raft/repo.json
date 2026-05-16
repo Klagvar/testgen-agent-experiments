@@ -1,0 +1,21 @@
+{
+  "repo": {
+    "Name": "hashicorp-raft",
+    "URL": "https://github.com/hashicorp/raft.git",
+    "Base": "5157c19cc233325dd92226aa0fdfe7f1dc188f2d",
+    "Head": "91745625f50efb7098f6a87a6c485cf54c435c1b",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/hashicorp-raft",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-google-gemini-3-flash-preview/hashicorp-raft",
+  "runs": [
+    {
+      "config": "full",
+      "report_path": "/home/gizat/exp/результаты/mutation-microexp/google-gemini-3-flash-preview/hashicorp-raft/full.json",
+      "exit_code": 0,
+      "duration": 254224652650
+    }
+  ],
+  "duration": 259795185529
+}

@@ -1,0 +1,21 @@
+{
+  "repo": {
+    "Name": "google-uuid",
+    "URL": "https://github.com/google/uuid.git",
+    "Base": "c58770eb495f55fe2ced6284f93c5158a62e53e3",
+    "Head": "a2b2b32373ff0b1a312b7fdf6d38a977099698a6",
+    "Subdir": "",
+    "Exclude": null
+  },
+  "clone_dir": "/home/gizat/testgen-experiments/workdir-mutexp-qwen-qwen-2.5-7b-instruct/google-uuid",
+  "agent_dir": "/home/gizat/testgen-experiments/workdir-mutexp-qwen-qwen-2.5-7b-instruct/google-uuid",
+  "runs": [
+    {
+      "config": "full",
+      "report_path": "/home/gizat/exp/результаты/mutation-microexp/qwen-qwen-2.5-7b-instruct/google-uuid/full.json",
+      "exit_code": 2,
+      "duration": 46108548159
+    }
+  ],
+  "duration": 48936071990
+}
