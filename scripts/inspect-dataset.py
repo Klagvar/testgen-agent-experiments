@@ -5,7 +5,12 @@ description in dataset.yaml.
 
 Usage: python3 inspect-dataset.py [<dataset-yaml>]
 """
-import os, sys, subprocess, yaml, re
+import os
+import re
+import subprocess
+import sys
+
+import yaml
 
 ds_path = sys.argv[1] if len(sys.argv) > 1 else \
           "/mnt/d/Дз/4 семестр/НИР/эксперимент/dataset.yaml"

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Universal aggregator: walk all raw JSON reports and emit one flat table.
 
 Each row corresponds to one (model, repo, ablation_config, run_index) tuple.

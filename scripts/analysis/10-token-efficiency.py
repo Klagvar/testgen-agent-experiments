@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Token efficiency: tokens per validated test, total cost per model.
 
 Per-million pricing (USD, OpenRouter pinned providers as of 2026-05):
@@ -10,7 +11,7 @@ from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS  # type: ignore
+from _aggregate import MODELS, collect  # type: ignore
 
 # (input USD/M, output USD/M)
 PRICING = {

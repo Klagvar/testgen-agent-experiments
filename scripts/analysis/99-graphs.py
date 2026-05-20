@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Generate all five chapter-5 figures (G1..G5) as monochrome PNG.
 
 All graphics are intentionally restrained: monochrome / grayscale palette,
@@ -25,7 +26,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS, CONFIGS, model_label  # type: ignore
+from _aggregate import CONFIGS, MODELS, collect, model_label  # type: ignore
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT_DIR = ROOT / "результаты" / "графики"

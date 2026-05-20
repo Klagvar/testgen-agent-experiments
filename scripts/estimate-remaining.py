@@ -4,7 +4,9 @@
 Uses old-run (cap=4096) per-repo costs and applies the observed
 inflation factor (new tokens / old tokens) on the 3 already-finished
 shared repos."""
-import json, glob, os
+import glob
+import json
+import os
 from collections import Counter
 
 OLD = "результаты/raw/anthropic-claude-haiku-4.5_OLD-cap4096"

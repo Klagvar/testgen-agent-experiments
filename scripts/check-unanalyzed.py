@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """What metrics do we collect but haven't analyzed yet?"""
 import json
+
 sample = "результаты/raw/google-gemini-3-flash-preview/gin-gonic-gin/full-run1.json"
 d = json.load(open(sample, encoding="utf-8"))
 t = d.get("totals", {})

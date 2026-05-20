@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Aggregate mutation micro-experiment (7 models × 8 repos × full × 1 run).
 
 Reads all full.json reports under results/mutation-microexp/ and prints:

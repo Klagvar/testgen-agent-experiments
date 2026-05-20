@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Inspect actual failure modes in haiku-4.5 vs 3.5 runs.
 Look at file-level data and per-attempt history."""
-import json, glob, os
+import glob
+import json
+import os
 from collections import Counter
 
 models = [

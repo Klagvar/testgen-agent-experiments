@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Per-repo difficulty: average run_success across all 7 models in 'full' config."""
 
 from __future__ import annotations
@@ -7,7 +8,7 @@ from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS, REPOS  # type: ignore
+from _aggregate import MODELS, REPOS, collect  # type: ignore
 
 
 def main() -> None:

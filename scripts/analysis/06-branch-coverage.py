@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Branch coverage: pct of diff-related branches taken by tests.
 
 Same convention as diff_coverage: only count rows with at least one
@@ -14,7 +15,7 @@ from pathlib import Path
 from statistics import mean
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS, CONFIGS  # type: ignore
+from _aggregate import CONFIGS, MODELS, collect  # type: ignore
 
 
 def main() -> None:

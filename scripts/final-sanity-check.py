@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Pre-thesis-writing sanity check: are all models complete on all 8
 repos × 6 ablation configs × 3 runs?"""
-import json, glob, os
-from collections import defaultdict, Counter
+import glob
+import json
+import os
+from collections import Counter, defaultdict
 
 EXPECTED_REPOS = {
     "burntsushi-toml", "etcd-io-bbolt", "gin-gonic-gin", "google-uuid",

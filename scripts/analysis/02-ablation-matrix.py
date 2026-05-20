@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Ablation matrix: 7 models × 6 configurations.
 
 For each (model, config) we report:
@@ -17,7 +18,7 @@ from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS, CONFIGS  # type: ignore
+from _aggregate import CONFIGS, MODELS, collect  # type: ignore
 
 
 def main() -> None:

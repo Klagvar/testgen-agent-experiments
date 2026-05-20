@@ -1,4 +1,8 @@
-import json, urllib.request
+#!/usr/bin/env python3
+"""Probe OpenRouter for haiku model availability and metadata."""
+
+import json
+import urllib.request
 
 d = json.loads(urllib.request.urlopen('https://openrouter.ai/api/v1/models').read())['data']
 for m in d:

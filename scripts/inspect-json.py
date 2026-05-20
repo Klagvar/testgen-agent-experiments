@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Pretty-print key fields of a testgen JSON report."""
-import json, sys
+import json
+import sys
 
 d = json.load(open(sys.argv[1]))
 cfg = d.get("config", {})

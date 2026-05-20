@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Deep analysis: what scientific findings are already in the results?
 Decide whether 4.5-haiku rerun adds anything new."""
-import json, glob, os
+import glob
+import json
+import os
 from collections import Counter, defaultdict
 
 models = [

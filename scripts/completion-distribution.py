@@ -6,7 +6,9 @@ The JSON report aggregates them into a single completion_tokens field;
 to detect 4096-token caps we need attempt-level data which is only in
 the log file. As a proxy: distribution of total per-run completion
 tokens, bucketed by 4096-multiples."""
-import json, glob, os
+import glob
+import json
+import os
 from collections import Counter
 
 models = [

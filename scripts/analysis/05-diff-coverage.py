@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Diff coverage: pct of changed lines covered by generated tests.
 
 We only consider rows where files_successful > 0 (otherwise diff coverage
@@ -13,7 +14,7 @@ from pathlib import Path
 from statistics import mean
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS, CONFIGS, REPOS  # type: ignore
+from _aggregate import CONFIGS, MODELS, REPOS, collect  # type: ignore
 
 
 def main() -> None:

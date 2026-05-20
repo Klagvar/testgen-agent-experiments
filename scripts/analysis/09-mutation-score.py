@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Mutation score: how many mutants are killed by generated tests.
 
 mutation_enabled is False in our experiment configuration (see config.json).
@@ -16,7 +17,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS  # type: ignore
+from _aggregate import MODELS, collect  # type: ignore
 
 
 def main() -> None:
@@ -33,8 +34,8 @@ def main() -> None:
     print()
     print("=== mutation_enabled flag distribution ===")
     # Need to peek into raw JSONs
-    from pathlib import Path as _P
     import json
+    from pathlib import Path as _P
     enabled_count = 0
     for r in rows:
         with open(r["_path"], encoding="utf-8") as f:

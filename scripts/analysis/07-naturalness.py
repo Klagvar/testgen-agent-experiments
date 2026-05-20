@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Naturalness: 5 sub-metrics describing how human-like generated tests are.
 
 Sub-metrics (from totals.naturalness):
@@ -21,8 +22,7 @@ from pathlib import Path
 from statistics import mean
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS  # type: ignore
-
+from _aggregate import MODELS, collect  # type: ignore
 
 METRICS = [
     ("nat_assert_ratio",   "assertions/test", ".2f", "higher better"),

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Equalizer effect: full vs no-pruning per model.
 
 We use no-pruning as a proxy baseline ("minimal harness"): only the LLM and
@@ -18,7 +19,7 @@ from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS  # type: ignore
+from _aggregate import MODELS, collect  # type: ignore
 
 
 def main() -> None:

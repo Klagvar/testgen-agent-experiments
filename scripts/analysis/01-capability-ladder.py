@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Capability ladder: success rate per model averaged across all configs/runs.
 
 Definition of success: per-(model, repo, config, run) we look at file-level
@@ -22,7 +23,8 @@ from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS, REPOS, CONFIGS, model_label  # type: ignore
+from _aggregate import (CONFIGS, MODELS, REPOS, collect,  # type: ignore
+                        model_label)
 
 
 def main() -> None:

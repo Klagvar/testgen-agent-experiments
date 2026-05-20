@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Variance: how stable are results across 3 independent runs?
 
 For each (model, repo, config), the 3 runs use seed = 42 + run_index. With
@@ -16,7 +17,7 @@ from pathlib import Path
 from statistics import mean, stdev
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS, REPOS, CONFIGS  # type: ignore
+from _aggregate import CONFIGS, MODELS, REPOS, collect  # type: ignore
 
 
 def main() -> None:

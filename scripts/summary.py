@@ -3,7 +3,10 @@
 
 Usage: python3 summary.py <results-dir> [<prompt-usd-per-m> <compl-usd-per-m>]
 """
-import sys, json, glob, os
+import glob
+import json
+import os
+import sys
 
 if len(sys.argv) < 2:
     print(__doc__, file=sys.stderr); sys.exit(1)

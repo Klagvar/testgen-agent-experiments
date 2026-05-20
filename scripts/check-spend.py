@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Estimate spend on the running 4.5-haiku rerun."""
-import json, glob, os
+import glob
+import json
+import os
 from collections import Counter
 
 mdir = "результаты/raw/anthropic-claude-haiku-4.5"

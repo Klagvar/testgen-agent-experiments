@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Per-file token analysis grouped by status, across models."""
-import json
 import glob
+import json
 import os
 
 models = [

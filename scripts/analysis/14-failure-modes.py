@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Failure mode analysis: when files fail, why?
 
 We examine file-level entries (status='failed') in raw JSON and try to
@@ -9,11 +10,11 @@ tests_total>0 but tests_passed=0 suggests a runtime/assertion failure).
 from __future__ import annotations
 
 import sys
-from collections import defaultdict, Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS  # type: ignore
+from _aggregate import MODELS, collect  # type: ignore
 
 
 def classify_failure(file_entry: dict) -> str:

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Error path coverage: how often error-return branches are covered.
 
 Many of our 8 repos have error_paths_total == 0 (functions without error
@@ -12,7 +13,7 @@ from pathlib import Path
 from statistics import mean
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS, REPOS  # type: ignore
+from _aggregate import MODELS, REPOS, collect  # type: ignore
 
 
 def main() -> None:

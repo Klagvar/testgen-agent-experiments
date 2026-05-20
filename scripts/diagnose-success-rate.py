@@ -6,8 +6,8 @@ Three angles:
 2. Without spf13-cobra (which we already know is universally hard)
 3. Sample failed runs to see what's actually wrong with the LLM output
 """
-import json
 import glob
+import json
 import os
 from collections import defaultdict
 
@@ -84,6 +84,7 @@ print("=== 4. Подозрение на timeout: длительность одн
 print()
 print(f"  {'model':<14} {'медиана (s)':>11} {'p95':>6} {'p99':>6} {'max':>6}")
 import statistics
+
 for tag, dn in models:
     durations = []
     for f in glob.glob(os.path.join(dn, "*/repo.json")):

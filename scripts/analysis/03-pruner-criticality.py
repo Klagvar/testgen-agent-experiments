@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Pruner criticality: per-(model, repo) view of full vs no-pruning.
 
 For each model, we tabulate file_macro under both configs and the delta.
@@ -12,7 +13,7 @@ from collections import defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from _aggregate import collect, MODELS, REPOS  # type: ignore
+from _aggregate import MODELS, REPOS, collect  # type: ignore
 
 
 def main() -> None:

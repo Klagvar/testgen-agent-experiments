@@ -12,10 +12,10 @@ Reads:
 Writes:
     <model-dir>/RUN-INFO.md
 """
+import glob
 import json
 import os
 import sys
-import glob
 from datetime import datetime
 
 if len(sys.argv) != 2:
@@ -154,6 +154,7 @@ lines.append("|------|-----------|-----:|--------------:|----------------:|-----
 
 # Re-walk per-run files to count successful runs distinctly from validated test count
 import glob as _glob
+
 for repo_name in sorted(repo_stats.keys()):
     rs = repo_stats[repo_name]
     bcov_all = []

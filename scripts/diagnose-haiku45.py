@@ -6,7 +6,10 @@ Compare:
 - per-attempt success (does retry-loop actually help?)
 - per-config breakdown
 """
-import json, glob, os, re
+import glob
+import json
+import os
+import re
 from collections import Counter
 
 models = [

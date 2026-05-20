@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """Cross-model comparison table."""
-import json
 import glob
+import json
 import os
-import sys
-
 import sys
 
 # Auto-discover all model directories under результаты/raw/
