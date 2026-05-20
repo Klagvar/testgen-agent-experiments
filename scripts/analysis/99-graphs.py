@@ -158,64 +158,74 @@ def aggregate_per_config(rows):
     return fm, rs
 
 
-# ── G1 — capability ladder (horizontal bars) ─────────────────────────────────
+# ── G1 — potential vs robustness (grouped horizontal bars) ───────────────────
 
 def plot_g1(rows):
-    metrics = aggregate_model_metrics(rows)
-    ranked = sorted(metrics.items(), key=lambda kv: kv[1]["run_success"])
-    labels = [m["label"] for _, m in ranked]
-    vals = [m["run_success"] for _, m in ranked]
-    fmacro = [m["file_macro"] for _, m in ranked]
+    """Two bars per model: run_success on `full` (potential) vs run_success
+    averaged over all six configurations (robustness to ablation).
 
-    # Tier colour: floor/mid-tier/frontier — by run_success.
-    def tier_color(rs: float) -> str:
-        if rs < 25:
-            return NEUTRAL
-        if rs < 80:
-            return PRIMARY
-        return ACCENT
+    The graphic complements Table T3, which lists only the `full` value;
+    the gap between the two bars characterises how strongly each model
+    relies on the agentic harness around it.
+    """
+    by_all = defaultdict(list)
+    by_full = defaultdict(list)
+    for r in rows:
+        by_all[r["model_id"]].append(r)
+        if r["config"] == "full":
+            by_full[r["model_id"]].append(r)
 
-    fig, ax = plt.subplots(figsize=(8.6, 4.8))
+    rows_data = []
+    for raw_dir, sid, lbl in MODELS:
+        rs_all = by_all.get(sid, [])
+        rs_full = by_full.get(sid, [])
+        if not rs_all or not rs_full:
+            continue
+        rate_full = sum(1 for r in rs_full if r["tests_validated"] > 0) / len(rs_full) * 100
+        rate_all = sum(1 for r in rs_all if r["tests_validated"] > 0) / len(rs_all) * 100
+        rows_data.append((lbl, rate_full, rate_all))
+
+    # bottom-up: ascending by full, tie-break by avg.
+    rows_data.sort(key=lambda t: (t[1], t[2]))
+    labels = [t[0] for t in rows_data]
+    full_v = [t[1] for t in rows_data]
+    avg_v  = [t[2] for t in rows_data]
+
+    fig, ax = plt.subplots(figsize=(9.2, 5.0))
     y = np.arange(len(labels))
-    bar_h = 0.62
-    fm_h = 0.22
+    bar_h = 0.36
 
-    rs_colors = [tier_color(v) for v in vals]
-    rs_face = [c + "66" for c in rs_colors]  # 40 % alpha (RGBA)
-    ax.barh(y + fm_h / 1.5, vals, color=rs_face, edgecolor=rs_colors,
-            linewidth=1.1, height=bar_h - fm_h)
-    ax.barh(y - bar_h / 2 + fm_h / 2, fmacro, color=SECONDARY,
-            edgecolor=SECONDARY, linewidth=0.0, height=fm_h)
+    ax.barh(
+        y + bar_h / 2, full_v,
+        color=PRIMARY + "AA", edgecolor=PRIMARY, linewidth=1.0,
+        height=bar_h, label="конфигурация full (24 запуска)",
+    )
+    ax.barh(
+        y - bar_h / 2, avg_v,
+        color=NEUTRAL + "55", edgecolor=NEUTRAL, linewidth=1.0,
+        height=bar_h, label="среднее по 6 конфигурациям (144 запуска)",
+    )
 
-    for i, (v, fm) in enumerate(zip(vals, fmacro)):
-        ax.text(v + 1.0, i + fm_h / 1.5, f"{v:.1f}%", va="center", ha="left",
+    for i, (vf, va) in enumerate(zip(full_v, avg_v)):
+        ax.text(vf + 1.0, i + bar_h / 2, f"{vf:.1f}\u202f%",
+                va="center", ha="left",
                 fontsize=10, color=GREY_DARK, fontweight="bold")
-        ax.text(fm + 1.0, i - bar_h / 2 + fm_h / 2, f"{fm:.1f}%",
-                va="center", ha="left", fontsize=8.5, color=SECONDARY)
+        ax.text(va + 1.0, i - bar_h / 2, f"{va:.1f}\u202f%",
+                va="center", ha="left",
+                fontsize=9.5, color=GREY_MID)
 
     ax.set_yticks(y)
     ax.set_yticklabels(labels)
-    ax.set_xlim(0, 112)
+    ax.set_xlim(0, 115)
+    ax.set_xticks(np.arange(0, 101, 20))
     ax.set_ylim(-0.7, len(labels) - 0.3)
     ax.set_xlabel("Доля успешных запусков, % (run_success)")
-    ax.set_title("Иерархия моделей по успешности генерации\n(8 проектов × 6 конфигураций × 3 запуска = 144 запуска на модель)",
-                 fontsize=11.5)
+    ax.set_title(
+        "Потенциал моделей и просадка при отключении компонент пайплайна",
+        fontsize=11.5,
+    )
 
-    legend_handles = [
-        plt.Rectangle((0, 0), 1, 1, color=ACCENT + "66", ec=ACCENT, lw=1.1),
-        plt.Rectangle((0, 0), 1, 1, color=PRIMARY + "66", ec=PRIMARY, lw=1.1),
-        plt.Rectangle((0, 0), 1, 1, color=NEUTRAL + "66", ec=NEUTRAL, lw=1.1),
-        plt.Rectangle((0, 0), 1, 1, color=SECONDARY),
-    ]
-    ax.legend(legend_handles,
-              ["frontier (run_success ≥ 80 %)",
-               "mid-tier (25 % ≤ run_success < 80 %)",
-               "floor (run_success < 25 %)",
-               "file_macro — успешных файлов на запуск"],
-              loc="lower right", frameon=False, fontsize=8.8)
-
-    ax.axhline(0.5, color=GREY_LIGHT, linewidth=0.8)
-    ax.axhline(5.5, color=GREY_LIGHT, linewidth=0.8)
+    ax.legend(loc="lower right", frameon=False, fontsize=9.2)
 
     save(fig, "G1-capability-ladder")
 
@@ -223,22 +233,25 @@ def plot_g1(rows):
 # ── G2 — component importance (mean Δ vs full + min/max whiskers) ────────────
 
 def plot_g2(rows):
-    fm, _ = aggregate_per_config(rows)
+    """Mean Δ run_success vs `full` per ablated component, with min/max
+    whiskers across the seven models.
+    """
+    _, rs_per = aggregate_per_config(rows)
     components = [c for c in CONFIGS if c != "full"]
     component_labels = {
-        "no-types":              "no-types\n(AST-типы)",
-        "no-smart-diff":         "no-smart-\ndiff",
+        "no-types":               "no-types\n(анализ go/types)",
+        "no-smart-diff":          "no-smart-\ndiff",
         "no-structured-feedback": "no-structured-\nfeedback",
-        "no-pruning":            "no-pruning\n(AST-фильтр)",
-        "no-coverage":           "no-coverage\n(cover-loop)",
+        "no-pruning":             "no-pruning\n(удаление\nневалидных тестов)",
+        "no-coverage":            "no-coverage\n(цикл расширения\nпокрытия)",
     }
 
     means, mins, maxs = [], [], []
     for cfg in components:
         deltas = []
         for raw_dir, sid, lbl in MODELS:
-            full_v = fm.get((sid, "full"), 0.0)
-            d = fm.get((sid, cfg), 0.0) - full_v
+            full_v = rs_per.get((sid, "full"), 0.0)
+            d = rs_per.get((sid, cfg), 0.0) - full_v
             deltas.append(d)
         means.append(statistics.mean(deltas))
         mins.append(min(deltas))
@@ -250,39 +263,46 @@ def plot_g2(rows):
     mins = [mins[i] for i in order]
     maxs = [maxs[i] for i in order]
 
-    fig, ax = plt.subplots(figsize=(7.8, 4.6))
+    fig, ax = plt.subplots(figsize=(8.6, 4.8))
     x = np.arange(len(components))
     err_low = [m - lo for m, lo in zip(means, mins)]
     err_high = [hi - m for m, hi in zip(means, maxs)]
 
     bar_colors = [POSITIVE if m < 0 else NEGATIVE for m in means]
-    bar_face = [c + "55" for c in bar_colors]  # 33 % alpha
+    bar_face = [c + "55" for c in bar_colors]
     ax.bar(x, means, color=bar_face, edgecolor=bar_colors, linewidth=1.3, width=0.55)
     ax.errorbar(x, means, yerr=[err_low, err_high], fmt="none",
                 ecolor=GREY_DARK, capsize=6, capthick=1.0, elinewidth=1.0)
 
     for xi, m in zip(x, means):
         col = POSITIVE if m < 0 else NEGATIVE
-        ax.text(xi, m - 1.8 if m < 0 else m + 1.8, f"{m:+.1f}",
+        ax.text(xi, m - 2.0 if m < 0 else m + 2.0, f"{m:+.1f}",
                 ha="center", va="top" if m < 0 else "bottom",
                 fontsize=10, fontweight="bold", color=col)
 
     ax.axhline(0, color=GREY_DARK, linewidth=0.9)
     ax.set_xticks(x)
-    ax.set_xticklabels([component_labels[c] for c in components], fontsize=9.5)
-    ax.set_ylabel("Δ file_macro vs full, п.п.")
-    ax.set_title("Вклад компонент архитектуры в качество генерации\n(столбец — среднее по 7 моделям, усы — min/max разброс)",
-                 fontsize=11.5)
-    ax.set_ylim(min(mins) - 8, max(maxs) + 8)
+    ax.set_xticklabels([component_labels[c] for c in components], fontsize=9.0)
+    ax.set_ylabel("Δ run_success vs full, процентных пунктов")
+    ax.set_title(
+        "Вклад компонент пайплайна в успешность генерации\n"
+        "(столбец — среднее по 7 моделям, усы — min/max разброс)",
+        fontsize=11.5,
+    )
+    ax.set_ylim(min(mins) - 10, max(maxs) + 10)
 
     legend_handles = [
         plt.Rectangle((0, 0), 1, 1, color=POSITIVE + "55", ec=POSITIVE, lw=1.3),
         plt.Rectangle((0, 0), 1, 1, color=NEGATIVE + "55", ec=NEGATIVE, lw=1.3),
     ]
-    ax.legend(legend_handles,
-              ["компонент полезен (отключение ↓ качества)",
-               "компонент мешает (отключение ↑ качества)"],
-              loc="upper left", frameon=False, fontsize=9)
+    ax.legend(
+        legend_handles,
+        [
+            "компонент полезен (отключение снижает успешность)",
+            "компонент мешает (отключение повышает успешность)",
+        ],
+        loc="upper left", frameon=False, fontsize=9.0,
+    )
 
     save(fig, "G2-component-importance")
 
@@ -290,37 +310,51 @@ def plot_g2(rows):
 # ── G3 — pruner criticality (paired bars: full vs no-pruning per model) ──────
 
 def plot_g3(rows):
-    fm, _ = aggregate_per_config(rows)
+    """Paired bars per model: run_success on `full` vs run_success on
+    `no-pruning`. Demonstrates universal criticality of the test-pruning
+    component across the seven models.
+    """
+    _, rs_per = aggregate_per_config(rows)
     metrics = aggregate_model_metrics(rows)
-    ordered = sorted(metrics.items(), key=lambda kv: -kv[1]["file_macro"])
+    # Order models by descending run_success on `full`.
+    ordered = sorted(
+        metrics.items(),
+        key=lambda kv: -rs_per.get((kv[0], "full"), 0.0),
+    )
 
     labels = [m["label"] for _, m in ordered]
-    full_vals = [fm[(sid, "full")] for sid, _ in ordered]
-    np_vals = [fm[(sid, "no-pruning")] for sid, _ in ordered]
+    full_vals = [rs_per[(sid, "full")] for sid, _ in ordered]
+    np_vals = [rs_per[(sid, "no-pruning")] for sid, _ in ordered]
     deltas = [np_vals[i] - full_vals[i] for i in range(len(labels))]
 
-    fig, ax = plt.subplots(figsize=(8.4, 4.8))
+    fig, ax = plt.subplots(figsize=(9.0, 5.0))
     x = np.arange(len(labels))
     w = 0.36
     ax.bar(x - w / 2, full_vals, width=w, color=POSITIVE, edgecolor=POSITIVE,
-           label="full (с AST-pruner)")
+           label="full (с модулем удаления невалидных тестов)")
     ax.bar(x + w / 2, np_vals, width=w, color=NEGATIVE + "AA",
-           edgecolor=NEGATIVE, linewidth=1.0, label="no-pruning (без фильтра)")
+           edgecolor=NEGATIVE, linewidth=1.0,
+           label="no-pruning (модуль отключён)")
 
     for xi, fv, nv, d in zip(x, full_vals, np_vals, deltas):
-        ax.text(xi - w / 2, fv + 1.0, f"{fv:.0f}", ha="center", fontsize=9, color=POSITIVE)
-        ax.text(xi + w / 2, nv + 1.0, f"{nv:.0f}", ha="center", fontsize=9, color=NEGATIVE)
-        y_arrow = max(fv, nv) + 6
-        ax.annotate(f"Δ {d:+.1f}", xy=(xi, y_arrow), ha="center", fontsize=9.5,
-                    color=GREY_DARK, fontweight="bold")
+        ax.text(xi - w / 2, fv + 1.5, f"{fv:.0f}", ha="center",
+                fontsize=9, color=POSITIVE)
+        ax.text(xi + w / 2, nv + 1.5, f"{nv:.0f}", ha="center",
+                fontsize=9, color=NEGATIVE)
+        y_arrow = max(fv, nv) + 8
+        ax.annotate(f"Δ {d:+.1f}", xy=(xi, y_arrow), ha="center",
+                    fontsize=9.5, color=GREY_DARK, fontweight="bold")
 
     ax.set_xticks(x)
     ax.set_xticklabels(labels, rotation=20, ha="right", fontsize=9.5)
-    ax.set_ylabel("file_macro success rate, %")
-    ax.set_ylim(0, max(max(full_vals), max(np_vals)) + 18)
-    ax.set_title("Критичность AST-pruner: полная конфигурация против no-pruning",
-                 fontsize=11.5)
-    ax.legend(loc="upper right", frameon=False, fontsize=10)
+    ax.set_ylabel("Доля успешных запусков, % (run_success)")
+    ax.set_ylim(0, max(max(full_vals), max(np_vals)) + 25)
+    ax.set_title(
+        "Критичность модуля удаления невалидных тестов:\n"
+        "конфигурация full против no-pruning",
+        fontsize=11.5,
+    )
+    ax.legend(loc="upper right", frameon=False, fontsize=9.5)
 
     save(fig, "G3-pruner-criticality")
 
